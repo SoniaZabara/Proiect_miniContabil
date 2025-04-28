@@ -59,11 +59,11 @@
             // labelHeader
             // 
             this.labelHeader.AutoSize = true;
-            this.labelHeader.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelHeader.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelHeader.ForeColor = System.Drawing.Color.White;
             this.labelHeader.Location = new System.Drawing.Point(12, 12);
             this.labelHeader.Name = "labelHeader";
-            this.labelHeader.Size = new System.Drawing.Size(113, 21);
+            this.labelHeader.Size = new System.Drawing.Size(101, 20);
             this.labelHeader.TabIndex = 2;
             this.labelHeader.Text = "miniContabil";
             // 
@@ -72,7 +72,7 @@
             this.buttonHelp.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonHelp.FlatAppearance.BorderSize = 0;
             this.buttonHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonHelp.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonHelp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonHelp.ForeColor = System.Drawing.Color.White;
             this.buttonHelp.Location = new System.Drawing.Point(1124, 0);
             this.buttonHelp.Name = "buttonHelp";
@@ -87,7 +87,7 @@
             this.buttonClose.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonClose.FlatAppearance.BorderSize = 0;
             this.buttonClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonClose.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonClose.ForeColor = System.Drawing.Color.White;
             this.buttonClose.Location = new System.Drawing.Point(1205, 0);
             this.buttonClose.Name = "buttonClose";
@@ -111,15 +111,16 @@
             this.mainpanel.Name = "mainpanel";
             this.mainpanel.Size = new System.Drawing.Size(1280, 680);
             this.mainpanel.TabIndex = 1;
+            this.mainpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.mainpanel_Paint);
             // 
             // labelNume4
             // 
             this.labelNume4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelNume4.AutoSize = true;
-            this.labelNume4.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNume4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNume4.Location = new System.Drawing.Point(237, 519);
             this.labelNume4.Name = "labelNume4";
-            this.labelNume4.Size = new System.Drawing.Size(120, 21);
+            this.labelNume4.Size = new System.Drawing.Size(107, 20);
             this.labelNume4.TabIndex = 6;
             this.labelNume4.Text = "Sonia Zabara";
             // 
@@ -127,10 +128,10 @@
             // 
             this.labelNume3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelNume3.AutoSize = true;
-            this.labelNume3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNume3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNume3.Location = new System.Drawing.Point(237, 480);
             this.labelNume3.Name = "labelNume3";
-            this.labelNume3.Size = new System.Drawing.Size(126, 21);
+            this.labelNume3.Size = new System.Drawing.Size(111, 20);
             this.labelNume3.TabIndex = 5;
             this.labelNume3.Text = "Petru Negoita";
             // 
@@ -138,10 +139,10 @@
             // 
             this.labelNume2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelNume2.AutoSize = true;
-            this.labelNume2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNume2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNume2.Location = new System.Drawing.Point(237, 442);
             this.labelNume2.Name = "labelNume2";
-            this.labelNume2.Size = new System.Drawing.Size(120, 21);
+            this.labelNume2.Size = new System.Drawing.Size(116, 20);
             this.labelNume2.TabIndex = 4;
             this.labelNume2.Text = "Silviu Chiuariu";
             // 
@@ -149,10 +150,10 @@
             // 
             this.labelNume1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelNume1.AutoSize = true;
-            this.labelNume1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNume1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNume1.Location = new System.Drawing.Point(237, 405);
             this.labelNume1.Name = "labelNume1";
-            this.labelNume1.Size = new System.Drawing.Size(181, 21);
+            this.labelNume1.Size = new System.Drawing.Size(157, 20);
             this.labelNume1.TabIndex = 3;
             this.labelNume1.Text = "Ioana Andreea Bran";
             // 
@@ -160,10 +161,10 @@
             // 
             this.labelMadeBy.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelMadeBy.AutoSize = true;
-            this.labelMadeBy.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMadeBy.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelMadeBy.Location = new System.Drawing.Point(39, 389);
             this.labelMadeBy.Name = "labelMadeBy";
-            this.labelMadeBy.Size = new System.Drawing.Size(177, 37);
+            this.labelMadeBy.Size = new System.Drawing.Size(159, 36);
             this.labelMadeBy.TabIndex = 2;
             this.labelMadeBy.Text = "realizat de:";
             // 
@@ -171,17 +172,17 @@
             // 
             this.labelTitlu.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelTitlu.AutoSize = true;
-            this.labelTitlu.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTitlu.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTitlu.Location = new System.Drawing.Point(70, 84);
             this.labelTitlu.Name = "labelTitlu";
-            this.labelTitlu.Size = new System.Drawing.Size(302, 74);
+            this.labelTitlu.Size = new System.Drawing.Size(290, 69);
             this.labelTitlu.TabIndex = 1;
             this.labelTitlu.Text = "Proiect IP";
             // 
             // buttonStart
             // 
             this.buttonStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonStart.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonStart.Location = new System.Drawing.Point(1124, 579);
             this.buttonStart.Name = "buttonStart";
             this.buttonStart.Size = new System.Drawing.Size(85, 40);

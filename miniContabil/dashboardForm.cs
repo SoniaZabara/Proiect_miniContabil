@@ -47,5 +47,15 @@ namespace miniContabil
         {
             loadForm(new tab3Form());
         }
+
+        private void dashboardMainpanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            loadForm(new tabSalariiForm());
+        }
     }
 }

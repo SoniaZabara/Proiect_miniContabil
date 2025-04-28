@@ -41,11 +41,12 @@
             this.label1.Size = new System.Drawing.Size(282, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "datele despre firma ce urmeaza a fii prelucrate";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // buttonNext2
             // 
             this.buttonNext2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonNext2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonNext2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonNext2.Location = new System.Drawing.Point(1124, 579);
             this.buttonNext2.Name = "buttonNext2";
             this.buttonNext2.Size = new System.Drawing.Size(85, 40);
@@ -57,7 +58,7 @@
             // buttonPrev2
             // 
             this.buttonPrev2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonPrev2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonPrev2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPrev2.Location = new System.Drawing.Point(77, 579);
             this.buttonPrev2.Name = "buttonPrev2";
             this.buttonPrev2.Size = new System.Drawing.Size(85, 40);

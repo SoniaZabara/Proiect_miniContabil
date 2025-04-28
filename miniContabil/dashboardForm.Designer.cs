@@ -34,12 +34,14 @@
             this.buttonTab1 = new System.Windows.Forms.Button();
             this.buttonPrev3 = new System.Windows.Forms.Button();
             this.dashboardMainpanel = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.dashboardSidepanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // dashboardSidepanel
             // 
             this.dashboardSidepanel.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.dashboardSidepanel.Controls.Add(this.button1);
             this.dashboardSidepanel.Controls.Add(this.buttonTab3);
             this.dashboardSidepanel.Controls.Add(this.buttonTab2);
             this.dashboardSidepanel.Controls.Add(this.buttonTab1);
@@ -54,7 +56,7 @@
             // 
             this.buttonTab3.FlatAppearance.BorderSize = 0;
             this.buttonTab3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonTab3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTab3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTab3.ForeColor = System.Drawing.Color.White;
             this.buttonTab3.Location = new System.Drawing.Point(0, 327);
             this.buttonTab3.Name = "buttonTab3";
@@ -68,7 +70,7 @@
             // 
             this.buttonTab2.FlatAppearance.BorderSize = 0;
             this.buttonTab2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonTab2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTab2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTab2.ForeColor = System.Drawing.Color.White;
             this.buttonTab2.Location = new System.Drawing.Point(0, 271);
             this.buttonTab2.Name = "buttonTab2";
@@ -82,7 +84,7 @@
             // 
             this.buttonTab1.FlatAppearance.BorderSize = 0;
             this.buttonTab1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonTab1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTab1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTab1.ForeColor = System.Drawing.Color.White;
             this.buttonTab1.Location = new System.Drawing.Point(0, 215);
             this.buttonTab1.Name = "buttonTab1";
@@ -96,7 +98,7 @@
             // 
             this.buttonPrev3.FlatAppearance.BorderSize = 0;
             this.buttonPrev3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonPrev3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonPrev3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPrev3.ForeColor = System.Drawing.Color.White;
             this.buttonPrev3.Location = new System.Drawing.Point(0, 159);
             this.buttonPrev3.Name = "buttonPrev3";
@@ -113,6 +115,21 @@
             this.dashboardMainpanel.Name = "dashboardMainpanel";
             this.dashboardMainpanel.Size = new System.Drawing.Size(1062, 633);
             this.dashboardMainpanel.TabIndex = 1;
+            this.dashboardMainpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.dashboardMainpanel_Paint);
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(3, 383);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(200, 50);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Salarii + Angajati";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dashboardForm
             // 
@@ -137,5 +154,6 @@
         private System.Windows.Forms.Button buttonTab3;
         private System.Windows.Forms.Button buttonTab2;
         private System.Windows.Forms.Button buttonTab1;
+        private System.Windows.Forms.Button button1;
     }
 }

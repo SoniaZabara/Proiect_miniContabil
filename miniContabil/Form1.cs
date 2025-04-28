@@ -48,6 +48,11 @@ namespace miniContabil
         {
             System.Diagnostics.Process.Start("miniContabilHelp.chm");
         }
+
+        private void mainpanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 
     public static class FormManager

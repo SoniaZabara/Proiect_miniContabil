@@ -95,6 +95,12 @@
     <Compile Include="tab3Form.Designer.cs">
       <DependentUpon>tab3Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="tabSalariiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tabSalariiForm.Designer.cs">
+      <DependentUpon>tabSalariiForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="dashboardForm.resx">
       <DependentUpon>dashboardForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -124,6 +130,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="tab3Form.resx">
       <DependentUpon>tab3Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tabSalariiForm.resx">
+      <DependentUpon>tabSalariiForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

@@ -31,5 +31,10 @@ namespace miniContabil
         {
             FormManager.MainForm.loadForm(new dashboardForm());
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

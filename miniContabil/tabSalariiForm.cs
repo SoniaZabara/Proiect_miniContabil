@@ -33,5 +33,10 @@ namespace miniContabil
             dataGridView1.Rows[n].Cells[3].Value = textBoxSalariuBrut.Text;
             dataGridView1.Rows[n].Cells[4].Value = textBoxDepartament.Text;
         }
+
+        private void tabSalariiForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

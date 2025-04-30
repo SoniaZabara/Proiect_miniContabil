@@ -16,5 +16,25 @@ namespace miniContabil
         {
             InitializeComponent();
         }
+
+        private void labelRataProfit_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBoxPragulRentabilitate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelCantitate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxCantitate_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

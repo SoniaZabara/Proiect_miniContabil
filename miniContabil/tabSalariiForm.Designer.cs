@@ -30,23 +30,23 @@
         {
             this.labelMadeBy = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBoxDepartament = new System.Windows.Forms.TextBox();
+            this.textBoxSalariuBrut = new System.Windows.Forms.TextBox();
+            this.textBoxFunctie = new System.Windows.Forms.TextBox();
+            this.textBoxNumeAngajat = new System.Windows.Forms.TextBox();
+            this.textBoxId = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nume_Angajat = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Functie = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Salariu_Brut = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Departament = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.textBoxId = new System.Windows.Forms.TextBox();
-            this.textBoxNumeAngajat = new System.Windows.Forms.TextBox();
-            this.textBoxFunctie = new System.Windows.Forms.TextBox();
-            this.textBoxSalariuBrut = new System.Windows.Forms.TextBox();
-            this.textBoxDepartament = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -56,9 +56,10 @@
             this.labelMadeBy.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelMadeBy.AutoSize = true;
             this.labelMadeBy.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMadeBy.Location = new System.Drawing.Point(12, 9);
+            this.labelMadeBy.Location = new System.Drawing.Point(9, 7);
+            this.labelMadeBy.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelMadeBy.Name = "labelMadeBy";
-            this.labelMadeBy.Size = new System.Drawing.Size(261, 36);
+            this.labelMadeBy.Size = new System.Drawing.Size(210, 29);
             this.labelMadeBy.TabIndex = 3;
             this.labelMadeBy.Text = "Salarii si Anagajati";
             // 
@@ -76,11 +77,114 @@
             this.groupBox1.Controls.Add(this.textBoxId);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.dataGridView1);
-            this.groupBox1.Location = new System.Drawing.Point(18, 48);
+            this.groupBox1.Location = new System.Drawing.Point(14, 39);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1004, 319);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(753, 259);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(499, 221);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(68, 13);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Departament";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(4, 221);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(16, 13);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "Id";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(403, 221);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(61, 13);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Salariu Brut";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(254, 221);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(42, 13);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Functie";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(105, 221);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(74, 13);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Nume Angajat";
+            // 
+            // textBoxDepartament
+            // 
+            this.textBoxDepartament.Location = new System.Drawing.Point(501, 236);
+            this.textBoxDepartament.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxDepartament.Name = "textBoxDepartament";
+            this.textBoxDepartament.Size = new System.Drawing.Size(146, 20);
+            this.textBoxDepartament.TabIndex = 6;
+            // 
+            // textBoxSalariuBrut
+            // 
+            this.textBoxSalariuBrut.Location = new System.Drawing.Point(405, 236);
+            this.textBoxSalariuBrut.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxSalariuBrut.Name = "textBoxSalariuBrut";
+            this.textBoxSalariuBrut.Size = new System.Drawing.Size(92, 20);
+            this.textBoxSalariuBrut.TabIndex = 5;
+            // 
+            // textBoxFunctie
+            // 
+            this.textBoxFunctie.Location = new System.Drawing.Point(256, 236);
+            this.textBoxFunctie.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxFunctie.Name = "textBoxFunctie";
+            this.textBoxFunctie.Size = new System.Drawing.Size(146, 20);
+            this.textBoxFunctie.TabIndex = 4;
+            // 
+            // textBoxNumeAngajat
+            // 
+            this.textBoxNumeAngajat.Location = new System.Drawing.Point(107, 236);
+            this.textBoxNumeAngajat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxNumeAngajat.Name = "textBoxNumeAngajat";
+            this.textBoxNumeAngajat.Size = new System.Drawing.Size(145, 20);
+            this.textBoxNumeAngajat.TabIndex = 3;
+            // 
+            // textBoxId
+            // 
+            this.textBoxId.Location = new System.Drawing.Point(5, 236);
+            this.textBoxId.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxId.Name = "textBoxId";
+            this.textBoxId.Size = new System.Drawing.Size(98, 20);
+            this.textBoxId.TabIndex = 2;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(651, 213);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(88, 41);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Adauga angajat";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dataGridView1
             // 
@@ -93,24 +197,15 @@
             this.Functie,
             this.Salariu_Brut,
             this.Departament});
-            this.dataGridView1.Location = new System.Drawing.Point(6, 21);
+            this.dataGridView1.Location = new System.Drawing.Point(4, 17);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(856, 214);
+            this.dataGridView1.Size = new System.Drawing.Size(642, 174);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(868, 262);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(118, 51);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Adauga angajat";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Id
             // 
@@ -147,96 +242,18 @@
             this.Departament.MinimumWidth = 6;
             this.Departament.Name = "Departament";
             // 
-            // textBoxId
-            // 
-            this.textBoxId.Location = new System.Drawing.Point(7, 291);
-            this.textBoxId.Name = "textBoxId";
-            this.textBoxId.Size = new System.Drawing.Size(130, 22);
-            this.textBoxId.TabIndex = 2;
-            // 
-            // textBoxNumeAngajat
-            // 
-            this.textBoxNumeAngajat.Location = new System.Drawing.Point(143, 291);
-            this.textBoxNumeAngajat.Name = "textBoxNumeAngajat";
-            this.textBoxNumeAngajat.Size = new System.Drawing.Size(192, 22);
-            this.textBoxNumeAngajat.TabIndex = 3;
-            // 
-            // textBoxFunctie
-            // 
-            this.textBoxFunctie.Location = new System.Drawing.Point(341, 291);
-            this.textBoxFunctie.Name = "textBoxFunctie";
-            this.textBoxFunctie.Size = new System.Drawing.Size(193, 22);
-            this.textBoxFunctie.TabIndex = 4;
-            // 
-            // textBoxSalariuBrut
-            // 
-            this.textBoxSalariuBrut.Location = new System.Drawing.Point(540, 291);
-            this.textBoxSalariuBrut.Name = "textBoxSalariuBrut";
-            this.textBoxSalariuBrut.Size = new System.Drawing.Size(122, 22);
-            this.textBoxSalariuBrut.TabIndex = 5;
-            // 
-            // textBoxDepartament
-            // 
-            this.textBoxDepartament.Location = new System.Drawing.Point(668, 291);
-            this.textBoxDepartament.Name = "textBoxDepartament";
-            this.textBoxDepartament.Size = new System.Drawing.Size(194, 22);
-            this.textBoxDepartament.TabIndex = 6;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(140, 272);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 16);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Nume Angajat";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(338, 272);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 16);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Functie";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(537, 272);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 16);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "Salariu Brut";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 272);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(18, 16);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "Id";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(665, 272);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(85, 16);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Departament";
-            // 
             // tabSalariiForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1044, 586);
+            this.ClientSize = new System.Drawing.Size(783, 476);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.labelMadeBy);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "tabSalariiForm";
             this.Text = "tabSalariiForm";
+            this.Load += new System.EventHandler(this.tabSalariiForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

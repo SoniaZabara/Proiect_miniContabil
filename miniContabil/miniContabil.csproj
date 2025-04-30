@@ -77,6 +77,7 @@
     <Compile Include="selectForm.Designer.cs">
       <DependentUpon>selectForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="SetterCerereSiOfertaExemple.cs" />
     <Compile Include="tab1Form.cs">
       <SubType>Form</SubType>
     </Compile>

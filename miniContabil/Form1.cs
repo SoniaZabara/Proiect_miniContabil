@@ -15,7 +15,7 @@ namespace miniContabil
         public Form1()
         {
             InitializeComponent();
-            FormManager.MainForm = this;
+            FormManager.mainForm = this;
         }
 
         public void loadForm(object Form)
@@ -57,7 +57,71 @@ namespace miniContabil
 
     public static class FormManager
     {
-        public static Form1 MainForm { get; set; }
+        public static Form1 mainForm { get; set; }
+        public static IFirmBuilder builder;
     }
 
+    public enum FirmType
+    {
+        SRL,
+        PFA,
+        SA
+    }
+
+    public class Firm
+    {
+        public string name;
+        public FirmType type;
+        uint ca;
+        uint cf;
+        uint cc;
+        uint nrActiuni;
+        uint pretActiune;
+        uint datorii;
+
+        public string GetName(){return name;}
+    }
+
+    public interface IFirmBuilder
+    {
+        void SetName(string name);
+        Firm GetResult();
+    }
+
+    public class SRLBuilder : IFirmBuilder
+    {
+        public Firm firm = new Firm();
+        public void SetName(string name) => firm.name = name;
+
+        public Firm GetResult()
+        {
+            firm.type = FirmType.SRL;
+            return firm;
+        }
+    }
+
+    public class SABuilder : IFirmBuilder
+    {
+        public Firm firm = new Firm();
+        public void SetName(string name) => firm.name = name;
+        
+        public Firm GetResult()
+        {
+            firm.type = FirmType.SA;
+            return firm;
+        }
+    }
+
+    public class PFABuilder : IFirmBuilder
+    {
+        public Firm firm = new Firm();
+        public void SetName(string name) => firm.name = name;
+        FirmType type = FirmType.PFA;
+        public Firm GetResult()
+        {
+            firm.type = FirmType.PFA;
+            return firm;
+        }
+
+    }
 }

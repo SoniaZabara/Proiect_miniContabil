@@ -30,7 +30,7 @@ namespace miniContabil
 
         private void buttonPrev3_Click(object sender, EventArgs e)
         {
-            FormManager.MainForm.loadForm(new dataForm());
+            FormManager.mainForm.loadForm(new dataForm());
         }
 
         private void buttonTab1_Click(object sender, EventArgs e)
@@ -56,6 +56,12 @@ namespace miniContabil
         private void button1_Click(object sender, EventArgs e)
         {
             loadForm(new tabSalariiForm());
+        }
+
+        private void dashboardForm_Load(object sender, EventArgs e)
+        {
+            Firm firm = FormManager.builder.GetResult();
+            labelFirma.Text = firm.GetName() + "." + firm.type;
         }
     }
 }

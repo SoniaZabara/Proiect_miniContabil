@@ -19,22 +19,19 @@ namespace miniContabil
 
         private void dataForm_Load(object sender, EventArgs e)
         {
-
+            Firm firm = FormManager.builder.GetResult();
+            labelFirma.Text = firm.GetName() + "." + firm.type;
         }
 
         private void buttonPrev2_Click(object sender, EventArgs e)
         {
-            FormManager.MainForm.loadForm(new selectForm());
+            FormManager.mainForm.loadForm(new selectForm());
         }
 
         private void buttonNext2_Click(object sender, EventArgs e)
         {
-            FormManager.MainForm.loadForm(new dashboardForm());
+            FormManager.mainForm.loadForm(new dashboardForm());
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

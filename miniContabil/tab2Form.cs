@@ -15,6 +15,7 @@ namespace miniContabil
         public tab2Form()
         {
             InitializeComponent();
+            this.AutoScroll = true;
         }
 
         private void labelRataProfit_Click(object sender, EventArgs e)
@@ -33,6 +34,11 @@ namespace miniContabil
         }
 
         private void textBoxCantitate_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tab2Form_Load(object sender, EventArgs e)
         {
 
         }

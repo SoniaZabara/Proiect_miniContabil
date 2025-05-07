@@ -96,7 +96,7 @@
             this.bigTextBox1.Multiline = false;
             this.bigTextBox1.Name = "bigTextBox1";
             this.bigTextBox1.ReadOnly = false;
-            this.bigTextBox1.Size = new System.Drawing.Size(456, 44);
+            this.bigTextBox1.Size = new System.Drawing.Size(456, 42);
             this.bigTextBox1.TabIndex = 11;
             this.bigTextBox1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
             this.bigTextBox1.UseSystemPasswordChar = false;
@@ -115,6 +115,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "selectForm";
             this.Text = "selectForm";
+            this.Load += new System.EventHandler(this.selectForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -36,12 +36,14 @@
             this.labelCC = new System.Windows.Forms.Label();
             this.labelNrAct = new System.Windows.Forms.Label();
             this.labelValAct = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.labelFirma = new System.Windows.Forms.Label();
+            this.textBoxCA = new System.Windows.Forms.TextBox();
+            this.textBoxCF = new System.Windows.Forms.TextBox();
+            this.textBoxCC = new System.Windows.Forms.TextBox();
+            this.textBoxNrAct = new System.Windows.Forms.TextBox();
+            this.textBoxValAct = new System.Windows.Forms.TextBox();
+            this.labelDatorii = new System.Windows.Forms.Label();
+            this.textBoxDatorii = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // buttonNext2
@@ -129,41 +131,6 @@
             this.labelValAct.TabIndex = 8;
             this.labelValAct.Text = "Valoare actiuni:";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(382, 215);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(172, 22);
-            this.textBox1.TabIndex = 9;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(382, 249);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(172, 22);
-            this.textBox2.TabIndex = 10;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(382, 286);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(172, 22);
-            this.textBox3.TabIndex = 11;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(382, 326);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(172, 22);
-            this.textBox4.TabIndex = 12;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(382, 360);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(172, 22);
-            this.textBox5.TabIndex = 13;
-            // 
             // labelFirma
             // 
             this.labelFirma.AutoSize = true;
@@ -174,17 +141,77 @@
             this.labelFirma.TabIndex = 14;
             this.labelFirma.Text = "labelTitlu";
             // 
+            // textBoxCA
+            // 
+            this.textBoxCA.Location = new System.Drawing.Point(360, 210);
+            this.textBoxCA.Name = "textBoxCA";
+            this.textBoxCA.Size = new System.Drawing.Size(172, 22);
+            this.textBoxCA.TabIndex = 15;
+            this.textBoxCA.TextChanged += new System.EventHandler(this.textBoxCA_TextChanged);
+            // 
+            // textBoxCF
+            // 
+            this.textBoxCF.Location = new System.Drawing.Point(360, 249);
+            this.textBoxCF.Name = "textBoxCF";
+            this.textBoxCF.Size = new System.Drawing.Size(172, 22);
+            this.textBoxCF.TabIndex = 16;
+            this.textBoxCF.TextChanged += new System.EventHandler(this.textBoxCF_TextChanged);
+            // 
+            // textBoxCC
+            // 
+            this.textBoxCC.Location = new System.Drawing.Point(360, 286);
+            this.textBoxCC.Name = "textBoxCC";
+            this.textBoxCC.Size = new System.Drawing.Size(172, 22);
+            this.textBoxCC.TabIndex = 17;
+            this.textBoxCC.TextChanged += new System.EventHandler(this.textBoxCC_TextChanged);
+            // 
+            // textBoxNrAct
+            // 
+            this.textBoxNrAct.Location = new System.Drawing.Point(360, 323);
+            this.textBoxNrAct.Name = "textBoxNrAct";
+            this.textBoxNrAct.Size = new System.Drawing.Size(172, 22);
+            this.textBoxNrAct.TabIndex = 18;
+            this.textBoxNrAct.TextChanged += new System.EventHandler(this.textBoxNrAct_TextChanged);
+            // 
+            // textBoxValAct
+            // 
+            this.textBoxValAct.Location = new System.Drawing.Point(360, 360);
+            this.textBoxValAct.Name = "textBoxValAct";
+            this.textBoxValAct.Size = new System.Drawing.Size(172, 22);
+            this.textBoxValAct.TabIndex = 19;
+            this.textBoxValAct.TextChanged += new System.EventHandler(this.textBoxValAct_TextChanged);
+            // 
+            // labelDatorii
+            // 
+            this.labelDatorii.AutoSize = true;
+            this.labelDatorii.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDatorii.Location = new System.Drawing.Point(204, 392);
+            this.labelDatorii.Name = "labelDatorii";
+            this.labelDatorii.Size = new System.Drawing.Size(55, 17);
+            this.labelDatorii.TabIndex = 20;
+            this.labelDatorii.Text = "Datorii:";
+            // 
+            // textBoxDatorii
+            // 
+            this.textBoxDatorii.Location = new System.Drawing.Point(360, 392);
+            this.textBoxDatorii.Name = "textBoxDatorii";
+            this.textBoxDatorii.Size = new System.Drawing.Size(172, 22);
+            this.textBoxDatorii.TabIndex = 21;
+            this.textBoxDatorii.TextChanged += new System.EventHandler(this.textBoxDatorii_TextChanged);
+            // 
             // dataForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1280, 680);
+            this.Controls.Add(this.textBoxDatorii);
+            this.Controls.Add(this.labelDatorii);
+            this.Controls.Add(this.textBoxValAct);
+            this.Controls.Add(this.textBoxNrAct);
+            this.Controls.Add(this.textBoxCC);
+            this.Controls.Add(this.textBoxCF);
+            this.Controls.Add(this.textBoxCA);
             this.Controls.Add(this.labelFirma);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.labelValAct);
             this.Controls.Add(this.labelNrAct);
             this.Controls.Add(this.labelCC);
@@ -211,11 +238,13 @@
         private System.Windows.Forms.Label labelCC;
         private System.Windows.Forms.Label labelNrAct;
         private System.Windows.Forms.Label labelValAct;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label labelFirma;
+        private System.Windows.Forms.TextBox textBoxCA;
+        private System.Windows.Forms.TextBox textBoxCF;
+        private System.Windows.Forms.TextBox textBoxCC;
+        private System.Windows.Forms.TextBox textBoxNrAct;
+        private System.Windows.Forms.TextBox textBoxValAct;
+        private System.Windows.Forms.Label labelDatorii;
+        private System.Windows.Forms.TextBox textBoxDatorii;
     }
 }

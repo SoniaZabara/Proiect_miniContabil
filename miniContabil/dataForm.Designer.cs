@@ -64,7 +64,7 @@
             this.buttonPrev2.BackColor = System.Drawing.Color.Transparent;
             this.buttonPrev2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonPrev2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPrev2.Location = new System.Drawing.Point(40, 614);
+            this.buttonPrev2.Location = new System.Drawing.Point(81, 579);
             this.buttonPrev2.Name = "buttonPrev2";
             this.buttonPrev2.Size = new System.Drawing.Size(85, 40);
             this.buttonPrev2.TabIndex = 2;
@@ -76,10 +76,10 @@
             // 
             this.labelAtribute.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelAtribute.AutoSize = true;
-            this.labelAtribute.Font = new System.Drawing.Font("RomanT", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAtribute.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAtribute.Location = new System.Drawing.Point(84, 162);
             this.labelAtribute.Name = "labelAtribute";
-            this.labelAtribute.Size = new System.Drawing.Size(295, 33);
+            this.labelAtribute.Size = new System.Drawing.Size(216, 29);
             this.labelAtribute.TabIndex = 3;
             this.labelAtribute.Text = "Atribute societate";
             // 
@@ -200,10 +200,10 @@
             // labelFirma
             // 
             this.labelFirma.AutoSize = true;
-            this.labelFirma.Font = new System.Drawing.Font("RomanT", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFirma.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelFirma.Location = new System.Drawing.Point(81, 85);
             this.labelFirma.Name = "labelFirma";
-            this.labelFirma.Size = new System.Drawing.Size(251, 53);
+            this.labelFirma.Size = new System.Drawing.Size(177, 42);
             this.labelFirma.TabIndex = 14;
             this.labelFirma.Text = "labelTitlu";
             // 

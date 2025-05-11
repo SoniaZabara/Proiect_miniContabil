@@ -46,7 +46,7 @@
             // 
             // panelheader
             // 
-            this.panelheader.BackColor = System.Drawing.Color.SteelBlue;
+            this.panelheader.BackColor = System.Drawing.Color.Gray;
             this.panelheader.Controls.Add(this.labelHeader);
             this.panelheader.Controls.Add(this.buttonHelp);
             this.panelheader.Controls.Add(this.buttonClose);
@@ -99,7 +99,6 @@
             // 
             // mainpanel
             // 
-            this.mainpanel.BackgroundImage = global::miniContabil.Properties.Resources.Screenshot_2025_05_11_195822;
             this.mainpanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.mainpanel.Controls.Add(this.labelNume4);
             this.mainpanel.Controls.Add(this.labelNume3);
@@ -122,7 +121,7 @@
             this.labelNume4.BackColor = System.Drawing.Color.Transparent;
             this.labelNume4.Font = new System.Drawing.Font("RomanT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNume4.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.labelNume4.Location = new System.Drawing.Point(39, 149);
+            this.labelNume4.Location = new System.Drawing.Point(39, 425);
             this.labelNume4.Name = "labelNume4";
             this.labelNume4.Size = new System.Drawing.Size(169, 25);
             this.labelNume4.TabIndex = 6;
@@ -135,7 +134,7 @@
             this.labelNume3.BackColor = System.Drawing.Color.Transparent;
             this.labelNume3.Font = new System.Drawing.Font("RomanT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNume3.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.labelNume3.Location = new System.Drawing.Point(39, 105);
+            this.labelNume3.Location = new System.Drawing.Point(39, 381);
             this.labelNume3.Name = "labelNume3";
             this.labelNume3.Size = new System.Drawing.Size(175, 25);
             this.labelNume3.TabIndex = 5;
@@ -148,7 +147,7 @@
             this.labelNume2.BackColor = System.Drawing.Color.Transparent;
             this.labelNume2.Font = new System.Drawing.Font("RomanT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNume2.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            this.labelNume2.Location = new System.Drawing.Point(39, 61);
+            this.labelNume2.Location = new System.Drawing.Point(39, 335);
             this.labelNume2.Name = "labelNume2";
             this.labelNume2.Size = new System.Drawing.Size(193, 25);
             this.labelNume2.TabIndex = 4;
@@ -161,7 +160,7 @@
             this.labelNume1.BackColor = System.Drawing.Color.Transparent;
             this.labelNume1.Font = new System.Drawing.Font("RomanT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNume1.ForeColor = System.Drawing.Color.PaleVioletRed;
-            this.labelNume1.Location = new System.Drawing.Point(39, 18);
+            this.labelNume1.Location = new System.Drawing.Point(39, 290);
             this.labelNume1.Name = "labelNume1";
             this.labelNume1.Size = new System.Drawing.Size(253, 25);
             this.labelNume1.TabIndex = 3;
@@ -184,7 +183,7 @@
             this.labelTitlu.BackColor = System.Drawing.Color.Transparent;
             this.labelTitlu.Font = new System.Drawing.Font("RomanT", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTitlu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.labelTitlu.Location = new System.Drawing.Point(380, 28);
+            this.labelTitlu.Location = new System.Drawing.Point(378, 104);
             this.labelTitlu.Name = "labelTitlu";
             this.labelTitlu.Size = new System.Drawing.Size(527, 86);
             this.labelTitlu.TabIndex = 1;

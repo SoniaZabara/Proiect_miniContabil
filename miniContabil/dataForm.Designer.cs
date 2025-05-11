@@ -64,7 +64,7 @@
             this.buttonPrev2.BackColor = System.Drawing.Color.Transparent;
             this.buttonPrev2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonPrev2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPrev2.Location = new System.Drawing.Point(40, 614);
+            this.buttonPrev2.Location = new System.Drawing.Point(67, 579);
             this.buttonPrev2.Name = "buttonPrev2";
             this.buttonPrev2.Size = new System.Drawing.Size(85, 40);
             this.buttonPrev2.TabIndex = 2;

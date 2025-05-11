@@ -145,6 +145,13 @@
     <Compile Include="tabSalariiForm.Designer.cs">
       <DependentUpon>tabSalariiForm.cs</DependentUpon>
     </Compile>
+    <None Include="Resources\Screenshot_2025-05-11_203409-removebg-preview.png" />
+    <None Include="Resources\Screenshot_2025-05-11_203309-removebg-preview.png" />
+    <None Include="Resources\Screenshot 2025-05-11 195822.png" />
+    <None Include="Resources\Screenshot 2025-05-11 195530.png" />
+    <None Include="Resources\Screenshot 2025-05-11 195429.png" />
+    <None Include="Resources\Screenshot 2025-05-11 195348.png" />
+    <None Include="Resources\Screenshot 2025-05-11 195302.png" />
     <EmbeddedResource Include="dashboardForm.resx">
       <DependentUpon>dashboardForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -162,6 +169,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="selectForm.resx">
       <DependentUpon>selectForm.cs</DependentUpon>
@@ -188,6 +196,13 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\331e7fb38b03fd014cda86e0afea411a.jpg" />
+    <None Include="Resources\331e7fb38b03fd014cda86e0afea411a-removebg-preview.png" />
+    <None Include="Resources\331e7fb38b03fd014cda86e0afea411a-removebg-preview1.png" />
+    <None Include="Resources\bad445eaa91b27cd07d416aa6edf9516-removebg-preview.png" />
+    <None Include="Resources\6ed0249801de341699c079366fd202a4-removebg-preview.png" />
+    <None Include="Resources\de089161317fa4fbddda0c381f589832-removebg-preview.png" />
+    <None Include="Resources\09e94ae7daa023000cbeac34903b7500-removebg-preview.png" />
     <Content Include="Resources\miniContabilHelp.chm">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

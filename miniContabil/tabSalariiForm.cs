@@ -319,6 +319,85 @@ namespace miniContabil
             int groupBoxHeight = groupBox1.Height;
             dataGridView1.Top = 0;
         }
+
+        private void buttonSalariuMediu_Click(object sender, EventArgs e)
+        {
+            double averageSalary=CalculateAverageSalary();
+
+            textBoxAverageSalary.Text = averageSalary.ToString("F2");
+
+        }
+
+        private double CalculateAverageSalary()
+        {
+            if (_angajati.Count == 0)
+            {
+                MessageBox.Show("Nu există angajați pentru a calcula salariul mediu.");
+            }
+
+            double totalSalary = _angajati.Sum(a => a.SalariuBrut);
+            double averageSalary = totalSalary / _angajati.Count;
+            return averageSalary;
+        }
+
+        private void buttonTotalSalarii_Click(object sender, EventArgs e)
+        {
+            if (_angajati.Count == 0)
+            {
+                MessageBox.Show("Nu există angajați pentru a calcula totalul salariilor.");
+            }
+
+            double totalSalary = _angajati.Sum(a => a.SalariuBrut);
+            textBoxTotalSalary.Text = totalSalary.ToString("F2");
+        }
+
+        private void buttonSalariuNet_Click(object sender, EventArgs e)
+        {
+            if (_angajati.Count == 0)
+            {
+                MessageBox.Show("Nu ati selectat un angajat pentru a calcula salariul NET.");
+            }
+
+            double asigurareSociala;
+            double asigurareSanatate;
+            double impozit;
+            double deducerePersonala;
+            double salariuNet;
+            double salariuMinimBrut = 4050;
+
+            if (_index >= 0 && _index < _angajati.Count)
+            {
+                var angajat = _angajati[_index];
+
+              
+                    asigurareSociala= 0.25 * angajat.SalariuBrut;
+                    asigurareSanatate = 0.10 * angajat.SalariuBrut;
+                    impozit = 0.10 * (angajat.SalariuBrut - asigurareSociala - asigurareSanatate);
+                    salariuNet = angajat.SalariuBrut - asigurareSociala - asigurareSanatate - impozit;
+
+                    if (angajat.SalariuBrut < salariuMinimBrut + 2000)
+                    {
+                        MessageBox.Show("Angajatul are un salariu brut mai mare decat salariul minim brut plus 2000 lei, deci are deducere personală.");
+                    }
+
+                    textBoxNetSalary.Text = salariuNet.ToString("F2");
+            }
+        }
+
+        private void buttonCostTotalAngajator_Click(object sender, EventArgs e)
+        {
+            double costTotal;
+
+            if (_index >= 0 && _index < _angajati.Count)
+            {
+                var angajat = _angajati[_index];
+
+                costTotal = 0.0225 * angajat.SalariuBrut+ angajat.SalariuBrut;
+                
+                textBoxCostTotalAngajator.Text = costTotal.ToString("F2");
+
+            }
+        }
     }
 
     public class Angajat

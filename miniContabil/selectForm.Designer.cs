@@ -33,16 +33,18 @@
             this.labelTipSocietate = new System.Windows.Forms.Label();
             this.poisonComboBox1 = new ReaLTaiizor.Controls.PoisonComboBox();
             this.bigTextBox1 = new ReaLTaiizor.Controls.BigTextBox();
+            this.pictureBoxDecor = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDecor)).BeginInit();
             this.SuspendLayout();
             // 
             // labelNumeSocietate
             // 
             this.labelNumeSocietate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelNumeSocietate.AutoSize = true;
-            this.labelNumeSocietate.Font = new System.Drawing.Font("RomanT", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNumeSocietate.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNumeSocietate.Location = new System.Drawing.Point(58, 134);
             this.labelNumeSocietate.Name = "labelNumeSocietate";
-            this.labelNumeSocietate.Size = new System.Drawing.Size(252, 33);
+            this.labelNumeSocietate.Size = new System.Drawing.Size(195, 29);
             this.labelNumeSocietate.TabIndex = 0;
             this.labelNumeSocietate.Text = "Nume societate";
             // 
@@ -64,10 +66,10 @@
             // 
             this.labelTipSocietate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelTipSocietate.AutoSize = true;
-            this.labelTipSocietate.Font = new System.Drawing.Font("RomanT", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTipSocietate.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTipSocietate.Location = new System.Drawing.Point(58, 283);
             this.labelTipSocietate.Name = "labelTipSocietate";
-            this.labelTipSocietate.Size = new System.Drawing.Size(213, 33);
+            this.labelTipSocietate.Size = new System.Drawing.Size(165, 29);
             this.labelTipSocietate.TabIndex = 2;
             this.labelTipSocietate.Text = "Tip societate";
             // 
@@ -103,13 +105,25 @@
             this.bigTextBox1.UseSystemPasswordChar = false;
             this.bigTextBox1.TextChanged += new System.EventHandler(this.bigTextBox1_TextChanged);
             // 
+            // pictureBoxDecor
+            // 
+            this.pictureBoxDecor.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBoxDecor.BackgroundImage = global::miniContabil.Properties.Resources.bad445eaa91b27cd07d416aa6edf9516_removebg_preview;
+            this.pictureBoxDecor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxDecor.Location = new System.Drawing.Point(541, 56);
+            this.pictureBoxDecor.Name = "pictureBoxDecor";
+            this.pictureBoxDecor.Size = new System.Drawing.Size(640, 505);
+            this.pictureBoxDecor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxDecor.TabIndex = 12;
+            this.pictureBoxDecor.TabStop = false;
+            // 
             // selectForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::miniContabil.Properties.Resources.bad445eaa91b27cd07d416aa6edf9516_removebg_preview;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1280, 680);
+            this.Controls.Add(this.pictureBoxDecor);
             this.Controls.Add(this.bigTextBox1);
             this.Controls.Add(this.poisonComboBox1);
             this.Controls.Add(this.labelTipSocietate);
@@ -120,6 +134,7 @@
             this.Name = "selectForm";
             this.Text = "selectForm";
             this.Load += new System.EventHandler(this.selectForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDecor)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -132,5 +147,6 @@
         private System.Windows.Forms.Label labelTipSocietate;
         private ReaLTaiizor.Controls.PoisonComboBox poisonComboBox1;
         private ReaLTaiizor.Controls.BigTextBox bigTextBox1;
+        private System.Windows.Forms.PictureBox pictureBoxDecor;
     }
 }

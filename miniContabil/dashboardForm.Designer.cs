@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.dashboardSidepanel = new System.Windows.Forms.Panel();
+            this.labelFirma = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.buttonTab3 = new System.Windows.Forms.Button();
             this.buttonTab2 = new System.Windows.Forms.Button();
             this.buttonTab1 = new System.Windows.Forms.Button();
             this.buttonPrev3 = new System.Windows.Forms.Button();
             this.dashboardMainpanel = new System.Windows.Forms.Panel();
-            this.labelFirma = new System.Windows.Forms.Label();
             this.dashboardSidepanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,11 +54,23 @@
             this.dashboardSidepanel.Size = new System.Drawing.Size(200, 633);
             this.dashboardSidepanel.TabIndex = 0;
             // 
+            // labelFirma
+            // 
+            this.labelFirma.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.labelFirma.Font = new System.Drawing.Font("RomanT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFirma.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelFirma.Location = new System.Drawing.Point(3, 46);
+            this.labelFirma.Name = "labelFirma";
+            this.labelFirma.Size = new System.Drawing.Size(200, 100);
+            this.labelFirma.TabIndex = 15;
+            this.labelFirma.Text = "labelTitlu";
+            this.labelFirma.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // button1
             // 
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(3, 383);
             this.button1.Name = "button1";
@@ -72,7 +84,7 @@
             // 
             this.buttonTab3.FlatAppearance.BorderSize = 0;
             this.buttonTab3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonTab3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTab3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTab3.ForeColor = System.Drawing.Color.White;
             this.buttonTab3.Location = new System.Drawing.Point(0, 327);
             this.buttonTab3.Name = "buttonTab3";
@@ -86,7 +98,7 @@
             // 
             this.buttonTab2.FlatAppearance.BorderSize = 0;
             this.buttonTab2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonTab2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTab2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTab2.ForeColor = System.Drawing.Color.White;
             this.buttonTab2.Location = new System.Drawing.Point(0, 271);
             this.buttonTab2.Name = "buttonTab2";
@@ -100,7 +112,7 @@
             // 
             this.buttonTab1.FlatAppearance.BorderSize = 0;
             this.buttonTab1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonTab1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTab1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTab1.ForeColor = System.Drawing.Color.White;
             this.buttonTab1.Location = new System.Drawing.Point(0, 215);
             this.buttonTab1.Name = "buttonTab1";
@@ -114,7 +126,7 @@
             // 
             this.buttonPrev3.FlatAppearance.BorderSize = 0;
             this.buttonPrev3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonPrev3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonPrev3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPrev3.ForeColor = System.Drawing.Color.White;
             this.buttonPrev3.Location = new System.Drawing.Point(0, 159);
             this.buttonPrev3.Name = "buttonPrev3";
@@ -132,18 +144,6 @@
             this.dashboardMainpanel.Size = new System.Drawing.Size(1062, 633);
             this.dashboardMainpanel.TabIndex = 1;
             this.dashboardMainpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.dashboardMainpanel_Paint);
-            // 
-            // labelFirma
-            // 
-            this.labelFirma.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.labelFirma.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFirma.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelFirma.Location = new System.Drawing.Point(3, 46);
-            this.labelFirma.Name = "labelFirma";
-            this.labelFirma.Size = new System.Drawing.Size(200, 100);
-            this.labelFirma.TabIndex = 15;
-            this.labelFirma.Text = "labelTitlu";
-            this.labelFirma.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // dashboardForm
             // 

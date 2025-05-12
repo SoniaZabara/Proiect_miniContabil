@@ -51,7 +51,7 @@
             this.buttonNext2.BackColor = System.Drawing.Color.Transparent;
             this.buttonNext2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonNext2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonNext2.Location = new System.Drawing.Point(1124, 579);
+            this.buttonNext2.Location = new System.Drawing.Point(1118, 579);
             this.buttonNext2.Name = "buttonNext2";
             this.buttonNext2.Size = new System.Drawing.Size(85, 40);
             this.buttonNext2.TabIndex = 1;
@@ -64,7 +64,6 @@
             this.buttonPrev2.BackColor = System.Drawing.Color.Transparent;
             this.buttonPrev2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonPrev2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPrev2.Location = new System.Drawing.Point(67, 579);
             this.buttonPrev2.Location = new System.Drawing.Point(81, 579);
             this.buttonPrev2.Name = "buttonPrev2";
             this.buttonPrev2.Size = new System.Drawing.Size(85, 40);

@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Amortizari">
+      <HintPath>..\Amortizari\Amortizari\bin\Debug\net4.8\Amortizari.dll</HintPath>
+    </Reference>
     <Reference Include="Angajati, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Angajati\Angajati\bin\Debug\net47\Angajati.dll</HintPath>

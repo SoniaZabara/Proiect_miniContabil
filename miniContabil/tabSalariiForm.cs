@@ -1,4 +1,24 @@
-﻿using System;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        tabSalariiForm.cs                                        *
+ *  Copyright:   (c) 2025, Bran Ioana -Andreea                            *
+ *  E-mail:      ioana-andreea.bran@student.tuiasi.ro                     *
+ *  Description:  Windows Forms UI pentru gestionarea salariilor          *
+ *       angajaților unei firme selectate.Permite adăugarea, modificarea, *
+ *       ștergerea și salvarea angajaților în format JSON.Afișează un     *
+ *   DataGridView cu angajații firmei și calculează salariul net,salariul *
+ *   mediu,costul total pentru angajator și suma totală a salariilor.     *
+ *  Project: miniContaBill                                                *
+ *                                                                        *
+ *  This code and information is provided "as is" without warranty of     *
+ *  any kind, either expressed or implied, including but not limited      *
+ *  to the implied warranties of merchantability or fitness for a         *
+ *  particular purpose. You are free to use this source code in your      *
+ *  applications as long as the original copyright notice is included.    *
+ *                                                                        *
+ **************************************************************************/
+
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
@@ -16,6 +36,10 @@ namespace miniContabil
         private readonly List<Angajat> _angajati = new List<Angajat>();
         public string SelectedFirm { get; set; }
 
+        /// <summary>
+        /// Constructorul primeste firma selectata si incarca angajatii care sunt salvati pentru acea firma
+        /// </summary>
+        /// <param name="selectedFirm"></param>
         public tabSalariiForm(string selectedFirm)
         {
             InitializeComponent();
@@ -36,6 +60,11 @@ namespace miniContabil
             
         }
 
+        /// <summary>
+        /// Functie ce adauga un angajat in dataGrid- ul cu angajati, face verificarile necesare pentru nu a fi dublat un id sau un nume
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonAdd_Click(object sender, EventArgs e)
         {
             double salariuBrut;
@@ -87,7 +116,11 @@ namespace miniContabil
             dataGridView1.DataSource = _angajati;
         }
 
-
+        /// <summary>
+        /// Functie ce descrie callback-ul evenimentului de apasare a unei celule din dataGrid
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0 && e.RowIndex < dataGridView1.Rows.Count)
@@ -108,6 +141,11 @@ namespace miniContabil
 
         }
 
+        /// <summary>
+        /// Functie pentru a actualiza datele unui angajat
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
             if (_index >= 0 && _index < _angajati.Count)
@@ -115,6 +153,7 @@ namespace miniContabil
                 var angajat = _angajati[_index];
 
                 double salariuBrut;
+
                 if (!double.TryParse(textBoxSalariuBrut.Text, out salariuBrut))
                 {
                     MessageBox.Show("Va rugam sa introduceti o valoare numerica pentru salariul brut");
@@ -127,18 +166,6 @@ namespace miniContabil
                 if (!int.TryParse(textBoxId.Text, out id))
                 {
                     MessageBox.Show("Va rugam sa introduceti un Id valid.");
-                    return;
-                }
-
-                if (_angajati.Any(a => a.Id == id))
-                {
-                    MessageBox.Show($"Angajatul cu id-ul {id} există deja. Vă rugăm să introduceți un Id unic.");
-                    return;
-                }
-
-                if (_angajati.Any(a => a.NumeAngajat.Equals(numeAngajat, StringComparison.OrdinalIgnoreCase)))
-                {
-                    MessageBox.Show($"Angajatul '{numeAngajat}' există deja in lista.");
                     return;
                 }
 
@@ -172,6 +199,11 @@ namespace miniContabil
             }
         }
 
+        /// <summary>
+        /// Functie pentru a sterge un angajat din dataGrid
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonDelete_Click(object sender, EventArgs e)
         {
             if (_index >= 0 && _index < _angajati.Count)
@@ -193,6 +225,11 @@ namespace miniContabil
             }
         }
 
+        /// <summary>
+        /// Functie pentru a salva lista cu angajati intr-un fisier JSON
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonSaveToJson_Click(object sender, EventArgs e)
         {
             try
@@ -221,6 +258,9 @@ namespace miniContabil
             }
         }
 
+        /// <summary>
+        /// Functie ce filtreaza angajatii in functie de firma selectata
+        /// </summary>
         private void FilterEmployeesByFirm()
         {
             dataGridView1.DataSource = null;
@@ -228,6 +268,10 @@ namespace miniContabil
 
             AdjustDataGridViewHeight(); 
         }
+
+        /// <summary>
+        /// Functie ce incarca toti angajatii firmei selectate
+        /// </summary>
         private void LoadAllEmployees()
         {
             string fileNamePattern = $"{SelectedFirm}_angajati.json";
@@ -251,6 +295,11 @@ namespace miniContabil
             }
         }
 
+        /// <summary>
+        /// Functie pentru a incarca in dataGrid lista cu angajatii firmei selectate
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonLoad_Click(object sender, EventArgs e)
         {
             try
@@ -317,6 +366,11 @@ namespace miniContabil
             dataGridView1.Top = 0;
         }
 
+        /// <summary>
+        /// Functie calcul salariu mediu folosind functia specifica din dll
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonSalariuMediu_Click(object sender, EventArgs e)
         {
             double averageSalary=SalaryCalculator.CalculateAverageSalary(_angajati);
@@ -325,6 +379,11 @@ namespace miniContabil
 
         }
 
+        /// <summary>
+        /// Functie calcul totatl salarii folosind functia specifica din dll
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonTotalSalarii_Click(object sender, EventArgs e)
         {
             if (_angajati.Count == 0)
@@ -336,6 +395,11 @@ namespace miniContabil
             textBoxTotalSalary.Text = totalSalary.ToString("F2");
         }
 
+        /// <summary>
+        /// Functie calcul salariu net pentru un abgajat selectat, folosind functia specifica din dll
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonSalariuNet_Click(object sender, EventArgs e)
         {
             if (_angajati.Count == 0)
@@ -357,6 +421,11 @@ namespace miniContabil
             }
         }
 
+        /// <summary>
+        /// Functie pentru calcul cost total angajator folosind functia specifica din dll
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonCostTotalAngajator_Click(object sender, EventArgs e)
         {
             if (_index >= 0 && _index < _angajati.Count)

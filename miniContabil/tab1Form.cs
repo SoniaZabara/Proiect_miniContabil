@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
+using Amortizari;
 
 namespace miniContabil
 {
@@ -17,8 +18,6 @@ namespace miniContabil
         {
             InitializeComponent();
         }
-
-
         private void tab1Form_Load(object sender, EventArgs e)
         {
 
@@ -57,17 +56,17 @@ namespace miniContabil
             switch (comboBoxAmortizare.SelectedIndex)
             {
                 case 0:
-                    var amortizariLiniare = amortizareLiniara(valoareInitiala, durataViata, valoareaReziduala);
+                    var amortizariLiniare = AmortizareCalculator.Liniara(valoareInitiala, durataViata, valoareaReziduala);
                     dataGridViewAmortizari.DataSource = amortizariLiniare;
                     ActualizeazaGrafic(amortizariLiniare, "Amortizare anuala", "Amortizare liniara",Color.SteelBlue);
                     break;
                 case 1:
-                    var amortizariProgresive = amortizareProgresiva(valoareInitiala, durataViata, valoareaReziduala);
+                    var amortizariProgresive = AmortizareCalculator.Progresiva(valoareInitiala, durataViata, valoareaReziduala);
                     dataGridViewAmortizari .DataSource = amortizariProgresive;
                     ActualizeazaGrafic(amortizariProgresive, "Amortizare anuala", "Amortizare progresiva",Color.Green);
                     break;
                 case 2:
-                    var amortizariDegresive = amortizareDegresiva(valoareInitiala, durataViata, valoareaReziduala);
+                    var amortizariDegresive = AmortizareCalculator.Degresiva(valoareInitiala, durataViata, valoareaReziduala);
                     dataGridViewAmortizari.DataSource = amortizariDegresive;
                     ActualizeazaGrafic(amortizariDegresive, "Amortizare anuala", "Amortizare degresiva", Color.Yellow);
                     break;
@@ -78,85 +77,6 @@ namespace miniContabil
             dataGridViewAmortizari.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
 
         }
-
-        private List<Amortizare> amortizareLiniara(double initialValue, int lifeTime, double rezidualValue)
-        {
-            List <Amortizare> amortizari=new List<Amortizare>();
-
-            double amortizareAnuala = (initialValue - rezidualValue) / lifeTime;
-            double valoareRamasa = initialValue;
-
-            for (int an = 1; an <= lifeTime; an++)
-            {
-                valoareRamasa -= amortizareAnuala;
-                amortizari.Add(new Amortizare
-                {
-                    An = an,
-                    AmortizareAnuala = amortizareAnuala,
-                    ValoareRamasa = valoareRamasa
-                });
-            }
-
-            return amortizari;
-        }
-
-        private List<Amortizare> amortizareProgresiva(double initialValue, int lifeTime, double rezidualValue)
-        {
-            List<Amortizare> amortizari=new List<Amortizare>();
-
-            double bazaAmortizabila = initialValue - rezidualValue;
-            int sumaPonderi = (lifeTime * (lifeTime + 1)) / 2;
-
-            double valoareRamasa = initialValue;
-
-            for (int an = 1; an <= lifeTime; an++)
-            {
-                double amortizareAnuala = bazaAmortizabila * an / sumaPonderi;
-                valoareRamasa -= amortizareAnuala;
-
-                amortizari.Add(new Amortizare
-                {
-                    An = an,
-                    AmortizareAnuala = Math.Round(amortizareAnuala, 2),
-                    ValoareRamasa = Math.Round(valoareRamasa, 2)
-                });
-            }
-
-            return amortizari;
-        }
-
-        private List<Amortizare> amortizareDegresiva(double initialValue, int lifeTime, double rezidualValue)
-        {
-            List<Amortizare> amortizari = new List<Amortizare>();
-
-            double rataDegresiva = 2.0 / lifeTime; 
-            double valoareRamasa = initialValue;
-
-            for (int an = 1; an <= lifeTime; an++)
-            {
-                double amortizareAnuala = valoareRamasa * rataDegresiva;
-
-                if (valoareRamasa - amortizareAnuala < rezidualValue)
-                {
-                    amortizareAnuala = valoareRamasa - rezidualValue;
-                }
-
-                valoareRamasa -= amortizareAnuala;
-
-                amortizari.Add(new Amortizare
-                {
-                    An = an,
-                    AmortizareAnuala = Math.Round(amortizareAnuala, 2),
-                    ValoareRamasa = Math.Round(valoareRamasa, 2)
-                });
-
-                if (valoareRamasa <= rezidualValue)
-                    break; 
-            }
-
-            return amortizari;
-        }
-
         private void ActualizeazaGrafic(List<Amortizare> amortizari, string titlu, string serieNume, Color culoare)
         {
             chartAmortizare.Series.Clear();
@@ -179,12 +99,5 @@ namespace miniContabil
             chartAmortizare.Series.Add(serie);
         }
 
-    }
-
-    public class Amortizare
-    {
-        public int An {  get; set; }
-        public double AmortizareAnuala {  get; set; }
-        public double ValoareRamasa { get; set; }
     }
 }

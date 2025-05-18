@@ -33,12 +33,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Amortizari">
-      <HintPath>..\Amortizari\Amortizari\bin\Debug\net4.8\Amortizari.dll</HintPath>
+    <Reference Include="Amortizari, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Amortizari\Amortizari\bin\Debug\net4.8\Amortizari.dll</HintPath>
     </Reference>
     <Reference Include="Angajati, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Angajati\Angajati\bin\Debug\net47\Angajati.dll</HintPath>
+      <HintPath>Angajati\Angajati\bin\Debug\net4.8\Angajati.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=9.0.0.4, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.9.0.4\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>

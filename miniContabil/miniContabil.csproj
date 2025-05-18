@@ -33,13 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Amortizari">
-      <HintPath>..\Amortizari\Amortizari\bin\Debug\net4.8\Amortizari.dll</HintPath>
-    </Reference>
-    <Reference Include="Angajati, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Angajati\Angajati\bin\Debug\net47\Angajati.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=9.0.0.4, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.9.0.4\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
@@ -222,6 +215,14 @@
     <ProjectReference Include="..\CostulProductieProfitDDL\CostulProductieProfitDDL.csproj">
       <Project>{b84506b6-8ec8-4fc5-b78d-cd79a05c0cb5}</Project>
       <Name>CostulProductieProfitDDL</Name>
+    </ProjectReference>
+    <ProjectReference Include="Amortizari\Amortizari\Amortizari.csproj">
+      <Project>{9ca03273-76b5-48c1-93ab-428ab38a3850}</Project>
+      <Name>Amortizari</Name>
+    </ProjectReference>
+    <ProjectReference Include="Angajati\Angajati\Angajati.csproj">
+      <Project>{a1e9d5e3-1a36-4f58-b4eb-67e8006c677e}</Project>
+      <Name>Angajati</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

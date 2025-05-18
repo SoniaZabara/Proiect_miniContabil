@@ -96,6 +96,8 @@
             this.textBoxMasaProfit2 = new System.Windows.Forms.TextBox();
             this.textBoxRataProfit = new System.Windows.Forms.TextBox();
             this.panelScroll = new System.Windows.Forms.Panel();
+            this.textBoxCostVariabileMedii = new System.Windows.Forms.TextBox();
+            this.labelCostVarMedii = new System.Windows.Forms.Label();
             this.groupBoxPragulRentabilitate.SuspendLayout();
             this.groupBoxPretFinal.SuspendLayout();
             this.groupBoxImpozitPeProfit.SuspendLayout();
@@ -124,6 +126,8 @@
             this.groupBoxPragulRentabilitate.BaseColor = System.Drawing.Color.Transparent;
             this.groupBoxPragulRentabilitate.BorderColorG = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(161)))));
             this.groupBoxPragulRentabilitate.BorderColorH = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(180)))), ((int)(((byte)(186)))));
+            this.groupBoxPragulRentabilitate.Controls.Add(this.textBoxCostVariabileMedii);
+            this.groupBoxPragulRentabilitate.Controls.Add(this.labelCostVarMedii);
             this.groupBoxPragulRentabilitate.Controls.Add(this.buttonCalculeazaPregdeRentabilitate);
             this.groupBoxPragulRentabilitate.Controls.Add(this.textBoxPretUnitateProdus);
             this.groupBoxPragulRentabilitate.Controls.Add(this.textBoxCantitate);
@@ -151,12 +155,13 @@
             // buttonCalculeazaPregdeRentabilitate
             // 
             this.buttonCalculeazaPregdeRentabilitate.ForeColor = System.Drawing.Color.Black;
-            this.buttonCalculeazaPregdeRentabilitate.Location = new System.Drawing.Point(271, 103);
+            this.buttonCalculeazaPregdeRentabilitate.Location = new System.Drawing.Point(264, 173);
             this.buttonCalculeazaPregdeRentabilitate.Name = "buttonCalculeazaPregdeRentabilitate";
             this.buttonCalculeazaPregdeRentabilitate.Size = new System.Drawing.Size(134, 55);
             this.buttonCalculeazaPregdeRentabilitate.TabIndex = 48;
             this.buttonCalculeazaPregdeRentabilitate.Text = "Calculează";
             this.buttonCalculeazaPregdeRentabilitate.UseVisualStyleBackColor = true;
+            this.buttonCalculeazaPregdeRentabilitate.Click += new System.EventHandler(this.buttonCalculeazaPregdeRentabilitate_Click);
             // 
             // textBoxPretUnitateProdus
             // 
@@ -167,7 +172,7 @@
             // 
             // textBoxCantitate
             // 
-            this.textBoxCantitate.Location = new System.Drawing.Point(270, 186);
+            this.textBoxCantitate.Location = new System.Drawing.Point(463, 186);
             this.textBoxCantitate.Name = "textBoxCantitate";
             this.textBoxCantitate.Size = new System.Drawing.Size(135, 29);
             this.textBoxCantitate.TabIndex = 41;
@@ -176,7 +181,7 @@
             // labelCantitate
             // 
             this.labelCantitate.AutoSize = true;
-            this.labelCantitate.Location = new System.Drawing.Point(294, 161);
+            this.labelCantitate.Location = new System.Drawing.Point(471, 161);
             this.labelCantitate.Name = "labelCantitate";
             this.labelCantitate.Size = new System.Drawing.Size(80, 22);
             this.labelCantitate.TabIndex = 40;
@@ -201,6 +206,7 @@
             this.radioButtonRentabilitateCazB.TabStop = true;
             this.radioButtonRentabilitateCazB.Text = "b) pentru profit (500k unități)";
             this.radioButtonRentabilitateCazB.UseVisualStyleBackColor = true;
+            this.radioButtonRentabilitateCazB.CheckedChanged += new System.EventHandler(this.radioButtonRentabilitateCazB_CheckedChanged);
             // 
             // labelProfit1
             // 
@@ -247,6 +253,7 @@
             this.radioButtonRentabilitateCazA.TabStop = true;
             this.radioButtonRentabilitateCazA.Text = "a) atingere prag de rentabilitate";
             this.radioButtonRentabilitateCazA.UseVisualStyleBackColor = true;
+            this.radioButtonRentabilitateCazA.CheckedChanged += new System.EventHandler(this.radioButtonRentabilitateCazA_CheckedChanged);
             // 
             // groupBoxPretFinal
             // 
@@ -309,11 +316,11 @@
             // labelProfitMediu
             // 
             this.labelProfitMediu.AutoSize = true;
-            this.labelProfitMediu.Location = new System.Drawing.Point(27, 181);
+            this.labelProfitMediu.Location = new System.Drawing.Point(7, 181);
             this.labelProfitMediu.Name = "labelProfitMediu";
-            this.labelProfitMediu.Size = new System.Drawing.Size(105, 22);
+            this.labelProfitMediu.Size = new System.Drawing.Size(162, 22);
             this.labelProfitMediu.TabIndex = 21;
-            this.labelProfitMediu.Text = "Profit Mediu";
+            this.labelProfitMediu.Text = "Profit Mediu(%CM)";
             // 
             // textBoxPretFinal
             // 
@@ -356,6 +363,7 @@
             this.buttonCalculeazaPretFinal.TabIndex = 19;
             this.buttonCalculeazaPretFinal.Text = "Calculează";
             this.buttonCalculeazaPretFinal.UseVisualStyleBackColor = true;
+            this.buttonCalculeazaPretFinal.Click += new System.EventHandler(this.buttonCalculeazaPretFinal_Click);
             // 
             // textBoxChiria
             // 
@@ -782,6 +790,7 @@
             this.buttonCalculeazaRataProfit.TabIndex = 15;
             this.buttonCalculeazaRataProfit.Text = "Calculează";
             this.buttonCalculeazaRataProfit.UseVisualStyleBackColor = true;
+            this.buttonCalculeazaRataProfit.Click += new System.EventHandler(this.buttonCalculeazaRataProfit_Click);
             // 
             // textBoxCosturiCa2
             // 
@@ -816,6 +825,22 @@
             this.panelScroll.Name = "panelScroll";
             this.panelScroll.Size = new System.Drawing.Size(1167, 951);
             this.panelScroll.TabIndex = 45;
+            // 
+            // textBoxCostVariabileMedii
+            // 
+            this.textBoxCostVariabileMedii.Location = new System.Drawing.Point(263, 116);
+            this.textBoxCostVariabileMedii.Name = "textBoxCostVariabileMedii";
+            this.textBoxCostVariabileMedii.Size = new System.Drawing.Size(135, 29);
+            this.textBoxCostVariabileMedii.TabIndex = 52;
+            // 
+            // labelCostVarMedii
+            // 
+            this.labelCostVarMedii.AutoSize = true;
+            this.labelCostVarMedii.Location = new System.Drawing.Point(249, 87);
+            this.labelCostVarMedii.Name = "labelCostVarMedii";
+            this.labelCostVarMedii.Size = new System.Drawing.Size(164, 22);
+            this.labelCostVarMedii.TabIndex = 51;
+            this.labelCostVarMedii.Text = "Cost Variabile Medii";
             // 
             // tab2Form
             // 
@@ -916,5 +941,7 @@
         private System.Windows.Forms.TextBox textBoxMasaProfit2;
         private System.Windows.Forms.TextBox textBoxRataProfit;
         private System.Windows.Forms.Panel panelScroll;
+        private System.Windows.Forms.TextBox textBoxCostVariabileMedii;
+        private System.Windows.Forms.Label labelCostVarMedii;
     }
 }

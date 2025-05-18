@@ -16,15 +16,39 @@ namespace miniContabil
         public tab2Form()
         {
             InitializeComponent();
+            DezactiveazaControalele();
+            DoarReadOnly();
             this.AutoScroll = true;
         }
 
-        private void labelRataProfit_Click(object sender, EventArgs e)
+        private void DezactiveazaControalele()
         {
+            textBoxPretUnitateProdus.Enabled = false;
+            textBoxCostFix.Enabled = false;
+            textBoxCostVariabileMedii.Enabled = false;
+            buttonCalculeazaPregdeRentabilitate.Enabled = false;
+            textBoxProfit1.Enabled = false;
+            textBoxCantitate.Enabled = false;
+        }
 
+        private void DoarReadOnly()
+        {
+            textBoxMasaProfit1.ReadOnly = true;
+            textBoxRataProfit.ReadOnly = true;
+            textBoxCT.ReadOnly = true;
+            textBoxCostMediu.ReadOnly = true;
+            textBoxPretFinal.ReadOnly = true;
+            textBoxCantitate.ReadOnly = true;
+            textBoxImpozitProfit.ReadOnly = true;
+            textBoxPretTVA.ReadOnly = true;
         }
 
         private void groupBoxPragulRentabilitate_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void labelRataProfit_Click(object sender, EventArgs e)
         {
 
         }
@@ -56,6 +80,82 @@ namespace miniContabil
             {
                 MessageBox.Show($"Eroare la calcul: {ex.Message}", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 textBoxMasaProfit1.Text = "0";
+            }
+        }
+
+        private void buttonCalculeazaRataProfit_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var calculator = new RataProfit();
+                string rezultat = calculator.CalculeazaRataProfit(textBoxMasaProfit2.Text, textBoxCosturiCa2.Text);
+                textBoxRataProfit.Text = rezultat;
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Eroare la calcul: {ex.Message}", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxRataProfit.Text = "0";
+            }
+        }
+
+        private void buttonCalculeazaPretFinal_Click(object sender, EventArgs e)
+        {         
+            try
+            {
+                var calculator = new PretFinal();
+                string rezultatCt = calculator.CalculeazaCostTotal(textBoxAmortizare.Text, textBoxMateriiPrime.Text, textBoxSalarii.Text, textBoxMaterialeAuxiliare.Text, textBoxChiria.Text);
+                textBoxCT.Text = rezultatCt;
+
+                string rezultatCm = calculator.CalculeazaCostMediu(textBoxCT.Text, textBoxNrUnitatiProduse.Text);
+                textBoxCostMediu.Text = rezultatCm;
+
+                string rezultatPf = calculator.CalculeazaPretFinal(textBoxCostMediu.Text, textBoxProfitMediu.Text);
+                textBoxPretFinal.Text = rezultatPf;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Eroare la calcul: {ex.Message}", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxCT.Text = "0";
+                textBoxCostMediu.Text = "0";
+                textBoxPretFinal.Text = "0";
+            }
+        }
+
+        private void radioButtonRentabilitateCazA_CheckedChanged(object sender, EventArgs e)
+        {
+            textBoxPretUnitateProdus.Enabled = true;
+            textBoxCostFix.Enabled = true;
+            textBoxCostVariabileMedii.Enabled = true;
+            buttonCalculeazaPregdeRentabilitate.Enabled = true;
+            textBoxCantitate.Enabled = true;
+            textBoxProfit1.Enabled = false;
+            textBoxProfit1.Clear();
+        }
+
+        private void radioButtonRentabilitateCazB_CheckedChanged(object sender, EventArgs e)
+        {
+            textBoxPretUnitateProdus.Enabled = true;
+            textBoxCostFix.Enabled = true;
+            textBoxCostVariabileMedii.Enabled = true;
+            buttonCalculeazaPregdeRentabilitate.Enabled = true;
+            textBoxCantitate.Enabled = true;
+            textBoxProfit1.Enabled = true;
+        }
+
+        private void buttonCalculeazaPregdeRentabilitate_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var calculator = new PragRentabilitate();
+                string rezultat = calculator.CalculeazaPragRentabilitate(textBoxPretUnitateProdus.Text, textBoxCostFix.Text, textBoxProfit1.Text, textBoxCostVariabileMedii.Text, radioButtonRentabilitateCazA.Checked);
+                textBoxCantitate.Text = rezultat;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Eroare la calcul: {ex.Message}", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxCantitate.Text = "0";
             }
         }
     }

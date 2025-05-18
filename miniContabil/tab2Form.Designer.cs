@@ -30,71 +30,71 @@
         {
             this.labelTitluCostulProductie = new ReaLTaiizor.Controls.BigLabel();
             this.groupBoxPragulRentabilitate = new ReaLTaiizor.Controls.GroupBox();
-            this.radioButtonRentabilitateCazA = new System.Windows.Forms.RadioButton();
-            this.labelCostFix = new System.Windows.Forms.Label();
-            this.labelPretUnitateProdus = new System.Windows.Forms.Label();
-            this.textBoxCostFix = new System.Windows.Forms.TextBox();
-            this.labelProfit1 = new System.Windows.Forms.Label();
-            this.radioButtonRentabilitateCazB = new System.Windows.Forms.RadioButton();
-            this.textBoxProfit1 = new System.Windows.Forms.TextBox();
-            this.labelCantitate = new System.Windows.Forms.Label();
-            this.textBoxCantitate = new System.Windows.Forms.TextBox();
-            this.textBoxPretUnitateProdus = new System.Windows.Forms.TextBox();
             this.buttonCalculeazaPregdeRentabilitate = new System.Windows.Forms.Button();
+            this.textBoxPretUnitateProdus = new System.Windows.Forms.TextBox();
+            this.textBoxCantitate = new System.Windows.Forms.TextBox();
+            this.labelCantitate = new System.Windows.Forms.Label();
+            this.textBoxProfit1 = new System.Windows.Forms.TextBox();
+            this.radioButtonRentabilitateCazB = new System.Windows.Forms.RadioButton();
+            this.labelProfit1 = new System.Windows.Forms.Label();
+            this.textBoxCostFix = new System.Windows.Forms.TextBox();
+            this.labelPretUnitateProdus = new System.Windows.Forms.Label();
+            this.labelCostFix = new System.Windows.Forms.Label();
+            this.radioButtonRentabilitateCazA = new System.Windows.Forms.RadioButton();
             this.groupBoxPretFinal = new ReaLTaiizor.Controls.GroupBox();
-            this.textBoxAmortizare = new System.Windows.Forms.TextBox();
-            this.labelAmortizare = new System.Windows.Forms.Label();
-            this.textBoxMateriiPrime = new System.Windows.Forms.TextBox();
-            this.labelNrUnitatiProduse = new System.Windows.Forms.Label();
-            this.labelSalarii = new System.Windows.Forms.Label();
-            this.textBoxNrUnitatiProduse = new System.Windows.Forms.TextBox();
-            this.textBoxSalarii = new System.Windows.Forms.TextBox();
-            this.textBoxCT = new System.Windows.Forms.TextBox();
-            this.labelMaterialeAuxiliare = new System.Windows.Forms.Label();
-            this.labelCT = new System.Windows.Forms.Label();
-            this.textBoxMaterialeAuxiliare = new System.Windows.Forms.TextBox();
-            this.textBoxProfitMediu = new System.Windows.Forms.TextBox();
-            this.textBoxChiria = new System.Windows.Forms.TextBox();
-            this.buttonCalculeazaPretFinal = new System.Windows.Forms.Button();
-            this.textBoxCostMediu = new System.Windows.Forms.TextBox();
-            this.labelPretFinal = new System.Windows.Forms.Label();
-            this.labelChiria = new System.Windows.Forms.Label();
-            this.textBoxPretFinal = new System.Windows.Forms.TextBox();
-            this.labelProfitMediu = new System.Windows.Forms.Label();
-            this.labelCostMediu = new System.Windows.Forms.Label();
             this.labelMateriiPrime = new System.Windows.Forms.Label();
+            this.labelCostMediu = new System.Windows.Forms.Label();
+            this.labelProfitMediu = new System.Windows.Forms.Label();
+            this.textBoxPretFinal = new System.Windows.Forms.TextBox();
+            this.labelChiria = new System.Windows.Forms.Label();
+            this.labelPretFinal = new System.Windows.Forms.Label();
+            this.textBoxCostMediu = new System.Windows.Forms.TextBox();
+            this.buttonCalculeazaPretFinal = new System.Windows.Forms.Button();
+            this.textBoxChiria = new System.Windows.Forms.TextBox();
+            this.textBoxProfitMediu = new System.Windows.Forms.TextBox();
+            this.textBoxMaterialeAuxiliare = new System.Windows.Forms.TextBox();
+            this.labelCT = new System.Windows.Forms.Label();
+            this.labelMaterialeAuxiliare = new System.Windows.Forms.Label();
+            this.textBoxCT = new System.Windows.Forms.TextBox();
+            this.textBoxSalarii = new System.Windows.Forms.TextBox();
+            this.textBoxNrUnitatiProduse = new System.Windows.Forms.TextBox();
+            this.labelSalarii = new System.Windows.Forms.Label();
+            this.labelNrUnitatiProduse = new System.Windows.Forms.Label();
+            this.textBoxMateriiPrime = new System.Windows.Forms.TextBox();
+            this.labelAmortizare = new System.Windows.Forms.Label();
+            this.textBoxAmortizare = new System.Windows.Forms.TextBox();
             this.groupBoxImpozitPeProfit = new ReaLTaiizor.Controls.GroupBox();
-            this.buttonCalculeazaImpozitProfit = new System.Windows.Forms.Button();
-            this.radioButtonCuPFA = new System.Windows.Forms.RadioButton();
-            this.radioButtonFaraPFA = new System.Windows.Forms.RadioButton();
-            this.labelProfit2 = new System.Windows.Forms.Label();
-            this.textBoxProfit2 = new System.Windows.Forms.TextBox();
-            this.labelImpozitProfit = new System.Windows.Forms.Label();
             this.textBoxImpozitProfit = new System.Windows.Forms.TextBox();
+            this.labelImpozitProfit = new System.Windows.Forms.Label();
+            this.textBoxProfit2 = new System.Windows.Forms.TextBox();
+            this.labelProfit2 = new System.Windows.Forms.Label();
+            this.radioButtonFaraPFA = new System.Windows.Forms.RadioButton();
+            this.radioButtonCuPFA = new System.Windows.Forms.RadioButton();
+            this.buttonCalculeazaImpozitProfit = new System.Windows.Forms.Button();
             this.groupBoxMasaProfit = new ReaLTaiizor.Controls.GroupBox();
-            this.textBoxMasaProfit1 = new System.Windows.Forms.TextBox();
-            this.labelMasaProfit1 = new System.Windows.Forms.Label();
-            this.buttonCalculeazaMasaProfit = new System.Windows.Forms.Button();
-            this.textBoxCosturi1 = new System.Windows.Forms.TextBox();
-            this.labelCosturi1 = new System.Windows.Forms.Label();
-            this.textBoxPretVanzare = new System.Windows.Forms.TextBox();
             this.labelPretVanzare = new System.Windows.Forms.Label();
+            this.textBoxPretVanzare = new System.Windows.Forms.TextBox();
+            this.labelCosturi1 = new System.Windows.Forms.Label();
+            this.textBoxCosturi1 = new System.Windows.Forms.TextBox();
+            this.buttonCalculeazaMasaProfit = new System.Windows.Forms.Button();
+            this.labelMasaProfit1 = new System.Windows.Forms.Label();
+            this.textBoxMasaProfit1 = new System.Windows.Forms.TextBox();
             this.groupBoxTVA = new ReaLTaiizor.Controls.GroupBox();
-            this.labelPretBrut = new System.Windows.Forms.Label();
-            this.textBoxPretBrut = new System.Windows.Forms.TextBox();
-            this.buttonCalculeazaTVA = new System.Windows.Forms.Button();
-            this.labelCotaTVA = new System.Windows.Forms.Label();
-            this.textBoxCotaTVA = new System.Windows.Forms.TextBox();
-            this.labelPretTVA = new System.Windows.Forms.Label();
             this.textBoxPretTVA = new System.Windows.Forms.TextBox();
+            this.labelPretTVA = new System.Windows.Forms.Label();
+            this.textBoxCotaTVA = new System.Windows.Forms.TextBox();
+            this.labelCotaTVA = new System.Windows.Forms.Label();
+            this.buttonCalculeazaTVA = new System.Windows.Forms.Button();
+            this.textBoxPretBrut = new System.Windows.Forms.TextBox();
+            this.labelPretBrut = new System.Windows.Forms.Label();
             this.groupBoxRataProfit = new ReaLTaiizor.Controls.GroupBox();
-            this.textBoxRataProfit = new System.Windows.Forms.TextBox();
-            this.textBoxMasaProfit2 = new System.Windows.Forms.TextBox();
-            this.textBoxCosturiCa2 = new System.Windows.Forms.TextBox();
-            this.buttonCalculeazaRataProfit = new System.Windows.Forms.Button();
-            this.labelCosturiCa2 = new System.Windows.Forms.Label();
-            this.labelRataProfit = new System.Windows.Forms.Label();
             this.labelMasaProfit2 = new System.Windows.Forms.Label();
+            this.labelRataProfit = new System.Windows.Forms.Label();
+            this.labelCosturiCa2 = new System.Windows.Forms.Label();
+            this.buttonCalculeazaRataProfit = new System.Windows.Forms.Button();
+            this.textBoxCosturiCa2 = new System.Windows.Forms.TextBox();
+            this.textBoxMasaProfit2 = new System.Windows.Forms.TextBox();
+            this.textBoxRataProfit = new System.Windows.Forms.TextBox();
             this.panelScroll = new System.Windows.Forms.Panel();
             this.groupBoxPragulRentabilitate.SuspendLayout();
             this.groupBoxPretFinal.SuspendLayout();
@@ -148,51 +148,47 @@
             this.groupBoxPragulRentabilitate.Text = "Pragul de rentabilitate";
             this.groupBoxPragulRentabilitate.Click += new System.EventHandler(this.groupBoxPragulRentabilitate_Click);
             // 
-            // radioButtonRentabilitateCazA
+            // buttonCalculeazaPregdeRentabilitate
             // 
-            this.radioButtonRentabilitateCazA.AutoSize = true;
-            this.radioButtonRentabilitateCazA.ForeColor = System.Drawing.Color.Transparent;
-            this.radioButtonRentabilitateCazA.Location = new System.Drawing.Point(17, 44);
-            this.radioButtonRentabilitateCazA.Name = "radioButtonRentabilitateCazA";
-            this.radioButtonRentabilitateCazA.Size = new System.Drawing.Size(284, 26);
-            this.radioButtonRentabilitateCazA.TabIndex = 49;
-            this.radioButtonRentabilitateCazA.TabStop = true;
-            this.radioButtonRentabilitateCazA.Text = "a) atingere prag de rentabilitate";
-            this.radioButtonRentabilitateCazA.UseVisualStyleBackColor = true;
+            this.buttonCalculeazaPregdeRentabilitate.ForeColor = System.Drawing.Color.Black;
+            this.buttonCalculeazaPregdeRentabilitate.Location = new System.Drawing.Point(271, 103);
+            this.buttonCalculeazaPregdeRentabilitate.Name = "buttonCalculeazaPregdeRentabilitate";
+            this.buttonCalculeazaPregdeRentabilitate.Size = new System.Drawing.Size(134, 55);
+            this.buttonCalculeazaPregdeRentabilitate.TabIndex = 48;
+            this.buttonCalculeazaPregdeRentabilitate.Text = "Calculează";
+            this.buttonCalculeazaPregdeRentabilitate.UseVisualStyleBackColor = true;
             // 
-            // labelCostFix
+            // textBoxPretUnitateProdus
             // 
-            this.labelCostFix.AutoSize = true;
-            this.labelCostFix.Location = new System.Drawing.Point(54, 161);
-            this.labelCostFix.Name = "labelCostFix";
-            this.labelCostFix.Size = new System.Drawing.Size(111, 22);
-            this.labelCostFix.TabIndex = 42;
-            this.labelCostFix.Text = "Cost fix total";
+            this.textBoxPretUnitateProdus.Location = new System.Drawing.Point(58, 116);
+            this.textBoxPretUnitateProdus.Name = "textBoxPretUnitateProdus";
+            this.textBoxPretUnitateProdus.Size = new System.Drawing.Size(135, 29);
+            this.textBoxPretUnitateProdus.TabIndex = 45;
             // 
-            // labelPretUnitateProdus
+            // textBoxCantitate
             // 
-            this.labelPretUnitateProdus.AutoSize = true;
-            this.labelPretUnitateProdus.Location = new System.Drawing.Point(54, 87);
-            this.labelPretUnitateProdus.Name = "labelPretUnitateProdus";
-            this.labelPretUnitateProdus.Size = new System.Drawing.Size(161, 22);
-            this.labelPretUnitateProdus.TabIndex = 44;
-            this.labelPretUnitateProdus.Text = "Preț unitate produs";
+            this.textBoxCantitate.Location = new System.Drawing.Point(270, 186);
+            this.textBoxCantitate.Name = "textBoxCantitate";
+            this.textBoxCantitate.Size = new System.Drawing.Size(135, 29);
+            this.textBoxCantitate.TabIndex = 41;
+            this.textBoxCantitate.TextChanged += new System.EventHandler(this.textBoxCantitate_TextChanged);
             // 
-            // textBoxCostFix
+            // labelCantitate
             // 
-            this.textBoxCostFix.Location = new System.Drawing.Point(58, 186);
-            this.textBoxCostFix.Name = "textBoxCostFix";
-            this.textBoxCostFix.Size = new System.Drawing.Size(135, 29);
-            this.textBoxCostFix.TabIndex = 43;
+            this.labelCantitate.AutoSize = true;
+            this.labelCantitate.Location = new System.Drawing.Point(294, 161);
+            this.labelCantitate.Name = "labelCantitate";
+            this.labelCantitate.Size = new System.Drawing.Size(80, 22);
+            this.labelCantitate.TabIndex = 40;
+            this.labelCantitate.Text = "Cantitate";
+            this.labelCantitate.Click += new System.EventHandler(this.labelCantitate_Click);
             // 
-            // labelProfit1
+            // textBoxProfit1
             // 
-            this.labelProfit1.AutoSize = true;
-            this.labelProfit1.Location = new System.Drawing.Point(469, 87);
-            this.labelProfit1.Name = "labelProfit1";
-            this.labelProfit1.Size = new System.Drawing.Size(52, 22);
-            this.labelProfit1.TabIndex = 47;
-            this.labelProfit1.Text = "Profit";
+            this.textBoxProfit1.Location = new System.Drawing.Point(463, 116);
+            this.textBoxProfit1.Name = "textBoxProfit1";
+            this.textBoxProfit1.Size = new System.Drawing.Size(135, 29);
+            this.textBoxProfit1.TabIndex = 46;
             // 
             // radioButtonRentabilitateCazB
             // 
@@ -206,47 +202,51 @@
             this.radioButtonRentabilitateCazB.Text = "b) pentru profit (500k unități)";
             this.radioButtonRentabilitateCazB.UseVisualStyleBackColor = true;
             // 
-            // textBoxProfit1
+            // labelProfit1
             // 
-            this.textBoxProfit1.Location = new System.Drawing.Point(463, 116);
-            this.textBoxProfit1.Name = "textBoxProfit1";
-            this.textBoxProfit1.Size = new System.Drawing.Size(135, 29);
-            this.textBoxProfit1.TabIndex = 46;
+            this.labelProfit1.AutoSize = true;
+            this.labelProfit1.Location = new System.Drawing.Point(469, 87);
+            this.labelProfit1.Name = "labelProfit1";
+            this.labelProfit1.Size = new System.Drawing.Size(52, 22);
+            this.labelProfit1.TabIndex = 47;
+            this.labelProfit1.Text = "Profit";
             // 
-            // labelCantitate
+            // textBoxCostFix
             // 
-            this.labelCantitate.AutoSize = true;
-            this.labelCantitate.Location = new System.Drawing.Point(294, 161);
-            this.labelCantitate.Name = "labelCantitate";
-            this.labelCantitate.Size = new System.Drawing.Size(80, 22);
-            this.labelCantitate.TabIndex = 40;
-            this.labelCantitate.Text = "Cantitate";
-            this.labelCantitate.Click += new System.EventHandler(this.labelCantitate_Click);
+            this.textBoxCostFix.Location = new System.Drawing.Point(58, 186);
+            this.textBoxCostFix.Name = "textBoxCostFix";
+            this.textBoxCostFix.Size = new System.Drawing.Size(135, 29);
+            this.textBoxCostFix.TabIndex = 43;
             // 
-            // textBoxCantitate
+            // labelPretUnitateProdus
             // 
-            this.textBoxCantitate.Location = new System.Drawing.Point(270, 186);
-            this.textBoxCantitate.Name = "textBoxCantitate";
-            this.textBoxCantitate.Size = new System.Drawing.Size(135, 29);
-            this.textBoxCantitate.TabIndex = 41;
-            this.textBoxCantitate.TextChanged += new System.EventHandler(this.textBoxCantitate_TextChanged);
+            this.labelPretUnitateProdus.AutoSize = true;
+            this.labelPretUnitateProdus.Location = new System.Drawing.Point(54, 87);
+            this.labelPretUnitateProdus.Name = "labelPretUnitateProdus";
+            this.labelPretUnitateProdus.Size = new System.Drawing.Size(161, 22);
+            this.labelPretUnitateProdus.TabIndex = 44;
+            this.labelPretUnitateProdus.Text = "Preț unitate produs";
             // 
-            // textBoxPretUnitateProdus
+            // labelCostFix
             // 
-            this.textBoxPretUnitateProdus.Location = new System.Drawing.Point(58, 116);
-            this.textBoxPretUnitateProdus.Name = "textBoxPretUnitateProdus";
-            this.textBoxPretUnitateProdus.Size = new System.Drawing.Size(135, 29);
-            this.textBoxPretUnitateProdus.TabIndex = 45;
+            this.labelCostFix.AutoSize = true;
+            this.labelCostFix.Location = new System.Drawing.Point(54, 161);
+            this.labelCostFix.Name = "labelCostFix";
+            this.labelCostFix.Size = new System.Drawing.Size(111, 22);
+            this.labelCostFix.TabIndex = 42;
+            this.labelCostFix.Text = "Cost fix total";
             // 
-            // buttonCalculeazaPregdeRentabilitate
+            // radioButtonRentabilitateCazA
             // 
-            this.buttonCalculeazaPregdeRentabilitate.ForeColor = System.Drawing.Color.Black;
-            this.buttonCalculeazaPregdeRentabilitate.Location = new System.Drawing.Point(271, 103);
-            this.buttonCalculeazaPregdeRentabilitate.Name = "buttonCalculeazaPregdeRentabilitate";
-            this.buttonCalculeazaPregdeRentabilitate.Size = new System.Drawing.Size(134, 55);
-            this.buttonCalculeazaPregdeRentabilitate.TabIndex = 48;
-            this.buttonCalculeazaPregdeRentabilitate.Text = "Calculează";
-            this.buttonCalculeazaPregdeRentabilitate.UseVisualStyleBackColor = true;
+            this.radioButtonRentabilitateCazA.AutoSize = true;
+            this.radioButtonRentabilitateCazA.ForeColor = System.Drawing.Color.Transparent;
+            this.radioButtonRentabilitateCazA.Location = new System.Drawing.Point(17, 44);
+            this.radioButtonRentabilitateCazA.Name = "radioButtonRentabilitateCazA";
+            this.radioButtonRentabilitateCazA.Size = new System.Drawing.Size(284, 26);
+            this.radioButtonRentabilitateCazA.TabIndex = 49;
+            this.radioButtonRentabilitateCazA.TabStop = true;
+            this.radioButtonRentabilitateCazA.Text = "a) atingere prag de rentabilitate";
+            this.radioButtonRentabilitateCazA.UseVisualStyleBackColor = true;
             // 
             // groupBoxPretFinal
             // 
@@ -288,106 +288,64 @@
             this.groupBoxPretFinal.TabIndex = 42;
             this.groupBoxPretFinal.Text = "Preț final";
             // 
-            // textBoxAmortizare
+            // labelMateriiPrime
             // 
-            this.textBoxAmortizare.Location = new System.Drawing.Point(17, 139);
-            this.textBoxAmortizare.Name = "textBoxAmortizare";
-            this.textBoxAmortizare.Size = new System.Drawing.Size(135, 29);
-            this.textBoxAmortizare.TabIndex = 31;
+            this.labelMateriiPrime.AutoSize = true;
+            this.labelMateriiPrime.Location = new System.Drawing.Point(183, 39);
+            this.labelMateriiPrime.Name = "labelMateriiPrime";
+            this.labelMateriiPrime.Size = new System.Drawing.Size(112, 22);
+            this.labelMateriiPrime.TabIndex = 32;
+            this.labelMateriiPrime.Text = "Materii Prime";
             // 
-            // labelAmortizare
+            // labelCostMediu
             // 
-            this.labelAmortizare.AutoSize = true;
-            this.labelAmortizare.Location = new System.Drawing.Point(38, 114);
-            this.labelAmortizare.Name = "labelAmortizare";
-            this.labelAmortizare.Size = new System.Drawing.Size(94, 22);
-            this.labelAmortizare.TabIndex = 30;
-            this.labelAmortizare.Text = "Amortizare";
+            this.labelCostMediu.AutoSize = true;
+            this.labelCostMediu.Location = new System.Drawing.Point(567, 114);
+            this.labelCostMediu.Name = "labelCostMediu";
+            this.labelCostMediu.Size = new System.Drawing.Size(98, 22);
+            this.labelCostMediu.TabIndex = 20;
+            this.labelCostMediu.Text = "Cost Mediu";
             // 
-            // textBoxMateriiPrime
+            // labelProfitMediu
             // 
-            this.textBoxMateriiPrime.Location = new System.Drawing.Point(179, 66);
-            this.textBoxMateriiPrime.Name = "textBoxMateriiPrime";
-            this.textBoxMateriiPrime.Size = new System.Drawing.Size(135, 29);
-            this.textBoxMateriiPrime.TabIndex = 33;
+            this.labelProfitMediu.AutoSize = true;
+            this.labelProfitMediu.Location = new System.Drawing.Point(27, 181);
+            this.labelProfitMediu.Name = "labelProfitMediu";
+            this.labelProfitMediu.Size = new System.Drawing.Size(105, 22);
+            this.labelProfitMediu.TabIndex = 21;
+            this.labelProfitMediu.Text = "Profit Mediu";
             // 
-            // labelNrUnitatiProduse
+            // textBoxPretFinal
             // 
-            this.labelNrUnitatiProduse.AutoSize = true;
-            this.labelNrUnitatiProduse.Location = new System.Drawing.Point(175, 181);
-            this.labelNrUnitatiProduse.Name = "labelNrUnitatiProduse";
-            this.labelNrUnitatiProduse.Size = new System.Drawing.Size(152, 22);
-            this.labelNrUnitatiProduse.TabIndex = 29;
-            this.labelNrUnitatiProduse.Text = "Nr unități produse";
+            this.textBoxPretFinal.Location = new System.Drawing.Point(558, 206);
+            this.textBoxPretFinal.Name = "textBoxPretFinal";
+            this.textBoxPretFinal.Size = new System.Drawing.Size(135, 29);
+            this.textBoxPretFinal.TabIndex = 25;
             // 
-            // labelSalarii
+            // labelChiria
             // 
-            this.labelSalarii.AutoSize = true;
-            this.labelSalarii.Location = new System.Drawing.Point(217, 114);
-            this.labelSalarii.Name = "labelSalarii";
-            this.labelSalarii.Size = new System.Drawing.Size(56, 22);
-            this.labelSalarii.TabIndex = 34;
-            this.labelSalarii.Text = "Salarii";
+            this.labelChiria.AutoSize = true;
+            this.labelChiria.Location = new System.Drawing.Point(54, 39);
+            this.labelChiria.Name = "labelChiria";
+            this.labelChiria.Size = new System.Drawing.Size(54, 22);
+            this.labelChiria.TabIndex = 39;
+            this.labelChiria.Text = "Chiria";
             // 
-            // textBoxNrUnitatiProduse
+            // labelPretFinal
             // 
-            this.textBoxNrUnitatiProduse.Location = new System.Drawing.Point(179, 207);
-            this.textBoxNrUnitatiProduse.Name = "textBoxNrUnitatiProduse";
-            this.textBoxNrUnitatiProduse.Size = new System.Drawing.Size(135, 29);
-            this.textBoxNrUnitatiProduse.TabIndex = 28;
+            this.labelPretFinal.AutoSize = true;
+            this.labelPretFinal.Location = new System.Drawing.Point(575, 181);
+            this.labelPretFinal.Name = "labelPretFinal";
+            this.labelPretFinal.Size = new System.Drawing.Size(83, 22);
+            this.labelPretFinal.TabIndex = 22;
+            this.labelPretFinal.Text = "Preț Final";
             // 
-            // textBoxSalarii
+            // textBoxCostMediu
             // 
-            this.textBoxSalarii.Location = new System.Drawing.Point(179, 139);
-            this.textBoxSalarii.Name = "textBoxSalarii";
-            this.textBoxSalarii.Size = new System.Drawing.Size(135, 29);
-            this.textBoxSalarii.TabIndex = 35;
-            // 
-            // textBoxCT
-            // 
-            this.textBoxCT.Location = new System.Drawing.Point(559, 66);
-            this.textBoxCT.Name = "textBoxCT";
-            this.textBoxCT.Size = new System.Drawing.Size(135, 29);
-            this.textBoxCT.TabIndex = 27;
-            // 
-            // labelMaterialeAuxiliare
-            // 
-            this.labelMaterialeAuxiliare.AutoSize = true;
-            this.labelMaterialeAuxiliare.Location = new System.Drawing.Point(338, 39);
-            this.labelMaterialeAuxiliare.Name = "labelMaterialeAuxiliare";
-            this.labelMaterialeAuxiliare.Size = new System.Drawing.Size(152, 22);
-            this.labelMaterialeAuxiliare.TabIndex = 36;
-            this.labelMaterialeAuxiliare.Text = "Materiale Auxiliare";
-            // 
-            // labelCT
-            // 
-            this.labelCT.AutoSize = true;
-            this.labelCT.Location = new System.Drawing.Point(575, 41);
-            this.labelCT.Name = "labelCT";
-            this.labelCT.Size = new System.Drawing.Size(91, 22);
-            this.labelCT.TabIndex = 26;
-            this.labelCT.Text = "Cost Total";
-            // 
-            // textBoxMaterialeAuxiliare
-            // 
-            this.textBoxMaterialeAuxiliare.Location = new System.Drawing.Point(342, 66);
-            this.textBoxMaterialeAuxiliare.Name = "textBoxMaterialeAuxiliare";
-            this.textBoxMaterialeAuxiliare.Size = new System.Drawing.Size(135, 29);
-            this.textBoxMaterialeAuxiliare.TabIndex = 37;
-            // 
-            // textBoxProfitMediu
-            // 
-            this.textBoxProfitMediu.Location = new System.Drawing.Point(17, 206);
-            this.textBoxProfitMediu.Name = "textBoxProfitMediu";
-            this.textBoxProfitMediu.Size = new System.Drawing.Size(135, 29);
-            this.textBoxProfitMediu.TabIndex = 24;
-            // 
-            // textBoxChiria
-            // 
-            this.textBoxChiria.Location = new System.Drawing.Point(17, 66);
-            this.textBoxChiria.Name = "textBoxChiria";
-            this.textBoxChiria.Size = new System.Drawing.Size(135, 29);
-            this.textBoxChiria.TabIndex = 38;
+            this.textBoxCostMediu.Location = new System.Drawing.Point(558, 139);
+            this.textBoxCostMediu.Name = "textBoxCostMediu";
+            this.textBoxCostMediu.Size = new System.Drawing.Size(135, 29);
+            this.textBoxCostMediu.TabIndex = 23;
             // 
             // buttonCalculeazaPretFinal
             // 
@@ -399,64 +357,106 @@
             this.buttonCalculeazaPretFinal.Text = "Calculează";
             this.buttonCalculeazaPretFinal.UseVisualStyleBackColor = true;
             // 
-            // textBoxCostMediu
+            // textBoxChiria
             // 
-            this.textBoxCostMediu.Location = new System.Drawing.Point(558, 139);
-            this.textBoxCostMediu.Name = "textBoxCostMediu";
-            this.textBoxCostMediu.Size = new System.Drawing.Size(135, 29);
-            this.textBoxCostMediu.TabIndex = 23;
+            this.textBoxChiria.Location = new System.Drawing.Point(17, 66);
+            this.textBoxChiria.Name = "textBoxChiria";
+            this.textBoxChiria.Size = new System.Drawing.Size(135, 29);
+            this.textBoxChiria.TabIndex = 38;
             // 
-            // labelPretFinal
+            // textBoxProfitMediu
             // 
-            this.labelPretFinal.AutoSize = true;
-            this.labelPretFinal.Location = new System.Drawing.Point(575, 181);
-            this.labelPretFinal.Name = "labelPretFinal";
-            this.labelPretFinal.Size = new System.Drawing.Size(83, 22);
-            this.labelPretFinal.TabIndex = 22;
-            this.labelPretFinal.Text = "Preț Final";
+            this.textBoxProfitMediu.Location = new System.Drawing.Point(17, 206);
+            this.textBoxProfitMediu.Name = "textBoxProfitMediu";
+            this.textBoxProfitMediu.Size = new System.Drawing.Size(135, 29);
+            this.textBoxProfitMediu.TabIndex = 24;
             // 
-            // labelChiria
+            // textBoxMaterialeAuxiliare
             // 
-            this.labelChiria.AutoSize = true;
-            this.labelChiria.Location = new System.Drawing.Point(54, 39);
-            this.labelChiria.Name = "labelChiria";
-            this.labelChiria.Size = new System.Drawing.Size(54, 22);
-            this.labelChiria.TabIndex = 39;
-            this.labelChiria.Text = "Chiria";
+            this.textBoxMaterialeAuxiliare.Location = new System.Drawing.Point(342, 66);
+            this.textBoxMaterialeAuxiliare.Name = "textBoxMaterialeAuxiliare";
+            this.textBoxMaterialeAuxiliare.Size = new System.Drawing.Size(135, 29);
+            this.textBoxMaterialeAuxiliare.TabIndex = 37;
             // 
-            // textBoxPretFinal
+            // labelCT
             // 
-            this.textBoxPretFinal.Location = new System.Drawing.Point(558, 206);
-            this.textBoxPretFinal.Name = "textBoxPretFinal";
-            this.textBoxPretFinal.Size = new System.Drawing.Size(135, 29);
-            this.textBoxPretFinal.TabIndex = 25;
+            this.labelCT.AutoSize = true;
+            this.labelCT.Location = new System.Drawing.Point(575, 41);
+            this.labelCT.Name = "labelCT";
+            this.labelCT.Size = new System.Drawing.Size(91, 22);
+            this.labelCT.TabIndex = 26;
+            this.labelCT.Text = "Cost Total";
             // 
-            // labelProfitMediu
+            // labelMaterialeAuxiliare
             // 
-            this.labelProfitMediu.AutoSize = true;
-            this.labelProfitMediu.Location = new System.Drawing.Point(27, 181);
-            this.labelProfitMediu.Name = "labelProfitMediu";
-            this.labelProfitMediu.Size = new System.Drawing.Size(105, 22);
-            this.labelProfitMediu.TabIndex = 21;
-            this.labelProfitMediu.Text = "Profit Mediu";
+            this.labelMaterialeAuxiliare.AutoSize = true;
+            this.labelMaterialeAuxiliare.Location = new System.Drawing.Point(338, 39);
+            this.labelMaterialeAuxiliare.Name = "labelMaterialeAuxiliare";
+            this.labelMaterialeAuxiliare.Size = new System.Drawing.Size(152, 22);
+            this.labelMaterialeAuxiliare.TabIndex = 36;
+            this.labelMaterialeAuxiliare.Text = "Materiale Auxiliare";
             // 
-            // labelCostMediu
+            // textBoxCT
             // 
-            this.labelCostMediu.AutoSize = true;
-            this.labelCostMediu.Location = new System.Drawing.Point(567, 114);
-            this.labelCostMediu.Name = "labelCostMediu";
-            this.labelCostMediu.Size = new System.Drawing.Size(98, 22);
-            this.labelCostMediu.TabIndex = 20;
-            this.labelCostMediu.Text = "Cost Mediu";
+            this.textBoxCT.Location = new System.Drawing.Point(559, 66);
+            this.textBoxCT.Name = "textBoxCT";
+            this.textBoxCT.Size = new System.Drawing.Size(135, 29);
+            this.textBoxCT.TabIndex = 27;
             // 
-            // labelMateriiPrime
+            // textBoxSalarii
             // 
-            this.labelMateriiPrime.AutoSize = true;
-            this.labelMateriiPrime.Location = new System.Drawing.Point(183, 39);
-            this.labelMateriiPrime.Name = "labelMateriiPrime";
-            this.labelMateriiPrime.Size = new System.Drawing.Size(112, 22);
-            this.labelMateriiPrime.TabIndex = 32;
-            this.labelMateriiPrime.Text = "Materii Prime";
+            this.textBoxSalarii.Location = new System.Drawing.Point(179, 139);
+            this.textBoxSalarii.Name = "textBoxSalarii";
+            this.textBoxSalarii.Size = new System.Drawing.Size(135, 29);
+            this.textBoxSalarii.TabIndex = 35;
+            // 
+            // textBoxNrUnitatiProduse
+            // 
+            this.textBoxNrUnitatiProduse.Location = new System.Drawing.Point(179, 207);
+            this.textBoxNrUnitatiProduse.Name = "textBoxNrUnitatiProduse";
+            this.textBoxNrUnitatiProduse.Size = new System.Drawing.Size(135, 29);
+            this.textBoxNrUnitatiProduse.TabIndex = 28;
+            // 
+            // labelSalarii
+            // 
+            this.labelSalarii.AutoSize = true;
+            this.labelSalarii.Location = new System.Drawing.Point(217, 114);
+            this.labelSalarii.Name = "labelSalarii";
+            this.labelSalarii.Size = new System.Drawing.Size(56, 22);
+            this.labelSalarii.TabIndex = 34;
+            this.labelSalarii.Text = "Salarii";
+            // 
+            // labelNrUnitatiProduse
+            // 
+            this.labelNrUnitatiProduse.AutoSize = true;
+            this.labelNrUnitatiProduse.Location = new System.Drawing.Point(175, 181);
+            this.labelNrUnitatiProduse.Name = "labelNrUnitatiProduse";
+            this.labelNrUnitatiProduse.Size = new System.Drawing.Size(152, 22);
+            this.labelNrUnitatiProduse.TabIndex = 29;
+            this.labelNrUnitatiProduse.Text = "Nr unități produse";
+            // 
+            // textBoxMateriiPrime
+            // 
+            this.textBoxMateriiPrime.Location = new System.Drawing.Point(179, 66);
+            this.textBoxMateriiPrime.Name = "textBoxMateriiPrime";
+            this.textBoxMateriiPrime.Size = new System.Drawing.Size(135, 29);
+            this.textBoxMateriiPrime.TabIndex = 33;
+            // 
+            // labelAmortizare
+            // 
+            this.labelAmortizare.AutoSize = true;
+            this.labelAmortizare.Location = new System.Drawing.Point(38, 114);
+            this.labelAmortizare.Name = "labelAmortizare";
+            this.labelAmortizare.Size = new System.Drawing.Size(94, 22);
+            this.labelAmortizare.TabIndex = 30;
+            this.labelAmortizare.Text = "Amortizare";
+            // 
+            // textBoxAmortizare
+            // 
+            this.textBoxAmortizare.Location = new System.Drawing.Point(17, 139);
+            this.textBoxAmortizare.Name = "textBoxAmortizare";
+            this.textBoxAmortizare.Size = new System.Drawing.Size(135, 29);
+            this.textBoxAmortizare.TabIndex = 31;
             // 
             // groupBoxImpozitPeProfit
             // 
@@ -484,27 +484,37 @@
             this.groupBoxImpozitPeProfit.TabIndex = 43;
             this.groupBoxImpozitPeProfit.Text = "Impozit pe profit";
             // 
-            // buttonCalculeazaImpozitProfit
+            // textBoxImpozitProfit
             // 
-            this.buttonCalculeazaImpozitProfit.ForeColor = System.Drawing.Color.Black;
-            this.buttonCalculeazaImpozitProfit.Location = new System.Drawing.Point(221, 95);
-            this.buttonCalculeazaImpozitProfit.Name = "buttonCalculeazaImpozitProfit";
-            this.buttonCalculeazaImpozitProfit.Size = new System.Drawing.Size(129, 54);
-            this.buttonCalculeazaImpozitProfit.TabIndex = 1;
-            this.buttonCalculeazaImpozitProfit.Text = "Calculează";
-            this.buttonCalculeazaImpozitProfit.UseVisualStyleBackColor = true;
+            this.textBoxImpozitProfit.Location = new System.Drawing.Point(374, 111);
+            this.textBoxImpozitProfit.Name = "textBoxImpozitProfit";
+            this.textBoxImpozitProfit.Size = new System.Drawing.Size(135, 29);
+            this.textBoxImpozitProfit.TabIndex = 54;
             // 
-            // radioButtonCuPFA
+            // labelImpozitProfit
             // 
-            this.radioButtonCuPFA.AutoSize = true;
-            this.radioButtonCuPFA.ForeColor = System.Drawing.Color.Transparent;
-            this.radioButtonCuPFA.Location = new System.Drawing.Point(17, 37);
-            this.radioButtonCuPFA.Name = "radioButtonCuPFA";
-            this.radioButtonCuPFA.Size = new System.Drawing.Size(111, 26);
-            this.radioButtonCuPFA.TabIndex = 50;
-            this.radioButtonCuPFA.TabStop = true;
-            this.radioButtonCuPFA.Text = "a) cu PFA";
-            this.radioButtonCuPFA.UseVisualStyleBackColor = true;
+            this.labelImpozitProfit.AutoSize = true;
+            this.labelImpozitProfit.Location = new System.Drawing.Point(370, 82);
+            this.labelImpozitProfit.Name = "labelImpozitProfit";
+            this.labelImpozitProfit.Size = new System.Drawing.Size(143, 22);
+            this.labelImpozitProfit.TabIndex = 55;
+            this.labelImpozitProfit.Text = "Impozit pe profit";
+            // 
+            // textBoxProfit2
+            // 
+            this.textBoxProfit2.Location = new System.Drawing.Point(61, 111);
+            this.textBoxProfit2.Name = "textBoxProfit2";
+            this.textBoxProfit2.Size = new System.Drawing.Size(135, 29);
+            this.textBoxProfit2.TabIndex = 52;
+            // 
+            // labelProfit2
+            // 
+            this.labelProfit2.AutoSize = true;
+            this.labelProfit2.Location = new System.Drawing.Point(67, 82);
+            this.labelProfit2.Name = "labelProfit2";
+            this.labelProfit2.Size = new System.Drawing.Size(52, 22);
+            this.labelProfit2.TabIndex = 53;
+            this.labelProfit2.Text = "Profit";
             // 
             // radioButtonFaraPFA
             // 
@@ -518,37 +528,27 @@
             this.radioButtonFaraPFA.Text = "b) fară PFA";
             this.radioButtonFaraPFA.UseVisualStyleBackColor = true;
             // 
-            // labelProfit2
+            // radioButtonCuPFA
             // 
-            this.labelProfit2.AutoSize = true;
-            this.labelProfit2.Location = new System.Drawing.Point(67, 82);
-            this.labelProfit2.Name = "labelProfit2";
-            this.labelProfit2.Size = new System.Drawing.Size(52, 22);
-            this.labelProfit2.TabIndex = 53;
-            this.labelProfit2.Text = "Profit";
+            this.radioButtonCuPFA.AutoSize = true;
+            this.radioButtonCuPFA.ForeColor = System.Drawing.Color.Transparent;
+            this.radioButtonCuPFA.Location = new System.Drawing.Point(17, 37);
+            this.radioButtonCuPFA.Name = "radioButtonCuPFA";
+            this.radioButtonCuPFA.Size = new System.Drawing.Size(111, 26);
+            this.radioButtonCuPFA.TabIndex = 50;
+            this.radioButtonCuPFA.TabStop = true;
+            this.radioButtonCuPFA.Text = "a) cu PFA";
+            this.radioButtonCuPFA.UseVisualStyleBackColor = true;
             // 
-            // textBoxProfit2
+            // buttonCalculeazaImpozitProfit
             // 
-            this.textBoxProfit2.Location = new System.Drawing.Point(61, 111);
-            this.textBoxProfit2.Name = "textBoxProfit2";
-            this.textBoxProfit2.Size = new System.Drawing.Size(135, 29);
-            this.textBoxProfit2.TabIndex = 52;
-            // 
-            // labelImpozitProfit
-            // 
-            this.labelImpozitProfit.AutoSize = true;
-            this.labelImpozitProfit.Location = new System.Drawing.Point(370, 82);
-            this.labelImpozitProfit.Name = "labelImpozitProfit";
-            this.labelImpozitProfit.Size = new System.Drawing.Size(143, 22);
-            this.labelImpozitProfit.TabIndex = 55;
-            this.labelImpozitProfit.Text = "Impozit pe profit";
-            // 
-            // textBoxImpozitProfit
-            // 
-            this.textBoxImpozitProfit.Location = new System.Drawing.Point(374, 111);
-            this.textBoxImpozitProfit.Name = "textBoxImpozitProfit";
-            this.textBoxImpozitProfit.Size = new System.Drawing.Size(135, 29);
-            this.textBoxImpozitProfit.TabIndex = 54;
+            this.buttonCalculeazaImpozitProfit.ForeColor = System.Drawing.Color.Black;
+            this.buttonCalculeazaImpozitProfit.Location = new System.Drawing.Point(221, 95);
+            this.buttonCalculeazaImpozitProfit.Name = "buttonCalculeazaImpozitProfit";
+            this.buttonCalculeazaImpozitProfit.Size = new System.Drawing.Size(129, 54);
+            this.buttonCalculeazaImpozitProfit.TabIndex = 1;
+            this.buttonCalculeazaImpozitProfit.Text = "Calculează";
+            this.buttonCalculeazaImpozitProfit.UseVisualStyleBackColor = true;
             // 
             // groupBoxMasaProfit
             // 
@@ -576,38 +576,21 @@
             this.groupBoxMasaProfit.TabIndex = 40;
             this.groupBoxMasaProfit.Text = "Masă profit";
             // 
-            // textBoxMasaProfit1
+            // labelPretVanzare
             // 
-            this.textBoxMasaProfit1.Location = new System.Drawing.Point(354, 95);
-            this.textBoxMasaProfit1.Name = "textBoxMasaProfit1";
-            this.textBoxMasaProfit1.Size = new System.Drawing.Size(146, 29);
-            this.textBoxMasaProfit1.TabIndex = 6;
+            this.labelPretVanzare.AutoSize = true;
+            this.labelPretVanzare.Location = new System.Drawing.Point(8, 41);
+            this.labelPretVanzare.Name = "labelPretVanzare";
+            this.labelPretVanzare.Size = new System.Drawing.Size(186, 22);
+            this.labelPretVanzare.TabIndex = 7;
+            this.labelPretVanzare.Text = "Preț vânzare / Venituri";
             // 
-            // labelMasaProfit1
+            // textBoxPretVanzare
             // 
-            this.labelMasaProfit1.AutoSize = true;
-            this.labelMasaProfit1.Location = new System.Drawing.Point(378, 60);
-            this.labelMasaProfit1.Name = "labelMasaProfit1";
-            this.labelMasaProfit1.Size = new System.Drawing.Size(98, 22);
-            this.labelMasaProfit1.TabIndex = 8;
-            this.labelMasaProfit1.Text = "Masă profit";
-            // 
-            // buttonCalculeazaMasaProfit
-            // 
-            this.buttonCalculeazaMasaProfit.ForeColor = System.Drawing.Color.Black;
-            this.buttonCalculeazaMasaProfit.Location = new System.Drawing.Point(187, 82);
-            this.buttonCalculeazaMasaProfit.Name = "buttonCalculeazaMasaProfit";
-            this.buttonCalculeazaMasaProfit.Size = new System.Drawing.Size(146, 54);
-            this.buttonCalculeazaMasaProfit.TabIndex = 1;
-            this.buttonCalculeazaMasaProfit.Text = "Calculează";
-            this.buttonCalculeazaMasaProfit.UseVisualStyleBackColor = true;
-            // 
-            // textBoxCosturi1
-            // 
-            this.textBoxCosturi1.Location = new System.Drawing.Point(23, 139);
-            this.textBoxCosturi1.Name = "textBoxCosturi1";
-            this.textBoxCosturi1.Size = new System.Drawing.Size(131, 29);
-            this.textBoxCosturi1.TabIndex = 5;
+            this.textBoxPretVanzare.Location = new System.Drawing.Point(23, 72);
+            this.textBoxPretVanzare.Name = "textBoxPretVanzare";
+            this.textBoxPretVanzare.Size = new System.Drawing.Size(135, 29);
+            this.textBoxPretVanzare.TabIndex = 3;
             // 
             // labelCosturi1
             // 
@@ -618,21 +601,39 @@
             this.labelCosturi1.TabIndex = 10;
             this.labelCosturi1.Text = "Costuri";
             // 
-            // textBoxPretVanzare
+            // textBoxCosturi1
             // 
-            this.textBoxPretVanzare.Location = new System.Drawing.Point(23, 72);
-            this.textBoxPretVanzare.Name = "textBoxPretVanzare";
-            this.textBoxPretVanzare.Size = new System.Drawing.Size(135, 29);
-            this.textBoxPretVanzare.TabIndex = 3;
+            this.textBoxCosturi1.Location = new System.Drawing.Point(23, 139);
+            this.textBoxCosturi1.Name = "textBoxCosturi1";
+            this.textBoxCosturi1.Size = new System.Drawing.Size(131, 29);
+            this.textBoxCosturi1.TabIndex = 5;
             // 
-            // labelPretVanzare
+            // buttonCalculeazaMasaProfit
             // 
-            this.labelPretVanzare.AutoSize = true;
-            this.labelPretVanzare.Location = new System.Drawing.Point(8, 41);
-            this.labelPretVanzare.Name = "labelPretVanzare";
-            this.labelPretVanzare.Size = new System.Drawing.Size(186, 22);
-            this.labelPretVanzare.TabIndex = 7;
-            this.labelPretVanzare.Text = "Preț vânzare / Venituri";
+            this.buttonCalculeazaMasaProfit.ForeColor = System.Drawing.Color.Black;
+            this.buttonCalculeazaMasaProfit.Location = new System.Drawing.Point(187, 82);
+            this.buttonCalculeazaMasaProfit.Name = "buttonCalculeazaMasaProfit";
+            this.buttonCalculeazaMasaProfit.Size = new System.Drawing.Size(146, 54);
+            this.buttonCalculeazaMasaProfit.TabIndex = 1;
+            this.buttonCalculeazaMasaProfit.Text = "Calculează";
+            this.buttonCalculeazaMasaProfit.UseVisualStyleBackColor = true;
+            this.buttonCalculeazaMasaProfit.Click += new System.EventHandler(this.buttonCalculeazaMasaProfit_Click);
+            // 
+            // labelMasaProfit1
+            // 
+            this.labelMasaProfit1.AutoSize = true;
+            this.labelMasaProfit1.Location = new System.Drawing.Point(378, 60);
+            this.labelMasaProfit1.Name = "labelMasaProfit1";
+            this.labelMasaProfit1.Size = new System.Drawing.Size(98, 22);
+            this.labelMasaProfit1.TabIndex = 8;
+            this.labelMasaProfit1.Text = "Masă profit";
+            // 
+            // textBoxMasaProfit1
+            // 
+            this.textBoxMasaProfit1.Location = new System.Drawing.Point(354, 95);
+            this.textBoxMasaProfit1.Name = "textBoxMasaProfit1";
+            this.textBoxMasaProfit1.Size = new System.Drawing.Size(146, 29);
+            this.textBoxMasaProfit1.TabIndex = 6;
             // 
             // groupBoxTVA
             // 
@@ -660,21 +661,37 @@
             this.groupBoxTVA.TabIndex = 44;
             this.groupBoxTVA.Text = "Preț cu TVA";
             // 
-            // labelPretBrut
+            // textBoxPretTVA
             // 
-            this.labelPretBrut.AutoSize = true;
-            this.labelPretBrut.Location = new System.Drawing.Point(52, 37);
-            this.labelPretBrut.Name = "labelPretBrut";
-            this.labelPretBrut.Size = new System.Drawing.Size(79, 22);
-            this.labelPretBrut.TabIndex = 57;
-            this.labelPretBrut.Text = "Preț brut";
+            this.textBoxPretTVA.Location = new System.Drawing.Point(384, 66);
+            this.textBoxPretTVA.Name = "textBoxPretTVA";
+            this.textBoxPretTVA.Size = new System.Drawing.Size(135, 29);
+            this.textBoxPretTVA.TabIndex = 60;
             // 
-            // textBoxPretBrut
+            // labelPretTVA
             // 
-            this.textBoxPretBrut.Location = new System.Drawing.Point(56, 66);
-            this.textBoxPretBrut.Name = "textBoxPretBrut";
-            this.textBoxPretBrut.Size = new System.Drawing.Size(135, 29);
-            this.textBoxPretBrut.TabIndex = 56;
+            this.labelPretTVA.AutoSize = true;
+            this.labelPretTVA.Location = new System.Drawing.Point(380, 37);
+            this.labelPretTVA.Name = "labelPretTVA";
+            this.labelPretTVA.Size = new System.Drawing.Size(104, 22);
+            this.labelPretTVA.TabIndex = 61;
+            this.labelPretTVA.Text = "Preț cu TVA";
+            // 
+            // textBoxCotaTVA
+            // 
+            this.textBoxCotaTVA.Location = new System.Drawing.Point(219, 66);
+            this.textBoxCotaTVA.Name = "textBoxCotaTVA";
+            this.textBoxCotaTVA.Size = new System.Drawing.Size(135, 29);
+            this.textBoxCotaTVA.TabIndex = 58;
+            // 
+            // labelCotaTVA
+            // 
+            this.labelCotaTVA.AutoSize = true;
+            this.labelCotaTVA.Location = new System.Drawing.Point(215, 37);
+            this.labelCotaTVA.Name = "labelCotaTVA";
+            this.labelCotaTVA.Size = new System.Drawing.Size(85, 22);
+            this.labelCotaTVA.TabIndex = 59;
+            this.labelCotaTVA.Text = "Cota TVA";
             // 
             // buttonCalculeazaTVA
             // 
@@ -686,37 +703,21 @@
             this.buttonCalculeazaTVA.Text = "Calculează";
             this.buttonCalculeazaTVA.UseVisualStyleBackColor = true;
             // 
-            // labelCotaTVA
+            // textBoxPretBrut
             // 
-            this.labelCotaTVA.AutoSize = true;
-            this.labelCotaTVA.Location = new System.Drawing.Point(215, 37);
-            this.labelCotaTVA.Name = "labelCotaTVA";
-            this.labelCotaTVA.Size = new System.Drawing.Size(85, 22);
-            this.labelCotaTVA.TabIndex = 59;
-            this.labelCotaTVA.Text = "Cota TVA";
+            this.textBoxPretBrut.Location = new System.Drawing.Point(56, 66);
+            this.textBoxPretBrut.Name = "textBoxPretBrut";
+            this.textBoxPretBrut.Size = new System.Drawing.Size(135, 29);
+            this.textBoxPretBrut.TabIndex = 56;
             // 
-            // textBoxCotaTVA
+            // labelPretBrut
             // 
-            this.textBoxCotaTVA.Location = new System.Drawing.Point(219, 66);
-            this.textBoxCotaTVA.Name = "textBoxCotaTVA";
-            this.textBoxCotaTVA.Size = new System.Drawing.Size(135, 29);
-            this.textBoxCotaTVA.TabIndex = 58;
-            // 
-            // labelPretTVA
-            // 
-            this.labelPretTVA.AutoSize = true;
-            this.labelPretTVA.Location = new System.Drawing.Point(380, 37);
-            this.labelPretTVA.Name = "labelPretTVA";
-            this.labelPretTVA.Size = new System.Drawing.Size(104, 22);
-            this.labelPretTVA.TabIndex = 61;
-            this.labelPretTVA.Text = "Preț cu TVA";
-            // 
-            // textBoxPretTVA
-            // 
-            this.textBoxPretTVA.Location = new System.Drawing.Point(384, 66);
-            this.textBoxPretTVA.Name = "textBoxPretTVA";
-            this.textBoxPretTVA.Size = new System.Drawing.Size(135, 29);
-            this.textBoxPretTVA.TabIndex = 60;
+            this.labelPretBrut.AutoSize = true;
+            this.labelPretBrut.Location = new System.Drawing.Point(52, 37);
+            this.labelPretBrut.Name = "labelPretBrut";
+            this.labelPretBrut.Size = new System.Drawing.Size(79, 22);
+            this.labelPretBrut.TabIndex = 57;
+            this.labelPretBrut.Text = "Preț brut";
             // 
             // groupBoxRataProfit
             // 
@@ -744,45 +745,14 @@
             this.groupBoxRataProfit.TabIndex = 41;
             this.groupBoxRataProfit.Text = "Rată profit";
             // 
-            // textBoxRataProfit
+            // labelMasaProfit2
             // 
-            this.textBoxRataProfit.Location = new System.Drawing.Point(384, 95);
-            this.textBoxRataProfit.Name = "textBoxRataProfit";
-            this.textBoxRataProfit.Size = new System.Drawing.Size(146, 29);
-            this.textBoxRataProfit.TabIndex = 18;
-            // 
-            // textBoxMasaProfit2
-            // 
-            this.textBoxMasaProfit2.Location = new System.Drawing.Point(22, 72);
-            this.textBoxMasaProfit2.Name = "textBoxMasaProfit2";
-            this.textBoxMasaProfit2.Size = new System.Drawing.Size(135, 29);
-            this.textBoxMasaProfit2.TabIndex = 17;
-            // 
-            // textBoxCosturiCa2
-            // 
-            this.textBoxCosturiCa2.Location = new System.Drawing.Point(22, 139);
-            this.textBoxCosturiCa2.Name = "textBoxCosturiCa2";
-            this.textBoxCosturiCa2.Size = new System.Drawing.Size(131, 29);
-            this.textBoxCosturiCa2.TabIndex = 16;
-            // 
-            // buttonCalculeazaRataProfit
-            // 
-            this.buttonCalculeazaRataProfit.ForeColor = System.Drawing.Color.Black;
-            this.buttonCalculeazaRataProfit.Location = new System.Drawing.Point(193, 82);
-            this.buttonCalculeazaRataProfit.Name = "buttonCalculeazaRataProfit";
-            this.buttonCalculeazaRataProfit.Size = new System.Drawing.Size(146, 54);
-            this.buttonCalculeazaRataProfit.TabIndex = 15;
-            this.buttonCalculeazaRataProfit.Text = "Calculează";
-            this.buttonCalculeazaRataProfit.UseVisualStyleBackColor = true;
-            // 
-            // labelCosturiCa2
-            // 
-            this.labelCosturiCa2.AutoSize = true;
-            this.labelCosturiCa2.Location = new System.Drawing.Point(34, 114);
-            this.labelCosturiCa2.Name = "labelCosturiCa2";
-            this.labelCosturiCa2.Size = new System.Drawing.Size(106, 22);
-            this.labelCosturiCa2.TabIndex = 14;
-            this.labelCosturiCa2.Text = "Costuri / CA";
+            this.labelMasaProfit2.AutoSize = true;
+            this.labelMasaProfit2.Location = new System.Drawing.Point(42, 41);
+            this.labelMasaProfit2.Name = "labelMasaProfit2";
+            this.labelMasaProfit2.Size = new System.Drawing.Size(98, 22);
+            this.labelMasaProfit2.TabIndex = 13;
+            this.labelMasaProfit2.Text = "Masă profit";
             // 
             // labelRataProfit
             // 
@@ -794,14 +764,45 @@
             this.labelRataProfit.Text = "Rată profit";
             this.labelRataProfit.Click += new System.EventHandler(this.labelRataProfit_Click);
             // 
-            // labelMasaProfit2
+            // labelCosturiCa2
             // 
-            this.labelMasaProfit2.AutoSize = true;
-            this.labelMasaProfit2.Location = new System.Drawing.Point(42, 41);
-            this.labelMasaProfit2.Name = "labelMasaProfit2";
-            this.labelMasaProfit2.Size = new System.Drawing.Size(98, 22);
-            this.labelMasaProfit2.TabIndex = 13;
-            this.labelMasaProfit2.Text = "Masă profit";
+            this.labelCosturiCa2.AutoSize = true;
+            this.labelCosturiCa2.Location = new System.Drawing.Point(34, 114);
+            this.labelCosturiCa2.Name = "labelCosturiCa2";
+            this.labelCosturiCa2.Size = new System.Drawing.Size(106, 22);
+            this.labelCosturiCa2.TabIndex = 14;
+            this.labelCosturiCa2.Text = "Costuri / CA";
+            // 
+            // buttonCalculeazaRataProfit
+            // 
+            this.buttonCalculeazaRataProfit.ForeColor = System.Drawing.Color.Black;
+            this.buttonCalculeazaRataProfit.Location = new System.Drawing.Point(193, 82);
+            this.buttonCalculeazaRataProfit.Name = "buttonCalculeazaRataProfit";
+            this.buttonCalculeazaRataProfit.Size = new System.Drawing.Size(146, 54);
+            this.buttonCalculeazaRataProfit.TabIndex = 15;
+            this.buttonCalculeazaRataProfit.Text = "Calculează";
+            this.buttonCalculeazaRataProfit.UseVisualStyleBackColor = true;
+            // 
+            // textBoxCosturiCa2
+            // 
+            this.textBoxCosturiCa2.Location = new System.Drawing.Point(22, 139);
+            this.textBoxCosturiCa2.Name = "textBoxCosturiCa2";
+            this.textBoxCosturiCa2.Size = new System.Drawing.Size(131, 29);
+            this.textBoxCosturiCa2.TabIndex = 16;
+            // 
+            // textBoxMasaProfit2
+            // 
+            this.textBoxMasaProfit2.Location = new System.Drawing.Point(22, 72);
+            this.textBoxMasaProfit2.Name = "textBoxMasaProfit2";
+            this.textBoxMasaProfit2.Size = new System.Drawing.Size(135, 29);
+            this.textBoxMasaProfit2.TabIndex = 17;
+            // 
+            // textBoxRataProfit
+            // 
+            this.textBoxRataProfit.Location = new System.Drawing.Point(384, 95);
+            this.textBoxRataProfit.Name = "textBoxRataProfit";
+            this.textBoxRataProfit.Size = new System.Drawing.Size(146, 29);
+            this.textBoxRataProfit.TabIndex = 18;
             // 
             // panelScroll
             // 

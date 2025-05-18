@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CostulProductieProfitDDL;
 
 namespace miniContabil
 {
@@ -41,6 +42,21 @@ namespace miniContabil
         private void tab2Form_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonCalculeazaMasaProfit_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var calculator = new MasaProfit();
+                string rezultat = calculator.CalculeazaMasaProfit(textBoxPretVanzare.Text, textBoxCosturi1.Text);
+                textBoxMasaProfit1.Text = rezultat;
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show($"Eroare la calcul: {ex.Message}", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxMasaProfit1.Text = "0";
+            }
         }
     }
 }

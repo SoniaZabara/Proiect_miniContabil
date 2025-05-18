@@ -218,5 +218,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CostulProductieProfitDDL\CostulProductieProfitDDL.csproj">
+      <Project>{b84506b6-8ec8-4fc5-b78d-cd79a05c0cb5}</Project>
+      <Name>CostulProductieProfitDDL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

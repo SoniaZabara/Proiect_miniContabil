@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 using CostulProductieProfitDDL;
 
 namespace miniContabil
@@ -57,31 +58,6 @@ namespace miniContabil
             textBoxPretTVA.ReadOnly = true;
         }
 
-        private void groupBoxPragulRentabilitate_Click(object sender, EventArgs e)
-        {
-          
-        }
-
-        private void labelRataProfit_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelCantitate_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBoxCantitate_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tab2Form_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void buttonCalculeazaMasaProfit_Click(object sender, EventArgs e)
         {
             try
@@ -114,6 +90,56 @@ namespace miniContabil
             }
         }
 
+        private void UpdatePieChartColorAndSize(double anortizare, double materiiPrim, double salarii, double materialAuxil, double chiria, double profit)
+        {
+            chartPretFinal.Series.Clear();
+
+            var series = new Series("Costuri");
+            series.ChartType = SeriesChartType.Pie;
+
+            series.Points.AddXY($" ({anortizare:F1}%)", anortizare);
+            series.Points.AddXY($" ({salarii:F1}%)", salarii);
+            series.Points.AddXY($" ({materiiPrim:F1}%)", materiiPrim);
+            series.Points.AddXY($" ({materialAuxil:F1}%)", materialAuxil);
+            series.Points.AddXY($" ({chiria:F1}%)", chiria);
+            series.Points.AddXY($" ({profit:F1}%)", profit);
+
+
+            series.Points[0].Color = Color.Yellow;      // anortizare
+            series.Points[1].Color = Color.Cyan;  // salarii
+            series.Points[2].Color = Color.Purple;       // materiiPrime
+            series.Points[3].Color = Color.GreenYellow;      // materialeAuxilre
+            series.Points[4].Color = Color.Red;      // chiria
+            series.Points[5].Color = Color.Gold;      // profit
+
+
+            chartPretFinal.Series.Add(series);
+
+            chartPretFinal.Refresh();
+        }
+
+        private void UpdateValoriPieGraph()
+        {
+            double pretFinal = Convert.ToDouble(textBoxPretFinal.Text);
+            double amortizare = Convert.ToDouble(textBoxAmortizare.Text);
+            double materiiPrime = Convert.ToDouble(textBoxMateriiPrime.Text);
+            double salarii = Convert.ToDouble(textBoxSalarii.Text);
+            double materialeAuxilar = Convert.ToDouble(textBoxMaterialeAuxiliare.Text);
+            double chiria = Convert.ToDouble(textBoxChiria.Text);
+
+            double numarUnitatiProd = Convert.ToDouble(textBoxNrUnitatiProduse.Text);
+
+            var calculator = new PretFinal();
+            double procentAmortizare = calculator.CalculeazaProcentePie(amortizare, pretFinal, numarUnitatiProd);
+            double procentMateriiPrime = calculator.CalculeazaProcentePie(materiiPrime, pretFinal, numarUnitatiProd);
+            double procentSalarii = calculator.CalculeazaProcentePie(salarii, pretFinal, numarUnitatiProd);
+            double procentMaterialAuxilar = calculator.CalculeazaProcentePie(materialeAuxilar, pretFinal, numarUnitatiProd);
+            double procentChiria = calculator.CalculeazaProcentePie(chiria, pretFinal, numarUnitatiProd);
+            double procentProfit = 100 - procentAmortizare - procentMateriiPrime - procentSalarii - procentMaterialAuxilar - procentChiria;
+
+            UpdatePieChartColorAndSize(procentAmortizare, procentMateriiPrime, procentSalarii, procentMaterialAuxilar, procentChiria, procentProfit);
+        }
+
         private void buttonCalculeazaPretFinal_Click(object sender, EventArgs e)
         {         
             try
@@ -127,6 +153,7 @@ namespace miniContabil
 
                 string rezultatPf = calculator.CalculeazaPretFinal(textBoxCostMediu.Text, textBoxProfitMediu.Text);
                 textBoxPretFinal.Text = rezultatPf;
+                UpdateValoriPieGraph();
             }
             catch (Exception ex)
             {

@@ -60,5 +60,13 @@ namespace CostulProductieProfitDDL
             }
             throw new ArgumentException("Valorile introduse trebuie să fie numere valide");
         }
+
+        public double CalculeazaProcentePie(double val, double pretFinal, double numarUnitatiProd)
+        {
+           
+            double procentVal = (val / (pretFinal * numarUnitatiProd)) * 100;
+            return procentVal;
+                 
+        }
     }
 }

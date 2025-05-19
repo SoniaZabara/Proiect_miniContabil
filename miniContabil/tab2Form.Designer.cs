@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.labelTitluCostulProductie = new ReaLTaiizor.Controls.BigLabel();
             this.groupBoxPragulRentabilitate = new ReaLTaiizor.Controls.GroupBox();
             this.textBoxCostVariabileMedii = new System.Windows.Forms.TextBox();
@@ -44,6 +46,7 @@
             this.labelCostFix = new System.Windows.Forms.Label();
             this.radioButtonRentabilitateCazA = new System.Windows.Forms.RadioButton();
             this.groupBoxPretFinal = new ReaLTaiizor.Controls.GroupBox();
+            this.chartPretFinal = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.labelMateriiPrime = new System.Windows.Forms.Label();
             this.labelCostMediu = new System.Windows.Forms.Label();
             this.labelProfitMediu = new System.Windows.Forms.Label();
@@ -100,6 +103,7 @@
             this.panelScroll = new System.Windows.Forms.Panel();
             this.groupBoxPragulRentabilitate.SuspendLayout();
             this.groupBoxPretFinal.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartPretFinal)).BeginInit();
             this.groupBoxImpozitPeProfit.SuspendLayout();
             this.groupBoxMasaProfit.SuspendLayout();
             this.groupBoxTVA.SuspendLayout();
@@ -150,7 +154,6 @@
             this.groupBoxPragulRentabilitate.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             this.groupBoxPragulRentabilitate.TabIndex = 41;
             this.groupBoxPragulRentabilitate.Text = "Pragul de rentabilitate";
-            this.groupBoxPragulRentabilitate.Click += new System.EventHandler(this.groupBoxPragulRentabilitate_Click);
             // 
             // textBoxCostVariabileMedii
             // 
@@ -192,7 +195,6 @@
             this.textBoxCantitate.Name = "textBoxCantitate";
             this.textBoxCantitate.Size = new System.Drawing.Size(135, 29);
             this.textBoxCantitate.TabIndex = 41;
-            this.textBoxCantitate.TextChanged += new System.EventHandler(this.textBoxCantitate_TextChanged);
             // 
             // labelCantitate
             // 
@@ -202,7 +204,6 @@
             this.labelCantitate.Size = new System.Drawing.Size(80, 22);
             this.labelCantitate.TabIndex = 40;
             this.labelCantitate.Text = "Cantitate";
-            this.labelCantitate.Click += new System.EventHandler(this.labelCantitate_Click);
             // 
             // textBoxProfit1
             // 
@@ -278,6 +279,7 @@
             this.groupBoxPretFinal.BaseColor = System.Drawing.Color.Transparent;
             this.groupBoxPretFinal.BorderColorG = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(161)))));
             this.groupBoxPretFinal.BorderColorH = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(180)))), ((int)(((byte)(186)))));
+            this.groupBoxPretFinal.Controls.Add(this.chartPretFinal);
             this.groupBoxPretFinal.Controls.Add(this.labelMateriiPrime);
             this.groupBoxPretFinal.Controls.Add(this.labelCostMediu);
             this.groupBoxPretFinal.Controls.Add(this.labelProfitMediu);
@@ -310,6 +312,29 @@
             this.groupBoxPretFinal.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             this.groupBoxPretFinal.TabIndex = 42;
             this.groupBoxPretFinal.Text = "Preț final";
+            // 
+            // chartPretFinal
+            // 
+            this.chartPretFinal.AntiAliasing = System.Windows.Forms.DataVisualization.Charting.AntiAliasingStyles.None;
+            this.chartPretFinal.BackColor = System.Drawing.Color.Transparent;
+            this.chartPretFinal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.chartPretFinal.BackImageTransparentColor = System.Drawing.Color.Transparent;
+            this.chartPretFinal.BackSecondaryColor = System.Drawing.Color.Transparent;
+            this.chartPretFinal.BorderlineColor = System.Drawing.Color.Transparent;
+            this.chartPretFinal.BorderlineWidth = 0;
+            this.chartPretFinal.CausesValidation = false;
+            chartArea1.BackColor = System.Drawing.Color.Transparent;
+            chartArea1.Name = "ChartArea1";
+            this.chartPretFinal.ChartAreas.Add(chartArea1);
+            this.chartPretFinal.Location = new System.Drawing.Point(700, 31);
+            this.chartPretFinal.Name = "chartPretFinal";
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series1.Name = "Series1";
+            this.chartPretFinal.Series.Add(series1);
+            this.chartPretFinal.Size = new System.Drawing.Size(401, 218);
+            this.chartPretFinal.TabIndex = 40;
+            this.chartPretFinal.Text = "chart1";
             // 
             // labelMateriiPrime
             // 
@@ -383,6 +408,7 @@
             // 
             // textBoxChiria
             // 
+            this.textBoxChiria.BackColor = System.Drawing.Color.Red;
             this.textBoxChiria.Location = new System.Drawing.Point(17, 66);
             this.textBoxChiria.Name = "textBoxChiria";
             this.textBoxChiria.Size = new System.Drawing.Size(135, 29);
@@ -390,6 +416,7 @@
             // 
             // textBoxProfitMediu
             // 
+            this.textBoxProfitMediu.BackColor = System.Drawing.Color.Gold;
             this.textBoxProfitMediu.Location = new System.Drawing.Point(17, 206);
             this.textBoxProfitMediu.Name = "textBoxProfitMediu";
             this.textBoxProfitMediu.Size = new System.Drawing.Size(135, 29);
@@ -397,6 +424,7 @@
             // 
             // textBoxMaterialeAuxiliare
             // 
+            this.textBoxMaterialeAuxiliare.BackColor = System.Drawing.Color.GreenYellow;
             this.textBoxMaterialeAuxiliare.Location = new System.Drawing.Point(342, 66);
             this.textBoxMaterialeAuxiliare.Name = "textBoxMaterialeAuxiliare";
             this.textBoxMaterialeAuxiliare.Size = new System.Drawing.Size(135, 29);
@@ -405,7 +433,7 @@
             // labelCT
             // 
             this.labelCT.AutoSize = true;
-            this.labelCT.Location = new System.Drawing.Point(575, 41);
+            this.labelCT.Location = new System.Drawing.Point(574, 41);
             this.labelCT.Name = "labelCT";
             this.labelCT.Size = new System.Drawing.Size(91, 22);
             this.labelCT.TabIndex = 26;
@@ -422,13 +450,14 @@
             // 
             // textBoxCT
             // 
-            this.textBoxCT.Location = new System.Drawing.Point(559, 66);
+            this.textBoxCT.Location = new System.Drawing.Point(558, 66);
             this.textBoxCT.Name = "textBoxCT";
             this.textBoxCT.Size = new System.Drawing.Size(135, 29);
             this.textBoxCT.TabIndex = 27;
             // 
             // textBoxSalarii
             // 
+            this.textBoxSalarii.BackColor = System.Drawing.Color.Cyan;
             this.textBoxSalarii.Location = new System.Drawing.Point(179, 139);
             this.textBoxSalarii.Name = "textBoxSalarii";
             this.textBoxSalarii.Size = new System.Drawing.Size(135, 29);
@@ -461,6 +490,7 @@
             // 
             // textBoxMateriiPrime
             // 
+            this.textBoxMateriiPrime.BackColor = System.Drawing.Color.Purple;
             this.textBoxMateriiPrime.Location = new System.Drawing.Point(179, 66);
             this.textBoxMateriiPrime.Name = "textBoxMateriiPrime";
             this.textBoxMateriiPrime.Size = new System.Drawing.Size(135, 29);
@@ -477,6 +507,7 @@
             // 
             // textBoxAmortizare
             // 
+            this.textBoxAmortizare.BackColor = System.Drawing.Color.Yellow;
             this.textBoxAmortizare.Location = new System.Drawing.Point(17, 139);
             this.textBoxAmortizare.Name = "textBoxAmortizare";
             this.textBoxAmortizare.Size = new System.Drawing.Size(135, 29);
@@ -790,7 +821,6 @@
             this.labelRataProfit.Size = new System.Drawing.Size(93, 22);
             this.labelRataProfit.TabIndex = 11;
             this.labelRataProfit.Text = "Rată profit";
-            this.labelRataProfit.Click += new System.EventHandler(this.labelRataProfit_Click);
             // 
             // labelCosturiCa2
             // 
@@ -857,11 +887,11 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "tab2Form";
             this.Text = "tab2Form";
-            this.Load += new System.EventHandler(this.tab2Form_Load);
             this.groupBoxPragulRentabilitate.ResumeLayout(false);
             this.groupBoxPragulRentabilitate.PerformLayout();
             this.groupBoxPretFinal.ResumeLayout(false);
             this.groupBoxPretFinal.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartPretFinal)).EndInit();
             this.groupBoxImpozitPeProfit.ResumeLayout(false);
             this.groupBoxImpozitPeProfit.PerformLayout();
             this.groupBoxMasaProfit.ResumeLayout(false);
@@ -947,5 +977,6 @@
         private System.Windows.Forms.Panel panelScroll;
         private System.Windows.Forms.TextBox textBoxCostVariabileMedii;
         private System.Windows.Forms.Label labelCostVarMedii;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartPretFinal;
     }
 }

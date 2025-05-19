@@ -68,6 +68,7 @@ namespace miniContabil
         {
             Firm firm = FormManager.builder.GetResult();
             labelFirma.Text = firm.GetName() + "." + firm.GetFirmType();
+            loadForm(new tab1Form());
         }
     }
 }

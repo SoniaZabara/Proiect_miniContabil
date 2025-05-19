@@ -32,6 +32,17 @@ namespace miniContabil
             textBoxProfit2.Enabled = false;
             buttonCalculeazaImpozitProfit.Enabled = false;
             textBoxImpozitProfit.Enabled = false;
+
+            if(FormManager.builder.GetResult().GetFirmType()==FirmType.PFA)
+            {
+                radioButtonCuPFA.Checked = true;
+                radioButtonFaraPFA.Enabled = false;
+            }
+            else
+            {
+                radioButtonFaraPFA.Checked = true;
+                radioButtonCuPFA.Enabled = false;
+            }
         }
 
         private void DoarReadOnly()

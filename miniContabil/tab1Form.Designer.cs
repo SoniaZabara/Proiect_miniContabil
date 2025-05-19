@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.labelInitialValue = new System.Windows.Forms.Label();
             this.labelLifeTime = new System.Windows.Forms.Label();
             this.labelRezidualValue = new System.Windows.Forms.Label();
@@ -124,11 +124,11 @@
             // dataGridViewAmortizari
             // 
             this.dataGridViewAmortizari.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewAmortizari.Location = new System.Drawing.Point(492, 64);
+            this.dataGridViewAmortizari.Location = new System.Drawing.Point(393, 64);
             this.dataGridViewAmortizari.Name = "dataGridViewAmortizari";
             this.dataGridViewAmortizari.RowHeadersWidth = 51;
             this.dataGridViewAmortizari.RowTemplate.Height = 24;
-            this.dataGridViewAmortizari.Size = new System.Drawing.Size(493, 233);
+            this.dataGridViewAmortizari.Size = new System.Drawing.Size(590, 233);
             this.dataGridViewAmortizari.TabIndex = 8;
             // 
             // buttonCalcAmortizare
@@ -144,17 +144,17 @@
             // chartAmortizare
             // 
             this.chartAmortizare.BackColor = System.Drawing.Color.Transparent;
-            chartArea1.Name = "ChartArea1";
-            this.chartAmortizare.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chartAmortizare.Legends.Add(legend1);
-            this.chartAmortizare.Location = new System.Drawing.Point(191, 317);
+            chartArea2.Name = "ChartArea1";
+            this.chartAmortizare.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chartAmortizare.Legends.Add(legend2);
+            this.chartAmortizare.Location = new System.Drawing.Point(-8, 303);
             this.chartAmortizare.Name = "chartAmortizare";
             this.chartAmortizare.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chartAmortizare.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chartAmortizare.Series.Add(series2);
             this.chartAmortizare.Size = new System.Drawing.Size(577, 245);
             this.chartAmortizare.TabIndex = 10;
             this.chartAmortizare.Text = "chartAmortizare";
@@ -163,7 +163,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1044, 586);
+            this.ClientSize = new System.Drawing.Size(1062, 633);
             this.Controls.Add(this.chartAmortizare);
             this.Controls.Add(this.buttonCalcAmortizare);
             this.Controls.Add(this.dataGridViewAmortizari);

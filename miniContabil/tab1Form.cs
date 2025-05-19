@@ -34,6 +34,8 @@ using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 using Amortizari;
 
+
+
 namespace miniContabil
 {
     public partial class tab1Form : Form
@@ -49,7 +51,15 @@ namespace miniContabil
         /// <param name="e"></param>
         private void tab1Form_Load(object sender, EventArgs e)
         {
+            textBoxAmortizareTotala.Text = "" + 0;
+            textBoxProfitTotal.Text = "" + 0;
+            textBoxSalariiTotal.Text = "" + 0;
 
+            if (FormManager.builder.GetResult().GetFirmType() != FirmType.SA)
+            {
+                groupBoxDividente.Enabled = false;
+            }
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -157,5 +167,79 @@ namespace miniContabil
             chartAmortizare.Series.Add(serie);
         }
 
+        private void buttonCalc_Click(object sender, EventArgs e)
+        {
+            decimal rezultat = 0;
+            decimal profit;
+            decimal ct;
+            
+            ct = Dividente.CalculCheltuieliTotale(ConvertText.ConvertToDecimal(textBoxAmortizareTotala.Text), FormManager.builder.GetResult().GetCC(), ConvertText.ConvertToDecimal(textBoxSalariiTotal.Text));
+            profit = Dividente.CalculProfit(FormManager.builder.GetResult().GetCA(), ct);
+            rezultat = Dividente.CalculDivident(profit, numericProcent.Value, FormManager.builder.GetResult().GetNrAct());
+
+
+            textBoxDivident.Text = "" + rezultat;
+        }
+    }
+    ///de pus in dll
+    public class ConvertText
+    {
+        public static decimal ConvertToDecimal(string input)
+        {
+            try
+            {
+                return decimal.Parse(input);
+            }
+            catch (FormatException)
+            {
+                return 0;
+            }
+            catch (OverflowException)
+            {
+                return 0;
+            }
+        }
+
+        public static int ConvertToInt(string input)
+        {
+            try
+            {
+                return int.Parse(input);
+            }
+            catch (FormatException)
+            {
+                return 0;
+            }
+            catch (OverflowException)
+            {
+                return 0;
+            }
+        }
+    }
+    public class Dividente
+    {
+        public static decimal CalculCheltuieliTotale(decimal amortizare, decimal cc, decimal salarii)
+        {
+            return amortizare + cc + salarii;
+        }
+
+        public static decimal CalculProfit(decimal ca, decimal ct)
+        {
+            return ca + ct;
+        }
+
+        public static decimal CalculDivident(decimal profit, decimal procent, decimal nrActiuni)
+        {
+            decimal divident;
+            try
+            {
+                divident = (profit + profit / 100 * procent) / nrActiuni;
+            }
+            catch (DivideByZeroException)
+            {
+                divident = 0;
+            }
+            return divident;
+        }
     }
 }

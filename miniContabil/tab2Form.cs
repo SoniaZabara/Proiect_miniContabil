@@ -29,6 +29,9 @@ namespace miniContabil
             buttonCalculeazaPregdeRentabilitate.Enabled = false;
             textBoxProfit1.Enabled = false;
             textBoxCantitate.Enabled = false;
+            textBoxProfit2.Enabled = false;
+            buttonCalculeazaImpozitProfit.Enabled = false;
+            textBoxImpozitProfit.Enabled = false;
         }
 
         private void DoarReadOnly()
@@ -132,6 +135,10 @@ namespace miniContabil
             textBoxCantitate.Enabled = true;
             textBoxProfit1.Enabled = false;
             textBoxProfit1.Clear();
+            textBoxPretUnitateProdus.Clear();
+            textBoxCostFix.Clear();
+            textBoxCostVariabileMedii.Clear();
+            textBoxCantitate.Clear();
         }
 
         private void radioButtonRentabilitateCazB_CheckedChanged(object sender, EventArgs e)
@@ -142,6 +149,10 @@ namespace miniContabil
             buttonCalculeazaPregdeRentabilitate.Enabled = true;
             textBoxCantitate.Enabled = true;
             textBoxProfit1.Enabled = true;
+            textBoxPretUnitateProdus.Clear();
+            textBoxCostFix.Clear();
+            textBoxCostVariabileMedii.Clear();
+            textBoxCantitate.Clear();
         }
 
         private void buttonCalculeazaPregdeRentabilitate_Click(object sender, EventArgs e)
@@ -156,6 +167,54 @@ namespace miniContabil
             {
                 MessageBox.Show($"Eroare la calcul: {ex.Message}", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 textBoxCantitate.Text = "0";
+            }
+        }
+
+        private void radioButtonCuPFA_CheckedChanged(object sender, EventArgs e)
+        {
+            textBoxProfit2.Enabled = true;
+            buttonCalculeazaImpozitProfit.Enabled = true;
+            textBoxImpozitProfit.Enabled = true;
+            textBoxProfit2.Clear();
+            textBoxImpozitProfit.Clear();
+        }
+
+        private void radioButtonFaraPFA_CheckedChanged(object sender, EventArgs e)
+        {
+            textBoxProfit2.Enabled = true;
+            buttonCalculeazaImpozitProfit.Enabled = true;
+            textBoxImpozitProfit.Enabled = true;
+            textBoxProfit2.Clear();
+            textBoxImpozitProfit.Clear();
+        }
+
+        private void buttonCalculeazaImpozitProfit_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var calculator = new ImpozitProfit();
+                string rezultat = calculator.CalculeazaImpozitProfit(textBoxProfit2.Text, radioButtonCuPFA.Checked);
+                textBoxImpozitProfit.Text = rezultat;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Eroare la calcul: {ex.Message}", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxImpozitProfit.Text = "0";
+            }
+        }
+
+        private void buttonCalculeazaTVA_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var calculator = new PretTva();
+                string rezultat = calculator.CalculeazaPretCuTva(textBoxPretBrut.Text, textBoxCotaTVA.Text);
+                textBoxPretTVA.Text = rezultat;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Eroare la calcul: {ex.Message}", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxPretTVA.Text = "0";
             }
         }
     }

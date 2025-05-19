@@ -30,6 +30,8 @@
         {
             this.labelTitluCostulProductie = new ReaLTaiizor.Controls.BigLabel();
             this.groupBoxPragulRentabilitate = new ReaLTaiizor.Controls.GroupBox();
+            this.textBoxCostVariabileMedii = new System.Windows.Forms.TextBox();
+            this.labelCostVarMedii = new System.Windows.Forms.Label();
             this.buttonCalculeazaPregdeRentabilitate = new System.Windows.Forms.Button();
             this.textBoxPretUnitateProdus = new System.Windows.Forms.TextBox();
             this.textBoxCantitate = new System.Windows.Forms.TextBox();
@@ -96,8 +98,6 @@
             this.textBoxMasaProfit2 = new System.Windows.Forms.TextBox();
             this.textBoxRataProfit = new System.Windows.Forms.TextBox();
             this.panelScroll = new System.Windows.Forms.Panel();
-            this.textBoxCostVariabileMedii = new System.Windows.Forms.TextBox();
-            this.labelCostVarMedii = new System.Windows.Forms.Label();
             this.groupBoxPragulRentabilitate.SuspendLayout();
             this.groupBoxPretFinal.SuspendLayout();
             this.groupBoxImpozitPeProfit.SuspendLayout();
@@ -151,6 +151,22 @@
             this.groupBoxPragulRentabilitate.TabIndex = 41;
             this.groupBoxPragulRentabilitate.Text = "Pragul de rentabilitate";
             this.groupBoxPragulRentabilitate.Click += new System.EventHandler(this.groupBoxPragulRentabilitate_Click);
+            // 
+            // textBoxCostVariabileMedii
+            // 
+            this.textBoxCostVariabileMedii.Location = new System.Drawing.Point(263, 116);
+            this.textBoxCostVariabileMedii.Name = "textBoxCostVariabileMedii";
+            this.textBoxCostVariabileMedii.Size = new System.Drawing.Size(135, 29);
+            this.textBoxCostVariabileMedii.TabIndex = 52;
+            // 
+            // labelCostVarMedii
+            // 
+            this.labelCostVarMedii.AutoSize = true;
+            this.labelCostVarMedii.Location = new System.Drawing.Point(249, 87);
+            this.labelCostVarMedii.Name = "labelCostVarMedii";
+            this.labelCostVarMedii.Size = new System.Drawing.Size(164, 22);
+            this.labelCostVarMedii.TabIndex = 51;
+            this.labelCostVarMedii.Text = "Cost Variabile Medii";
             // 
             // buttonCalculeazaPregdeRentabilitate
             // 
@@ -535,6 +551,7 @@
             this.radioButtonFaraPFA.TabStop = true;
             this.radioButtonFaraPFA.Text = "b) fară PFA";
             this.radioButtonFaraPFA.UseVisualStyleBackColor = true;
+            this.radioButtonFaraPFA.CheckedChanged += new System.EventHandler(this.radioButtonFaraPFA_CheckedChanged);
             // 
             // radioButtonCuPFA
             // 
@@ -547,6 +564,7 @@
             this.radioButtonCuPFA.TabStop = true;
             this.radioButtonCuPFA.Text = "a) cu PFA";
             this.radioButtonCuPFA.UseVisualStyleBackColor = true;
+            this.radioButtonCuPFA.CheckedChanged += new System.EventHandler(this.radioButtonCuPFA_CheckedChanged);
             // 
             // buttonCalculeazaImpozitProfit
             // 
@@ -557,6 +575,7 @@
             this.buttonCalculeazaImpozitProfit.TabIndex = 1;
             this.buttonCalculeazaImpozitProfit.Text = "Calculează";
             this.buttonCalculeazaImpozitProfit.UseVisualStyleBackColor = true;
+            this.buttonCalculeazaImpozitProfit.Click += new System.EventHandler(this.buttonCalculeazaImpozitProfit_Click);
             // 
             // groupBoxMasaProfit
             // 
@@ -710,6 +729,7 @@
             this.buttonCalculeazaTVA.TabIndex = 1;
             this.buttonCalculeazaTVA.Text = "Calculează";
             this.buttonCalculeazaTVA.UseVisualStyleBackColor = true;
+            this.buttonCalculeazaTVA.Click += new System.EventHandler(this.buttonCalculeazaTVA_Click);
             // 
             // textBoxPretBrut
             // 
@@ -825,22 +845,6 @@
             this.panelScroll.Name = "panelScroll";
             this.panelScroll.Size = new System.Drawing.Size(1167, 951);
             this.panelScroll.TabIndex = 45;
-            // 
-            // textBoxCostVariabileMedii
-            // 
-            this.textBoxCostVariabileMedii.Location = new System.Drawing.Point(263, 116);
-            this.textBoxCostVariabileMedii.Name = "textBoxCostVariabileMedii";
-            this.textBoxCostVariabileMedii.Size = new System.Drawing.Size(135, 29);
-            this.textBoxCostVariabileMedii.TabIndex = 52;
-            // 
-            // labelCostVarMedii
-            // 
-            this.labelCostVarMedii.AutoSize = true;
-            this.labelCostVarMedii.Location = new System.Drawing.Point(249, 87);
-            this.labelCostVarMedii.Name = "labelCostVarMedii";
-            this.labelCostVarMedii.Size = new System.Drawing.Size(164, 22);
-            this.labelCostVarMedii.TabIndex = 51;
-            this.labelCostVarMedii.Text = "Cost Variabile Medii";
             // 
             // tab2Form
             // 

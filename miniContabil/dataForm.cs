@@ -29,6 +29,13 @@ namespace miniContabil
             textBoxNrAct.Text = "" + firm.GetNrAct();
             textBoxValAct.Text = "" + firm.GetValAct();
             textBoxDatorii.Text = "" + firm.GetDatorii();
+
+            if(FormManager.builder.GetResult().GetFirmType()!=FirmType.SA)
+            {
+                textBoxNrAct.Enabled = false;
+                textBoxValAct.Enabled = false;
+            }
+            
         }
 
         private void buttonPrev2_Click(object sender, EventArgs e)

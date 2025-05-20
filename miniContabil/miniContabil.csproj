@@ -212,9 +212,21 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ConvertText\ConvertText.csproj">
+      <Project>{b0ac45bf-f7ee-425a-9449-3f4971bfd790}</Project>
+      <Name>ConvertText</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CostulProductieProfitDDL\CostulProductieProfitDDL.csproj">
       <Project>{b84506b6-8ec8-4fc5-b78d-cd79a05c0cb5}</Project>
       <Name>CostulProductieProfitDDL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dividente\Dividente.csproj">
+      <Project>{49505280-0c1a-476a-9c9a-55000cc4a55e}</Project>
+      <Name>Dividente</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FirmUtil\FirmUtil.csproj">
+      <Project>{e4c301c1-fb1d-4998-942e-adbbd9d1447b}</Project>
+      <Name>FirmUtil</Name>
     </ProjectReference>
     <ProjectReference Include="Amortizari\Amortizari\Amortizari.csproj">
       <Project>{9ca03273-76b5-48c1-93ab-428ab38a3850}</Project>

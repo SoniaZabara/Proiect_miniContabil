@@ -1,6 +1,6 @@
 ﻿namespace miniContabil
 {
-    partial class tab1Form
+    partial class TabCapitalForm
     {
         /// <summary>
         /// Required designer variable.

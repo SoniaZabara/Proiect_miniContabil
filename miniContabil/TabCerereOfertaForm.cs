@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace miniContabil
 {
-    public partial class tab3Form : Form
+    public partial class TabCerereOfertaForm : Form
     {
-        public tab3Form()
+        public TabCerereOfertaForm()
         {
             InitializeComponent();
         }

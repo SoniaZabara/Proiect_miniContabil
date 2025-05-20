@@ -30,7 +30,7 @@ using SalariiAngajati;
 
 namespace miniContabil
 {
-    public partial class tabSalariiForm : Form
+    public partial class TabSalariiForm : Form
     {
         private int _index;
         private readonly List<Angajat> _angajati = new List<Angajat>();
@@ -40,7 +40,7 @@ namespace miniContabil
         /// Constructorul primeste firma selectata si incarca angajatii care sunt salvati pentru acea firma
         /// </summary>
         /// <param name="selectedFirm"></param>
-        public tabSalariiForm(string selectedFirm)
+        public TabSalariiForm(string selectedFirm)
         {
             InitializeComponent();
             CustomizeDataGridView();

@@ -13,9 +13,9 @@ using CostulProductieProfitDDL;
 
 namespace miniContabil
 {
-    public partial class tab2Form : Form
+    public partial class TabCostProfitForm : Form
     {
-        public tab2Form()
+        public TabCostProfitForm()
         {
             InitializeComponent();
             DezactiveazaControalele();

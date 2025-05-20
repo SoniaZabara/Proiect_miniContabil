@@ -1,6 +1,6 @@
 ﻿namespace miniContabil
 {
-    partial class dataForm
+    partial class DataForm
     {
         /// <summary>
         /// Required designer variable.

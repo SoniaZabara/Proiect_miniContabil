@@ -1,6 +1,6 @@
 ﻿namespace miniContabil
 {
-    partial class selectForm
+    partial class SelectForm
     {
         /// <summary>
         /// Required designer variable.
@@ -80,7 +80,7 @@
             this.poisonComboBox1.Items.AddRange(new object[] {
             "Societate cu Răspundere Limitată",
             "Persoană Fizica Autorizată",
-            "Societate pe acțiuni"});
+            "Societate pe Acțiuni"});
             this.poisonComboBox1.Location = new System.Drawing.Point(63, 333);
             this.poisonComboBox1.Name = "poisonComboBox1";
             this.poisonComboBox1.Size = new System.Drawing.Size(323, 30);

@@ -95,56 +95,56 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="dashboardForm.cs">
+    <Compile Include="DashboardForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="dashboardForm.Designer.cs">
-      <DependentUpon>dashboardForm.cs</DependentUpon>
+    <Compile Include="DashboardForm.Designer.cs">
+      <DependentUpon>DashboardForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="dataForm.cs">
+    <Compile Include="DataForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="dataForm.Designer.cs">
-      <DependentUpon>dataForm.cs</DependentUpon>
+    <Compile Include="DataForm.Designer.cs">
+      <DependentUpon>DataForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="selectForm.cs">
+    <Compile Include="SelectForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="selectForm.Designer.cs">
-      <DependentUpon>selectForm.cs</DependentUpon>
+    <Compile Include="SelectForm.Designer.cs">
+      <DependentUpon>SelectForm.cs</DependentUpon>
     </Compile>
     <Compile Include="SetterCerereSiOfertaExemple.cs" />
-    <Compile Include="tab1Form.cs">
+    <Compile Include="TabCapitalForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="tab1Form.Designer.cs">
-      <DependentUpon>tab1Form.cs</DependentUpon>
+    <Compile Include="TabCapitalForm.Designer.cs">
+      <DependentUpon>TabCapitalForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="tab2Form.cs">
+    <Compile Include="TabCostProfitForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="tab2Form.Designer.cs">
-      <DependentUpon>tab2Form.cs</DependentUpon>
+    <Compile Include="TabCostProfitForm.Designer.cs">
+      <DependentUpon>TabCostProfitForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="tab3Form.cs">
+    <Compile Include="TabCerereOfertaForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="tab3Form.Designer.cs">
-      <DependentUpon>tab3Form.cs</DependentUpon>
+    <Compile Include="TabCerereOfertaForm.Designer.cs">
+      <DependentUpon>TabCerereOfertaForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="tabSalariiForm.cs">
+    <Compile Include="TabSalariiForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="tabSalariiForm.Designer.cs">
-      <DependentUpon>tabSalariiForm.cs</DependentUpon>
+    <Compile Include="TabSalariiForm.Designer.cs">
+      <DependentUpon>TabSalariiForm.cs</DependentUpon>
     </Compile>
     <None Include="Resources\Screenshot_2025-05-11_203409-removebg-preview.png" />
     <None Include="Resources\Screenshot_2025-05-11_203309-removebg-preview.png" />
@@ -153,14 +153,14 @@
     <None Include="Resources\Screenshot 2025-05-11 195429.png" />
     <None Include="Resources\Screenshot 2025-05-11 195348.png" />
     <None Include="Resources\Screenshot 2025-05-11 195302.png" />
-    <EmbeddedResource Include="dashboardForm.resx">
-      <DependentUpon>dashboardForm.cs</DependentUpon>
+    <EmbeddedResource Include="DashboardForm.resx">
+      <DependentUpon>DashboardForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="dataForm.resx">
-      <DependentUpon>dataForm.cs</DependentUpon>
+    <EmbeddedResource Include="DataForm.resx">
+      <DependentUpon>DataForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -172,20 +172,20 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="selectForm.resx">
-      <DependentUpon>selectForm.cs</DependentUpon>
+    <EmbeddedResource Include="SelectForm.resx">
+      <DependentUpon>SelectForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="tab1Form.resx">
-      <DependentUpon>tab1Form.cs</DependentUpon>
+    <EmbeddedResource Include="TabCapitalForm.resx">
+      <DependentUpon>TabCapitalForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="tab2Form.resx">
-      <DependentUpon>tab2Form.cs</DependentUpon>
+    <EmbeddedResource Include="TabCostProfitForm.resx">
+      <DependentUpon>TabCostProfitForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="tab3Form.resx">
-      <DependentUpon>tab3Form.cs</DependentUpon>
+    <EmbeddedResource Include="TabCerereOfertaForm.resx">
+      <DependentUpon>TabCerereOfertaForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="tabSalariiForm.resx">
-      <DependentUpon>tabSalariiForm.cs</DependentUpon>
+    <EmbeddedResource Include="TabSalariiForm.resx">
+      <DependentUpon>TabSalariiForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -204,7 +204,7 @@
     <None Include="Resources\6ed0249801de341699c079366fd202a4-removebg-preview.png" />
     <None Include="Resources\de089161317fa4fbddda0c381f589832-removebg-preview.png" />
     <None Include="Resources\09e94ae7daa023000cbeac34903b7500-removebg-preview.png" />
-    <Content Include="Resources\miniContabilHelp.chm">
+    <Content Include="miniContabilHelp.chm">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

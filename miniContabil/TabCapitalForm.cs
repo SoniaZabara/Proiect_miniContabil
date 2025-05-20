@@ -40,9 +40,9 @@ using FirmUtil;
 
 namespace miniContabil
 {
-    public partial class tab1Form : Form
+    public partial class TabCapitalForm : Form
     {
-        public tab1Form()
+        public TabCapitalForm()
         {
             InitializeComponent();
         }

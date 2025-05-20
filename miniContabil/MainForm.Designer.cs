@@ -1,6 +1,6 @@
 ﻿namespace miniContabil
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -63,9 +63,9 @@
             this.labelHeader.ForeColor = System.Drawing.Color.White;
             this.labelHeader.Location = new System.Drawing.Point(12, 12);
             this.labelHeader.Name = "labelHeader";
-            this.labelHeader.Size = new System.Drawing.Size(101, 20);
+            this.labelHeader.Size = new System.Drawing.Size(108, 20);
             this.labelHeader.TabIndex = 2;
-            this.labelHeader.Text = "miniContabil";
+            this.labelHeader.Text = "miniContaBill";
             // 
             // buttonHelp
             // 
@@ -119,11 +119,11 @@
             this.labelNume4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelNume4.AutoSize = true;
             this.labelNume4.BackColor = System.Drawing.Color.Transparent;
-            this.labelNume4.Font = new System.Drawing.Font("RomanT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNume4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNume4.ForeColor = System.Drawing.Color.DarkGoldenrod;
             this.labelNume4.Location = new System.Drawing.Point(39, 425);
             this.labelNume4.Name = "labelNume4";
-            this.labelNume4.Size = new System.Drawing.Size(169, 25);
+            this.labelNume4.Size = new System.Drawing.Size(119, 20);
             this.labelNume4.TabIndex = 6;
             this.labelNume4.Text = "Sonia Zabara";
             // 
@@ -132,11 +132,11 @@
             this.labelNume3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelNume3.AutoSize = true;
             this.labelNume3.BackColor = System.Drawing.Color.Transparent;
-            this.labelNume3.Font = new System.Drawing.Font("RomanT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNume3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNume3.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.labelNume3.Location = new System.Drawing.Point(39, 381);
             this.labelNume3.Name = "labelNume3";
-            this.labelNume3.Size = new System.Drawing.Size(175, 25);
+            this.labelNume3.Size = new System.Drawing.Size(124, 20);
             this.labelNume3.TabIndex = 5;
             this.labelNume3.Text = "Petru Negoita";
             // 
@@ -145,11 +145,11 @@
             this.labelNume2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelNume2.AutoSize = true;
             this.labelNume2.BackColor = System.Drawing.Color.Transparent;
-            this.labelNume2.Font = new System.Drawing.Font("RomanT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNume2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNume2.ForeColor = System.Drawing.Color.DarkOliveGreen;
             this.labelNume2.Location = new System.Drawing.Point(39, 335);
             this.labelNume2.Name = "labelNume2";
-            this.labelNume2.Size = new System.Drawing.Size(193, 25);
+            this.labelNume2.Size = new System.Drawing.Size(131, 20);
             this.labelNume2.TabIndex = 4;
             this.labelNume2.Text = "Silviu Chiuariu";
             // 
@@ -158,11 +158,11 @@
             this.labelNume1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelNume1.AutoSize = true;
             this.labelNume1.BackColor = System.Drawing.Color.Transparent;
-            this.labelNume1.Font = new System.Drawing.Font("RomanT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNume1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNume1.ForeColor = System.Drawing.Color.PaleVioletRed;
             this.labelNume1.Location = new System.Drawing.Point(39, 290);
             this.labelNume1.Name = "labelNume1";
-            this.labelNume1.Size = new System.Drawing.Size(253, 25);
+            this.labelNume1.Size = new System.Drawing.Size(175, 20);
             this.labelNume1.TabIndex = 3;
             this.labelNume1.Text = "Ioana Andreea Bran";
             // 
@@ -181,11 +181,11 @@
             this.labelTitlu.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelTitlu.AutoSize = true;
             this.labelTitlu.BackColor = System.Drawing.Color.Transparent;
-            this.labelTitlu.Font = new System.Drawing.Font("RomanT", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTitlu.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTitlu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.labelTitlu.Location = new System.Drawing.Point(378, 104);
             this.labelTitlu.Name = "labelTitlu";
-            this.labelTitlu.Size = new System.Drawing.Size(527, 86);
+            this.labelTitlu.Size = new System.Drawing.Size(382, 69);
             this.labelTitlu.TabIndex = 1;
             this.labelTitlu.Text = "MiniContaBill";
             // 
@@ -202,7 +202,7 @@
             this.buttonStart.UseVisualStyleBackColor = false;
             this.buttonStart.Click += new System.EventHandler(this.buttonStart_Click);
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -210,7 +210,7 @@
             this.Controls.Add(this.mainpanel);
             this.Controls.Add(this.panelheader);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panelheader.ResumeLayout(false);

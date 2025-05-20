@@ -1,4 +1,21 @@
-﻿using System;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        DataForm.cs                                              *
+ *  Copyright:   (c) 2025, Sonia Zabara                                   *
+ *  E-mail:      sonia.zabara@student.tuiasi.ro                           *
+ *  Description: Windows Forms UI for setting the atributes of the firm.  *
+ *                                                                        *
+ *  This program is free software; you can redistribute it and/or modify  *
+ *  it under the terms of the GNU General Public License as published by  *
+ *  the Free Software Foundation. This program is distributed in the      *
+ *  hope that it will be useful, but WITHOUT ANY WARRANTY; without even   *
+ *  the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR   *
+ *  PURPOSE. See the GNU General Public License for more details.         *
+ *                                                                        *
+ **************************************************************************/
+
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,13 +29,24 @@ using FirmUtil;
 
 namespace miniContabil
 {
-    public partial class dataForm : Form
+    /// <summary>
+    /// Clasă pentru form-ul care setează atributele firmei
+    /// </summary>
+    public partial class DataForm : Form
     {
-        public dataForm()
+        /// <summary>
+        /// Metodă ce inițializează form-ul
+        /// </summary>
+        public DataForm()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Metodă ce  Metodă ce inițializează form-ul cu câteva valori deja definite
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void dataForm_Load(object sender, EventArgs e)
         {
             Firm firm = FormManager.builder.GetResult();
@@ -39,16 +67,31 @@ namespace miniContabil
             
         }
 
+        /// <summary>
+        /// Buton de înapoi - se merge la form-ul ce era înainte
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonPrev2_Click(object sender, EventArgs e)
         {
-            FormManager.mainForm.loadForm(new selectForm());
+            FormManager.mainForm.loadForm(new SelectForm());
         }
 
+        /// <summary>
+        /// Buton de next - se merge la următorul form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonNext2_Click(object sender, EventArgs e)
         {
-            FormManager.mainForm.loadForm(new dashboardForm());
+            FormManager.mainForm.loadForm(new DashboardForm());
         }
 
+        /// <summary>
+        /// Metodă ce setează cifra de afaceri a firmei
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void textBoxCA_TextChanged(object sender, EventArgs e)
         {
             try
@@ -61,6 +104,11 @@ namespace miniContabil
             }
         }
 
+        /// <summary>
+        /// Metodă ce setează capitalul fix al firmei
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void textBoxCF_TextChanged(object sender, EventArgs e)
         {
             try
@@ -73,6 +121,11 @@ namespace miniContabil
             }
         }
 
+        /// <summary>
+        /// Metodă ce setează capitalul circulant al firmei
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void textBoxCC_TextChanged(object sender, EventArgs e)
         {
             try
@@ -85,6 +138,11 @@ namespace miniContabil
             }
         }
 
+        /// <summary>
+        /// Metodă ce setează numărul de acțiuni ale firmei
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void textBoxNrAct_TextChanged(object sender, EventArgs e)
         {
             try
@@ -97,6 +155,11 @@ namespace miniContabil
             }
         }
 
+        /// <summary>
+        /// Metodă ce setează valoarea unei acțiuni ale firmei
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void textBoxValAct_TextChanged(object sender, EventArgs e)
         {
             try
@@ -109,6 +172,11 @@ namespace miniContabil
             }
         }
 
+        /// <summary>
+        /// Metodă ce setează valoarea datoriilor firmei
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void textBoxDatorii_TextChanged(object sender, EventArgs e)
         {
             try

@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.labelTitluCostulProductie = new ReaLTaiizor.Controls.BigLabel();
@@ -101,6 +103,7 @@
             this.textBoxMasaProfit2 = new System.Windows.Forms.TextBox();
             this.textBoxRataProfit = new System.Windows.Forms.TextBox();
             this.panelScroll = new System.Windows.Forms.Panel();
+            this.chartPragDeRentabilitate = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.groupBoxPragulRentabilitate.SuspendLayout();
             this.groupBoxPretFinal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartPretFinal)).BeginInit();
@@ -109,6 +112,7 @@
             this.groupBoxTVA.SuspendLayout();
             this.groupBoxRataProfit.SuspendLayout();
             this.panelScroll.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartPragDeRentabilitate)).BeginInit();
             this.SuspendLayout();
             // 
             // labelTitluCostulProductie
@@ -130,6 +134,7 @@
             this.groupBoxPragulRentabilitate.BaseColor = System.Drawing.Color.Transparent;
             this.groupBoxPragulRentabilitate.BorderColorG = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(161)))));
             this.groupBoxPragulRentabilitate.BorderColorH = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(180)))), ((int)(((byte)(186)))));
+            this.groupBoxPragulRentabilitate.Controls.Add(this.chartPragDeRentabilitate);
             this.groupBoxPragulRentabilitate.Controls.Add(this.textBoxCostVariabileMedii);
             this.groupBoxPragulRentabilitate.Controls.Add(this.labelCostVarMedii);
             this.groupBoxPragulRentabilitate.Controls.Add(this.buttonCalculeazaPregdeRentabilitate);
@@ -157,6 +162,7 @@
             // 
             // textBoxCostVariabileMedii
             // 
+            this.textBoxCostVariabileMedii.BackColor = System.Drawing.Color.LightGreen;
             this.textBoxCostVariabileMedii.Location = new System.Drawing.Point(263, 116);
             this.textBoxCostVariabileMedii.Name = "textBoxCostVariabileMedii";
             this.textBoxCostVariabileMedii.Size = new System.Drawing.Size(135, 29);
@@ -184,6 +190,7 @@
             // 
             // textBoxPretUnitateProdus
             // 
+            this.textBoxPretUnitateProdus.BackColor = System.Drawing.Color.LightBlue;
             this.textBoxPretUnitateProdus.Location = new System.Drawing.Point(58, 116);
             this.textBoxPretUnitateProdus.Name = "textBoxPretUnitateProdus";
             this.textBoxPretUnitateProdus.Size = new System.Drawing.Size(135, 29);
@@ -191,6 +198,7 @@
             // 
             // textBoxCantitate
             // 
+            this.textBoxCantitate.BackColor = System.Drawing.Color.Purple;
             this.textBoxCantitate.Location = new System.Drawing.Point(463, 186);
             this.textBoxCantitate.Name = "textBoxCantitate";
             this.textBoxCantitate.Size = new System.Drawing.Size(135, 29);
@@ -207,6 +215,7 @@
             // 
             // textBoxProfit1
             // 
+            this.textBoxProfit1.BackColor = System.Drawing.Color.Gold;
             this.textBoxProfit1.Location = new System.Drawing.Point(463, 116);
             this.textBoxProfit1.Name = "textBoxProfit1";
             this.textBoxProfit1.Size = new System.Drawing.Size(135, 29);
@@ -236,6 +245,7 @@
             // 
             // textBoxCostFix
             // 
+            this.textBoxCostFix.BackColor = System.Drawing.Color.Salmon;
             this.textBoxCostFix.Location = new System.Drawing.Point(58, 186);
             this.textBoxCostFix.Name = "textBoxCostFix";
             this.textBoxCostFix.Size = new System.Drawing.Size(135, 29);
@@ -323,15 +333,15 @@
             this.chartPretFinal.BorderlineColor = System.Drawing.Color.Transparent;
             this.chartPretFinal.BorderlineWidth = 0;
             this.chartPretFinal.CausesValidation = false;
-            chartArea1.BackColor = System.Drawing.Color.Transparent;
-            chartArea1.Name = "ChartArea1";
-            this.chartPretFinal.ChartAreas.Add(chartArea1);
+            chartArea2.BackColor = System.Drawing.Color.Transparent;
+            chartArea2.Name = "ChartArea1";
+            this.chartPretFinal.ChartAreas.Add(chartArea2);
             this.chartPretFinal.Location = new System.Drawing.Point(700, 31);
             this.chartPretFinal.Name = "chartPretFinal";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series1.Name = "Series1";
-            this.chartPretFinal.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series2.Name = "Series1";
+            this.chartPretFinal.Series.Add(series2);
             this.chartPretFinal.Size = new System.Drawing.Size(401, 218);
             this.chartPretFinal.TabIndex = 40;
             this.chartPretFinal.Text = "chart1";
@@ -876,6 +886,34 @@
             this.panelScroll.Size = new System.Drawing.Size(1167, 951);
             this.panelScroll.TabIndex = 45;
             // 
+            // chartPragDeRentabilitate
+            // 
+            this.chartPragDeRentabilitate.BackColor = System.Drawing.Color.Transparent;
+            chartArea1.AxisX.LabelStyle.Enabled = false;
+            chartArea1.AxisX.LineColor = System.Drawing.Color.Transparent;
+            chartArea1.AxisX.MajorGrid.Enabled = false;
+            chartArea1.AxisX2.LabelStyle.Enabled = false;
+            chartArea1.AxisX2.LineColor = System.Drawing.Color.Transparent;
+            chartArea1.AxisX2.MajorGrid.Enabled = false;
+            chartArea1.AxisY.LabelStyle.Enabled = false;
+            chartArea1.AxisY.LineColor = System.Drawing.Color.Transparent;
+            chartArea1.AxisY.MajorGrid.Enabled = false;
+            chartArea1.AxisY2.LabelStyle.Enabled = false;
+            chartArea1.AxisY2.LineColor = System.Drawing.Color.Transparent;
+            chartArea1.AxisY2.MajorGrid.Enabled = false;
+            chartArea1.BackColor = System.Drawing.Color.Transparent;
+            chartArea1.BorderColor = System.Drawing.Color.Transparent;
+            chartArea1.BorderWidth = 0;
+            chartArea1.Name = "ChartArea1";
+            this.chartPragDeRentabilitate.ChartAreas.Add(chartArea1);
+            this.chartPragDeRentabilitate.Location = new System.Drawing.Point(691, 31);
+            this.chartPragDeRentabilitate.Name = "chartPragDeRentabilitate";
+            series1.ChartArea = "ChartArea1";
+            series1.Name = "Series1";
+            this.chartPragDeRentabilitate.Series.Add(series1);
+            this.chartPragDeRentabilitate.Size = new System.Drawing.Size(423, 206);
+            this.chartPragDeRentabilitate.TabIndex = 53;
+            // 
             // tab2Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -901,6 +939,7 @@
             this.groupBoxRataProfit.ResumeLayout(false);
             this.groupBoxRataProfit.PerformLayout();
             this.panelScroll.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chartPragDeRentabilitate)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -978,5 +1017,6 @@
         private System.Windows.Forms.TextBox textBoxCostVariabileMedii;
         private System.Windows.Forms.Label labelCostVarMedii;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartPretFinal;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartPragDeRentabilitate;
     }
 }

@@ -22,13 +22,14 @@ namespace CostulProductieProfitDDL
             if (!decimal.TryParse(pretUnitateProdusText, out decimal pretUnitateProdus) ||
                 !decimal.TryParse(costFixTotalText, out decimal costFixTotal) ||
                 !decimal.TryParse(costVarMediiText, out decimal costVarMedii))
-            {
                 throw new ArgumentException("Preț unitate, cost fix și cost variabil mediu trebuie să fie numere valide");
-            }
+            
             if (!decimal.TryParse(profitText, out decimal profit) && buttonRadioCk == false)
-            {
                 throw new ArgumentException("Profitul trebuie să fie numere valide");
-            }
+     
+            if (pretUnitateProdus <= costVarMedii)
+                throw new ArgumentException("Pretul produsului trebuie sa fie mai mare decat costul variabilelor medii");
+
             decimal rezultat = CalculeazaPragRentabilitate(pretUnitateProdus, costFixTotal, profit, costVarMedii, buttonRadioCk);
             return rezultat.ToString("F2");
         }

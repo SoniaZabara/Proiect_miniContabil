@@ -22,6 +22,8 @@ namespace miniContabil
             this.AutoScroll = true;
         }
 
+
+
         private void DezactiveazaControalele()
         {
             textBoxPretUnitateProdus.Enabled = false;
@@ -193,6 +195,63 @@ namespace miniContabil
             textBoxCantitate.Clear();
         }
 
+        private void SetupBarChartPragRenta(bool ok)
+        {
+            try
+            {
+               
+                chartPragDeRentabilitate.Series.Clear();
+                chartPragDeRentabilitate.ChartAreas.Clear();
+                chartPragDeRentabilitate.Titles.Clear();
+
+
+                ChartArea chartArea = new ChartArea("MainArea");
+                chartPragDeRentabilitate.ChartAreas.Add(chartArea);
+
+                chartPragDeRentabilitate.Titles.Add("Analiza Prag de Rentabilitate");
+                chartPragDeRentabilitate.Titles[0].Font = new Font("Arial", 12, FontStyle.Bold);
+
+                Series series = new Series("Valori");
+                series.ChartType = SeriesChartType.Column;
+                chartPragDeRentabilitate.Series.Add(series);
+
+             
+                chartArea.AxisY.Minimum = 0;
+
+                double pretUnitate = Convert.ToDouble(textBoxPretUnitateProdus.Text);
+                double costFixTotal = Convert.ToDouble(textBoxCostFix.Text);
+                double costVarMediu = Convert.ToDouble(textBoxCostVariabileMedii.Text);
+                double cantitate = Convert.ToDouble(textBoxCantitate.Text);
+              
+                series.Points.AddXY("", pretUnitate);
+                series.Points.AddXY("", costFixTotal);
+                series.Points.AddXY("", costVarMediu);
+                series.Points.AddXY("", cantitate);
+
+                series.Points[0].Color = Color.LightBlue;    // Pret Unitate
+                series.Points[1].Color = Color.Salmon;       // Cost Fix
+                series.Points[2].Color = Color.LightGreen;   // Cost Variabil
+                series.Points[3].Color = Color.Purple;       // Cantitate
+
+                if (!ok)
+                {
+                    double profit = Convert.ToDouble(textBoxProfit1.Text);
+                    series.Points.AddXY("", profit);
+                    series.Points[4].Color = Color.Gold;         // Profit
+                }
+
+                foreach (DataPoint point in series.Points)
+                {
+                    point.Label = "#VALY";
+                    point.Font = new Font("Arial", 8);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Eroare: {ex.Message}", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
         private void buttonCalculeazaPregdeRentabilitate_Click(object sender, EventArgs e)
         {
             try
@@ -200,6 +259,7 @@ namespace miniContabil
                 var calculator = new PragRentabilitate();
                 string rezultat = calculator.CalculeazaPragRentabilitate(textBoxPretUnitateProdus.Text, textBoxCostFix.Text, textBoxProfit1.Text, textBoxCostVariabileMedii.Text, radioButtonRentabilitateCazA.Checked);
                 textBoxCantitate.Text = rezultat;
+                SetupBarChartPragRenta(radioButtonRentabilitateCazA.Checked);
             }
             catch (Exception ex)
             {

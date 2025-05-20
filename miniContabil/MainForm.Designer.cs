@@ -146,7 +146,7 @@
             this.labelNume2.AutoSize = true;
             this.labelNume2.BackColor = System.Drawing.Color.Transparent;
             this.labelNume2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNume2.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            this.labelNume2.ForeColor = System.Drawing.Color.DarkViolet;
             this.labelNume2.Location = new System.Drawing.Point(39, 335);
             this.labelNume2.Name = "labelNume2";
             this.labelNume2.Size = new System.Drawing.Size(131, 20);

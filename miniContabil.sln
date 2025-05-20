@@ -5,13 +5,17 @@ VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "miniContabil", "miniContabil\miniContabil.csproj", "{4020C6E3-8524-44FF-9A11-CCFA77B2A6D4}"
 EndProject
-<<<<<<< HEAD
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CostulProductieProfitDDL", "CostulProductieProfitDDL\CostulProductieProfitDDL.csproj", "{B84506B6-8EC8-4FC5-B78D-CD79A05C0CB5}"
-=======
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amortizari", "miniContabil\Amortizari\Amortizari\Amortizari.csproj", "{9CA03273-76B5-48C1-93AB-428AB38A3850}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Angajati", "miniContabil\Angajati\Angajati\Angajati.csproj", "{A1E9D5E3-1A36-4F58-B4EB-67E8006C677E}"
->>>>>>> a02d3e71ed7240376b5423ef1e2bdc7195c0fc47
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Amortizari", "miniContabil\Amortizari\Amortizari\Amortizari.csproj", "{9CA03273-76B5-48C1-93AB-428AB38A3850}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Angajati", "miniContabil\Angajati\Angajati\Angajati.csproj", "{A1E9D5E3-1A36-4F58-B4EB-67E8006C677E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dividente", "Dividente\Dividente.csproj", "{49505280-0C1A-476A-9C9A-55000CC4A55E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertText", "ConvertText\ConvertText.csproj", "{B0AC45BF-F7EE-425A-9449-3F4971BFD790}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirmUtil", "FirmUtil\FirmUtil.csproj", "{E4C301C1-FB1D-4998-942E-ADBBD9D1447B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,12 +27,10 @@ Global
 		{4020C6E3-8524-44FF-9A11-CCFA77B2A6D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4020C6E3-8524-44FF-9A11-CCFA77B2A6D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4020C6E3-8524-44FF-9A11-CCFA77B2A6D4}.Release|Any CPU.Build.0 = Release|Any CPU
-<<<<<<< HEAD
 		{B84506B6-8EC8-4FC5-B78D-CD79A05C0CB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B84506B6-8EC8-4FC5-B78D-CD79A05C0CB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B84506B6-8EC8-4FC5-B78D-CD79A05C0CB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B84506B6-8EC8-4FC5-B78D-CD79A05C0CB5}.Release|Any CPU.Build.0 = Release|Any CPU
-=======
 		{9CA03273-76B5-48C1-93AB-428AB38A3850}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9CA03273-76B5-48C1-93AB-428AB38A3850}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CA03273-76B5-48C1-93AB-428AB38A3850}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -37,7 +39,18 @@ Global
 		{A1E9D5E3-1A36-4F58-B4EB-67E8006C677E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1E9D5E3-1A36-4F58-B4EB-67E8006C677E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1E9D5E3-1A36-4F58-B4EB-67E8006C677E}.Release|Any CPU.Build.0 = Release|Any CPU
->>>>>>> a02d3e71ed7240376b5423ef1e2bdc7195c0fc47
+		{49505280-0C1A-476A-9C9A-55000CC4A55E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49505280-0C1A-476A-9C9A-55000CC4A55E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49505280-0C1A-476A-9C9A-55000CC4A55E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49505280-0C1A-476A-9C9A-55000CC4A55E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0AC45BF-F7EE-425A-9449-3F4971BFD790}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0AC45BF-F7EE-425A-9449-3F4971BFD790}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0AC45BF-F7EE-425A-9449-3F4971BFD790}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0AC45BF-F7EE-425A-9449-3F4971BFD790}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4C301C1-FB1D-4998-942E-ADBBD9D1447B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4C301C1-FB1D-4998-942E-ADBBD9D1447B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4C301C1-FB1D-4998-942E-ADBBD9D1447B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4C301C1-FB1D-4998-942E-ADBBD9D1447B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

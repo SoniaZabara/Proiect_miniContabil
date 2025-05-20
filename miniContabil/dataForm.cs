@@ -43,7 +43,7 @@ namespace miniContabil
         }
 
         /// <summary>
-        /// Metodă ce  Metodă ce inițializează form-ul cu câteva valori deja definite
+        /// Metodă ce inițializează form-ul cu câteva valori deja definite
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>

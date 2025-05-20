@@ -98,6 +98,11 @@ namespace miniContabil
             loadForm(new TabCerereOfertaForm());
         }
 
+        /// <summary>
+        /// Buton incărcare - form salarii
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonTab4_Click(object sender, EventArgs e)
         {
             string firmName = FormManager.builder?.GetResult()?.GetName();
@@ -114,6 +119,11 @@ namespace miniContabil
 
         }
 
+        /// <summary>
+        /// Metodă ce inițializează form-ul cu câteva valori deja definite
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void dashboardForm_Load(object sender, EventArgs e)
         {
             Firm firm = FormManager.builder.GetResult();

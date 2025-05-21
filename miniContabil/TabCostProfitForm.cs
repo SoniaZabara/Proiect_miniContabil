@@ -1,4 +1,19 @@
-﻿using System;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        RataProfit.cs                                            *
+ *  Copyright:   (c) 2025, Chiuariu Vasile Silviu                         *
+ *  E-mail:      vasile-silviu.chiuariu@student.tuiasi.ro                 *
+ *  Description: Clasa pentru functionalitatea tabului TabCostProfit      *
+ *                                                                        *
+ *  This program is free software; you can redistribute it and/or modify  *
+ *  it under the terms of the GNU General Public License as published by  *
+ *  the Free Software Foundation. This program is distributed in the      *
+ *  hope that it will be useful, but WITHOUT ANY WARRANTY; without even   *
+ *  the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR   *
+ *  PURPOSE. See the GNU General Public License for more details.         *
+ *                                                                        *
+ **************************************************************************/
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +30,9 @@ namespace miniContabil
 {
     public partial class TabCostProfitForm : Form
     {
+        /// <summary>
+        /// Initializeaza formularul, dezactiveaza controalele si activeaza scroll-ul automat.
+        /// </summary>
         public TabCostProfitForm()
         {
             InitializeComponent();
@@ -24,7 +42,9 @@ namespace miniContabil
         }
 
 
-
+        /// <summary>
+        /// Dezactiveaza controalele pentru introducerea datelor si seteaza tipul firmei in functie de configuratia existenta.
+        /// </summary>
         private void DezactiveazaControalele()
         {
             textBoxPretUnitateProdus.Enabled = false;
@@ -49,6 +69,9 @@ namespace miniContabil
             }
         }
 
+        /// <summary>
+        /// Seteaza anumite campuri ca fiind doar pentru citire.
+        /// </summary>
         private void DoarReadOnly()
         {
             textBoxMasaProfit1.ReadOnly = true;
@@ -61,6 +84,9 @@ namespace miniContabil
             textBoxPretTVA.ReadOnly = true;
         }
 
+        /// <summary>
+        /// Calculeaza masa profitului pe baza pretului de vanzare si a costurilor, si afiseaza rezultatul.
+        /// </summary>
         private void buttonCalculeazaMasaProfit_Click(object sender, EventArgs e)
         {
             try
@@ -76,6 +102,9 @@ namespace miniContabil
             }
         }
 
+        /// <summary>
+        /// Calculeaza rata profitului pe baza masei profitului si a costurilor, si afiseaza rezultatul.
+        /// </summary>
         private void buttonCalculeazaRataProfit_Click(object sender, EventArgs e)
         {
             try
@@ -93,6 +122,9 @@ namespace miniContabil
             }
         }
 
+        /// <summary>
+        /// Actualizeaza culorile si valorile graficului tip pie pentru distributia costurilor.
+        /// </summary>
         private void UpdatePieChartColorAndSize(double anortizare, double materiiPrim, double salarii, double materialAuxil, double chiria, double profit)
         {
             chartPretFinal.Series.Clear();
@@ -121,6 +153,9 @@ namespace miniContabil
             chartPretFinal.Refresh();
         }
 
+        /// <summary>
+        /// Calculeaza procentele pentru fiecare componenta a costului si actualizeaza graficul tip pie.
+        /// </summary>
         private void UpdateValoriPieGraph()
         {
             double pretFinal = Convert.ToDouble(textBoxPretFinal.Text);
@@ -143,6 +178,9 @@ namespace miniContabil
             UpdatePieChartColorAndSize(procentAmortizare, procentMateriiPrime, procentSalarii, procentMaterialAuxilar, procentChiria, procentProfit);
         }
 
+        /// <summary>
+        /// Calculeaza costul total, costul mediu si pretul final, apoi actualizeaza graficul cu distributia costurilor.
+        /// </summary>
         private void buttonCalculeazaPretFinal_Click(object sender, EventArgs e)
         {         
             try
@@ -167,6 +205,9 @@ namespace miniContabil
             }
         }
 
+        /// <summary>
+        /// Activeaza campurile necesare pentru calculul pragului de rentabilitate in cazul A.
+        /// </summary>
         private void radioButtonRentabilitateCazA_CheckedChanged(object sender, EventArgs e)
         {
             textBoxPretUnitateProdus.Enabled = true;
@@ -182,6 +223,9 @@ namespace miniContabil
             textBoxCantitate.Clear();
         }
 
+        /// <summary>
+        /// Activeaza campurile necesare pentru calculul pragului de rentabilitate in cazul B.
+        /// </summary>
         private void radioButtonRentabilitateCazB_CheckedChanged(object sender, EventArgs e)
         {
             textBoxPretUnitateProdus.Enabled = true;
@@ -196,6 +240,10 @@ namespace miniContabil
             textBoxCantitate.Clear();
         }
 
+
+        /// <summary>
+        /// Configureaza graficul de tip bar pentru afisarea valorilor componente in analiza pragului de rentabilitate.
+        /// </summary>
         private void SetupBarChartPragRenta(bool ok)
         {
             try
@@ -253,6 +301,9 @@ namespace miniContabil
             }
         }
 
+        /// <summary>
+        /// Calculeaza pragul de rentabilitate si actualizeaza graficul corespunzator.
+        /// </summary>
         private void buttonCalculeazaPregdeRentabilitate_Click(object sender, EventArgs e)
         {
             try
@@ -269,6 +320,9 @@ namespace miniContabil
             }
         }
 
+        /// <summary>
+        /// Activeaza campurile necesare pentru calculul impozitului pe profit in cazul in care firma este PFA.
+        /// </summary>
         private void radioButtonCuPFA_CheckedChanged(object sender, EventArgs e)
         {
             textBoxProfit2.Enabled = true;
@@ -278,6 +332,9 @@ namespace miniContabil
             textBoxImpozitProfit.Clear();
         }
 
+        /// <summary>
+        /// Activeaza campurile necesare pentru calculul impozitului pe profit in cazul in care firma nu este PFA.
+        /// </summary>
         private void radioButtonFaraPFA_CheckedChanged(object sender, EventArgs e)
         {
             textBoxProfit2.Enabled = true;
@@ -287,6 +344,9 @@ namespace miniContabil
             textBoxImpozitProfit.Clear();
         }
 
+        /// <summary>
+        /// Calculeaza impozitul pe profit in functie de valoarea profitului si tipul firmei (PFA sau nu).
+        /// </summary>
         private void buttonCalculeazaImpozitProfit_Click(object sender, EventArgs e)
         {
             try
@@ -302,6 +362,9 @@ namespace miniContabil
             }
         }
 
+        /// <summary>
+        /// Calculeaza pretul cu TVA pe baza pretului brut si a cotei de TVA.
+        /// </summary>
         private void buttonCalculeazaTVA_Click(object sender, EventArgs e)
         {
             try

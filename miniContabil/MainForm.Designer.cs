@@ -65,7 +65,7 @@
             this.labelHeader.Name = "labelHeader";
             this.labelHeader.Size = new System.Drawing.Size(108, 20);
             this.labelHeader.TabIndex = 2;
-            this.labelHeader.Text = "miniContaBill";
+            this.labelHeader.Text = "MiniContaBill";
             // 
             // buttonHelp
             // 

@@ -28,7 +28,7 @@ using System.Text.Json;
 using System.Windows.Forms;
 using SalariiAngajati;
 
-namespace miniContabil
+namespace MiniContaBill
 {
     public partial class TabSalariiForm : Form
     {

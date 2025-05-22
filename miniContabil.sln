@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "miniContabil", "miniContabil\miniContabil.csproj", "{4020C6E3-8524-44FF-9A11-CCFA77B2A6D4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniContaBill", "miniContabil\MiniContaBill.csproj", "{4020C6E3-8524-44FF-9A11-CCFA77B2A6D4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CostulProductieProfitDDL", "CostulProductieProfitDDL\CostulProductieProfitDDL.csproj", "{B84506B6-8EC8-4FC5-B78D-CD79A05C0CB5}"
 EndProject

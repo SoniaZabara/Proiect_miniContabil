@@ -1,4 +1,4 @@
-﻿namespace miniContabil
+﻿namespace MiniContaBill
 {
     partial class SelectForm
     {
@@ -108,7 +108,7 @@
             // pictureBoxDecor
             // 
             this.pictureBoxDecor.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBoxDecor.BackgroundImage = global::miniContabil.Properties.Resources.bad445eaa91b27cd07d416aa6edf9516_removebg_preview;
+            this.pictureBoxDecor.BackgroundImage = global::MiniContaBill.Properties.Resources.bad445eaa91b27cd07d416aa6edf9516_removebg_preview;
             this.pictureBoxDecor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxDecor.Location = new System.Drawing.Point(541, 56);
             this.pictureBoxDecor.Name = "pictureBoxDecor";

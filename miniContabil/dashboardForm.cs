@@ -27,7 +27,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FirmUtil;
 
-namespace miniContabil
+namespace MiniContaBill
 {
     /// <summary>
     /// Clasă pentru form-ul în care se poate face selecția la ce form va fii încărcat în acesta
@@ -65,7 +65,7 @@ namespace miniContabil
         /// <param name="e"></param>
         private void buttonPrev3_Click(object sender, EventArgs e)
         {
-            FormManager.mainForm.loadForm(new DataForm());
+            FormManager.mainForm.LoadForm(new DataForm());
         }
 
         /// <summary>

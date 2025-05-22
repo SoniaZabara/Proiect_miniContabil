@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace miniContabil
+namespace MiniContaBill
 {
     public partial class TabCerereOfertaForm : Form
     {

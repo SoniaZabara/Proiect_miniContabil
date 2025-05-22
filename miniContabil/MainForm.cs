@@ -27,7 +27,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FirmUtil;
 
-namespace miniContabil
+namespace MiniContaBill
 {
     /// <summary>
     /// Clasă pentru primul form din aplicație
@@ -47,7 +47,7 @@ namespace miniContabil
         /// Metodă ce incarcă in MainForm alte form-uri
         /// </summary>
         /// <param name="Form">Form-ul ce va fii incărcat</param>
-        public void loadForm(object Form)
+        public void LoadForm(object Form)
         {
             if(this.mainpanel.Controls.Count > 0)
                 mainpanel.Controls.Clear();
@@ -59,10 +59,6 @@ namespace miniContabil
             f.Show();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-        }
-
         /// <summary>
         /// Buton de start - Încarcă primul form
         /// </summary>
@@ -70,7 +66,7 @@ namespace miniContabil
         /// <param name="e"></param>
         private void buttonStart_Click(object sender, EventArgs e)
         {
-            loadForm(new SelectForm());
+            LoadForm(new SelectForm());
         }
 
 

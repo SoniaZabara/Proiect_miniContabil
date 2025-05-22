@@ -26,7 +26,7 @@ using System.Windows.Forms.DataVisualization.Charting;
 using FirmUtil;
 using CostulProductieProfitDDL;
 
-namespace miniContabil
+namespace MiniContaBill
 {
     public partial class TabCostProfitForm : Form
     {

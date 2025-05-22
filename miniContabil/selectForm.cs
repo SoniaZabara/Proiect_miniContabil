@@ -28,7 +28,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FirmUtil;
 
-namespace miniContabil
+namespace MiniContaBill
 {
     /// <summary>
     /// Clasă pentru form-ul ce face selecția numelui și tipului firmei
@@ -56,7 +56,7 @@ namespace miniContabil
             }
             else
             {
-                FormManager.mainForm.loadForm(new DataForm());
+                FormManager.mainForm.LoadForm(new DataForm());
             }
         }
 

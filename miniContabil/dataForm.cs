@@ -27,7 +27,7 @@ using System.Windows.Forms;
 using ReaLTaiizor.Controls;
 using FirmUtil;
 
-namespace miniContabil
+namespace MiniContaBill
 {
     /// <summary>
     /// Clasă pentru form-ul care setează atributele firmei
@@ -74,7 +74,7 @@ namespace miniContabil
         /// <param name="e"></param>
         private void buttonPrev2_Click(object sender, EventArgs e)
         {
-            FormManager.mainForm.loadForm(new SelectForm());
+            FormManager.mainForm.LoadForm(new SelectForm());
         }
 
         /// <summary>
@@ -84,7 +84,7 @@ namespace miniContabil
         /// <param name="e"></param>
         private void buttonNext2_Click(object sender, EventArgs e)
         {
-            FormManager.mainForm.loadForm(new DashboardForm());
+            FormManager.mainForm.LoadForm(new DashboardForm());
         }
 
         /// <summary>

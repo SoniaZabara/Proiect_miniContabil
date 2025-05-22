@@ -1,4 +1,4 @@
-﻿namespace miniContabil
+﻿namespace MiniContaBill
 {
     partial class TabCerereOfertaForm
     {

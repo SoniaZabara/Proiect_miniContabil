@@ -38,7 +38,7 @@ using ConvertText;
 using FirmUtil;
 
 
-namespace miniContabil
+namespace MiniContaBill
 {
     public partial class TabCapitalForm : Form
     {

@@ -1,4 +1,4 @@
-﻿namespace miniContabil
+﻿namespace MiniContaBill
 {
     partial class DataForm
     {
@@ -211,7 +211,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::miniContabil.Properties.Resources.Screenshot_2025_05_11_203409_removebg_preview;
+            this.BackgroundImage = global::MiniContaBill.Properties.Resources.Screenshot_2025_05_11_203409_removebg_preview;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1280, 680);
             this.Controls.Add(this.textBoxDatorii);

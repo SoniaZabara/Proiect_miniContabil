@@ -145,6 +145,9 @@
     <Compile Include="TabSalariiForm.Designer.cs">
       <DependentUpon>TabSalariiForm.cs</DependentUpon>
     </Compile>
+    <Content Include="MiniContaBillHelp.chm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="Resources\Screenshot_2025-05-11_203409-removebg-preview.png" />
     <None Include="Resources\Screenshot_2025-05-11_203309-removebg-preview.png" />
     <None Include="Resources\Screenshot 2025-05-11 195822.png" />

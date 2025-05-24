@@ -88,7 +88,7 @@ namespace MiniContaBill
         /// <param name="e"></param>
         private void buttonHelp_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("miniContabilHelp.chm");
+            System.Diagnostics.Process.Start("MiniContaBillHelp.chm");
         }
 
         private void mainpanel_Paint(object sender, PaintEventArgs e)

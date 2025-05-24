@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirmUtil", "FirmUtil\FirmUt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniContaBillTests", "MiniContaBillTests\MiniContaBillTests.csproj", "{F39C80C9-84D7-47E2-8B6D-92AD530109A7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SetterExamplesStrategyDesign", "SetterExamplesStrategyDesign\SetterExamplesStrategyDesign.csproj", "{6B35F579-0443-4BC8-817E-4869D6910AF7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{F39C80C9-84D7-47E2-8B6D-92AD530109A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F39C80C9-84D7-47E2-8B6D-92AD530109A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F39C80C9-84D7-47E2-8B6D-92AD530109A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B35F579-0443-4BC8-817E-4869D6910AF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B35F579-0443-4BC8-817E-4869D6910AF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B35F579-0443-4BC8-817E-4869D6910AF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B35F579-0443-4BC8-817E-4869D6910AF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,4 +1,22 @@
-﻿using System;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        TabCerereOfertaForm.cs                                   *
+ *  Copyright:   (c) 2025, Negoiță Petru                                  *
+ *  E-mail:      petru.negoita@student.tuiasi.ro                          *
+ *  Description:  Windows Forms UI folosit drept calculator pentru        *
+ *  a stabili tipul de cerere/ofertă în funcție de input-urile dorite     *
+ *  de utilizator                                                         *
+ *  Project: miniContabil                                                 *
+ *                                                                        *
+ *  This code and information is provided "as is" without warranty of     *
+ *  any kind, either expressed or implied, including but not limited      *
+ *  to the implied warranties of merchantability or fitness for a         *
+ *  particular purpose. You are free to use this source code in your      *
+ *  applications as long as the original copyright notice is included.    *
+ *                                                                        *
+ **************************************************************************/
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +25,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CerereStrategy;
 
 namespace MiniContaBill
 {
@@ -16,7 +35,12 @@ namespace MiniContaBill
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// Funcție ce ascunde din tab-ul principal la încărcare toate elementele 
+        /// aplicației în afară de butoanele radio de selecție a elasticității
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void tab3Form_Load_1(object sender, EventArgs e)
         {
             crownLabel1.Visible = false;
@@ -56,7 +80,12 @@ namespace MiniContaBill
         {
 
         }
-
+        /// <summary>
+        /// Funcție ce face calculul efectiv al datelor scrise și afișează
+        /// valoarea și tipul de cerere
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void hopeButton1_Click(object sender, EventArgs e)
         {
             try
@@ -117,7 +146,12 @@ namespace MiniContaBill
             }
 
         }
-
+        /// <summary>
+        /// Actualizează interfața utilizatorului în funcție de tipul de elasticitate selectat
+        /// (preț sau venit), afișând câmpurile și etichetele relevante
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void hopeComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -152,12 +186,17 @@ namespace MiniContaBill
             }
 
         }
-
+        
         private void hopeGroupBox2_Enter(object sender, EventArgs e)
         {
 
         }
-
+        /// <summary>
+        /// Funcție ce face calculul efectiv al datelor scrise și afișează
+        /// valoarea și tipul de ofertă
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void hopeButton2_Click(object sender, EventArgs e)
         {
             try
@@ -198,7 +237,11 @@ namespace MiniContaBill
             }
 
         }
-
+        /// <summary>
+        /// Funcție ce afișează expres butoanele pentru elasticitatea cererii
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void hopeRadioButton1_CheckedChanged(object sender, EventArgs e)
         {
             hopeComboBox1.Visible = true;
@@ -219,17 +262,11 @@ namespace MiniContaBill
 
 
         }
-
-        private void hopeRadioButton3_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void hopeRadioButton2_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
+        /// <summary>
+        /// Funcție ce afișează expres butoanele pentru elasticitatea ofertei
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void hopeRadioButton4_CheckedChanged(object sender, EventArgs e)
         {
 
@@ -283,7 +320,11 @@ namespace MiniContaBill
         {
 
         }
-
+        /// <summary>
+        /// Funcție ce activează doar butoanele cu exemple de cereri elastice
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void hopeButton3_Click(object sender, EventArgs e)
         {
             hideInterfaceCerere();
@@ -291,22 +332,29 @@ namespace MiniContaBill
             {
                 case "în funcție de preț":
 
-                    showExampleRadioButtonsCererePret();
+                    showExampleButtonsCererePret();
                     break;
                 case "în funcție de venit":
-                    showExampleRadioButtonsCerereVenit();
+                    showExampleButtonsCerereVenit();
                     break;
             }
             
 
         }
 
+        /// <summary>
+        /// Funcție ce activează doar butoanele cu exemple de oferte elastice
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void hopeButton4_Click(object sender, EventArgs e)
         {
             hideInterfaceOferta();
             showExampleButtonsOferta();
         }
-
+        /// <summary>
+        /// Funcție ce ascunde elementele din interfața de cereri elastice
+        /// </summary>
         private void hideInterfaceCerere()
         {
             crownLabel1.Visible = false;
@@ -328,10 +376,10 @@ namespace MiniContaBill
             hopeButton8.Visible = false;
             hopeButton5.Visible = false;
             hopeButton6.Visible = false;
-
-
-            
         }
+        /// <summary>
+        /// Funcție ce activează elementele din interfața de cereri elastice
+        /// </summary>
         private void showInterfaceCererere()
         {
             crownLabel1.Visible = true;
@@ -351,6 +399,9 @@ namespace MiniContaBill
 
 
         }
+        /// <summary>
+        /// Funcție ce ascunde elementele din interfața de oferte elastice
+        /// </summary>
         private void hideInterfaceOferta()
         {
             hopeTextBox5.Visible = false;
@@ -371,6 +422,9 @@ namespace MiniContaBill
             crownLabel7.Visible = false;
             crownLabel8.Visible = false;
         }
+        /// <summary>
+        /// Funcție ce afișează elementele din interfața de oferte elastice
+        /// </summary>
         private void showInterfaceOferta()
         {
             crownLabel5.Visible = true;
@@ -386,13 +440,21 @@ namespace MiniContaBill
             hopeButton2.Visible = true;
             hopeButton4.Visible = true;
         }
-        private void showExampleRadioButtonsCererePret()
+        /// <summary>
+        /// Funcție ce afișează butoanele cu exemplele de cerere elastică în funcție
+        /// de preț
+        /// </summary>
+        private void showExampleButtonsCererePret()
         {
             hopeButton7.Visible = true;
             hopeButton8.Visible = true;
             hopeButton5.Visible = true;
             hopeButton6.Visible = true;
         }
+        /// <summary>
+        /// Funcție ce ascunde butoanele cu exemplele de cerere elastică în funcție
+        /// de preț
+        /// </summary>
         private void hideExampleButtonsCererePret()
         {
 
@@ -407,7 +469,11 @@ namespace MiniContaBill
         {
 
         }
-
+        /// <summary>
+        /// Funcție ce afișează exemplul de cerere elastică
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void hopeButton5_Click(object sender, EventArgs e)
         {
             hideExampleButtonsCererePret();
@@ -425,6 +491,11 @@ namespace MiniContaBill
             System.Windows.Forms.MessageBox.Show(cerere.explanation, cerere.typeOfElasticity);
         }
 
+        /// <summary>
+        /// Funcție ce afișează exemplul de cerere unitar elastică
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void hopeButton6_Click(object sender, EventArgs e)
         {
             hideExampleButtonsCererePret();
@@ -442,6 +513,11 @@ namespace MiniContaBill
             System.Windows.Forms.MessageBox.Show(cerere.explanation, cerere.typeOfElasticity);
         }
 
+        /// <summary>
+        /// Funcție ce afișează exemplul de cerere rigidă
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void hopeButton8_Click(object sender, EventArgs e)
         {
             hideExampleButtonsCererePret();
@@ -458,7 +534,12 @@ namespace MiniContaBill
 
             System.Windows.Forms.MessageBox.Show(cerere.explanation, cerere.typeOfElasticity);
         }
-        
+
+        /// <summary>
+        /// Funcție ce afișează exemplul de cerere inelastică
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void hopeButton7_Click(object sender, EventArgs e)
         {
             hideExampleButtonsCererePret();
@@ -475,12 +556,22 @@ namespace MiniContaBill
 
             System.Windows.Forms.MessageBox.Show(cerere.explanation, cerere.typeOfElasticity);
         }
-        private void showExampleRadioButtonsCerereVenit()
+
+        /// <summary>
+        /// Funcție ce afișează butoanele cu exemplele de cerere elastică în funcție
+        /// de venit
+        /// </summary>
+        private void showExampleButtonsCerereVenit()
         {
             hopeButton12.Visible = true;
             hopeButton11.Visible = true;
             hopeButton10.Visible = true;
         }
+
+        /// <summary>
+        /// Funcție ce ascunde butoanele cu exemplele de cerere elastică în funcție
+        /// de venit
+        /// </summary>
         private void hideExampleButtonsCerereVenit()
         {
 
@@ -490,6 +581,12 @@ namespace MiniContaBill
             hopeButton10.Visible = false;
             
         }
+
+        /// <summary>
+        /// Funcție ce afișează exemplul de bun inferior
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void hopeButton12_Click(object sender, EventArgs e)
         {
             hideExampleButtonsCerereVenit();
@@ -506,7 +603,11 @@ namespace MiniContaBill
 
             System.Windows.Forms.MessageBox.Show(cerere.explanation, cerere.typeOfElasticity);
         }
-
+        /// <summary>
+        /// Funcție ce afișează exemplul de bun necesar
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void hopeButton11_Click(object sender, EventArgs e)
         {
             hideExampleButtonsCerereVenit();
@@ -523,7 +624,11 @@ namespace MiniContaBill
 
             System.Windows.Forms.MessageBox.Show(cerere.explanation, cerere.typeOfElasticity);
         }
-
+        /// <summary>
+        /// Funcție ce afișează exemplul de bun superior
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void hopeButton10_Click(object sender, EventArgs e)
         {
             hideExampleButtonsCerereVenit();
@@ -545,6 +650,9 @@ namespace MiniContaBill
         {
 
         }
+        /// <summary>
+        /// Funcție ce afișează butoanele cu exemplele de ofertă elastică
+        /// </summary>
         private void showExampleButtonsOferta()
         {
             hopeButton9.Visible = true;
@@ -552,6 +660,9 @@ namespace MiniContaBill
             hopeButton14.Visible = true;
             hopeButton15.Visible = true;
         }
+        /// <summary>
+        /// Funcție ce ascunde butoanele cu exemplele de ofertă elastică
+        /// </summary>
         private void hideExampleButtonsOferta()
         {
             hopeButton9.Visible = false;
@@ -559,6 +670,11 @@ namespace MiniContaBill
             hopeButton14.Visible = false;
             hopeButton15.Visible = false;
         }
+        /// <summary>
+        /// Funcție ce afișează exemplul de ofertă elastică
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void hopeButton9_Click(object sender, EventArgs e)
         {
             hideExampleButtonsOferta();
@@ -575,7 +691,11 @@ namespace MiniContaBill
 
             System.Windows.Forms.MessageBox.Show(oferta.explanation, oferta.typeOfElasticity);
         }
-
+        /// <summary>
+        /// Funcție ce afișează exemplul de ofertă inelastică
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void hopeButton13_Click(object sender, EventArgs e)
         {
             hideExampleButtonsOferta();
@@ -592,7 +712,11 @@ namespace MiniContaBill
 
             System.Windows.Forms.MessageBox.Show(oferta.explanation, oferta.typeOfElasticity);
         }
-
+        /// <summary>
+        /// Funcție ce afișează exemplul de ofertă inelastică
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void hopeButton14_Click(object sender, EventArgs e)
         {
             hideExampleButtonsOferta();
@@ -609,7 +733,11 @@ namespace MiniContaBill
 
             System.Windows.Forms.MessageBox.Show(oferta.explanation, oferta.typeOfElasticity);
         }
-
+        /// <summary>
+        /// Funcție ce afișează exemplul de ofertă unitar elastică
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void hopeButton15_Click(object sender, EventArgs e)
         {
             hideExampleButtonsOferta();

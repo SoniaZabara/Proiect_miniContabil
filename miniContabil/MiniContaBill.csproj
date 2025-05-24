@@ -121,24 +121,23 @@
     <Compile Include="SelectForm.Designer.cs">
       <DependentUpon>SelectForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="SetterCerereSiOfertaExemple.cs" />
     <Compile Include="TabCapitalForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TabCapitalForm.Designer.cs">
       <DependentUpon>TabCapitalForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="TabCostProfitForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TabCostProfitForm.Designer.cs">
-      <DependentUpon>TabCostProfitForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="TabCerereOfertaForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TabCerereOfertaForm.Designer.cs">
       <DependentUpon>TabCerereOfertaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabCostProfitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabCostProfitForm.Designer.cs">
+      <DependentUpon>TabCostProfitForm.cs</DependentUpon>
     </Compile>
     <Compile Include="TabSalariiForm.cs">
       <SubType>Form</SubType>
@@ -178,11 +177,11 @@
     <EmbeddedResource Include="TabCapitalForm.resx">
       <DependentUpon>TabCapitalForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TabCostProfitForm.resx">
-      <DependentUpon>TabCostProfitForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="TabCerereOfertaForm.resx">
       <DependentUpon>TabCerereOfertaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabCostProfitForm.resx">
+      <DependentUpon>TabCostProfitForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TabSalariiForm.resx">
       <DependentUpon>TabSalariiForm.cs</DependentUpon>
@@ -227,6 +226,10 @@
     <ProjectReference Include="..\FirmUtil\FirmUtil.csproj">
       <Project>{e4c301c1-fb1d-4998-942e-adbbd9d1447b}</Project>
       <Name>FirmUtil</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SetterExamplesStrategyDesign\SetterExamplesStrategyDesign.csproj">
+      <Project>{6b35f579-0443-4bc8-817e-4869d6910af7}</Project>
+      <Name>SetterExamplesStrategyDesign</Name>
     </ProjectReference>
     <ProjectReference Include="Amortizari\Amortizari\Amortizari.csproj">
       <Project>{9ca03273-76b5-48c1-93ab-428ab38a3850}</Project>

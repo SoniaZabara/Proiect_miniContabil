@@ -59,6 +59,10 @@
       <Project>{4020C6E3-8524-44FF-9A11-CCFA77B2A6D4}</Project>
       <Name>MiniContaBill</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SetterExamplesStrategyDesign\SetterExamplesStrategyDesign.csproj">
+      <Project>{6b35f579-0443-4bc8-817e-4869d6910af7}</Project>
+      <Name>SetterExamplesStrategyDesign</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

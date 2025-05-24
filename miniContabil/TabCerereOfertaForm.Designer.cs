@@ -32,6 +32,10 @@
             this.bigLabel1 = new ReaLTaiizor.Controls.BigLabel();
             this.hopeGroupBox1 = new ReaLTaiizor.Controls.HopeGroupBox();
             this.hopeGroupBox2 = new ReaLTaiizor.Controls.HopeGroupBox();
+            this.hopeButton15 = new ReaLTaiizor.Controls.HopeButton();
+            this.hopeButton14 = new ReaLTaiizor.Controls.HopeButton();
+            this.hopeButton13 = new ReaLTaiizor.Controls.HopeButton();
+            this.hopeButton9 = new ReaLTaiizor.Controls.HopeButton();
             this.hopeButton4 = new ReaLTaiizor.Controls.HopeButton();
             this.hopeButton2 = new ReaLTaiizor.Controls.HopeButton();
             this.hopeTextBox8 = new ReaLTaiizor.Controls.HopeTextBox();
@@ -62,10 +66,6 @@
             this.crownLabel3 = new ReaLTaiizor.Controls.CrownLabel();
             this.crownLabel4 = new ReaLTaiizor.Controls.CrownLabel();
             this.hopeRadioButton4 = new ReaLTaiizor.Controls.HopeRadioButton();
-            this.hopeButton9 = new ReaLTaiizor.Controls.HopeButton();
-            this.hopeButton13 = new ReaLTaiizor.Controls.HopeButton();
-            this.hopeButton14 = new ReaLTaiizor.Controls.HopeButton();
-            this.hopeButton15 = new ReaLTaiizor.Controls.HopeButton();
             this.hopeGroupBox1.SuspendLayout();
             this.hopeGroupBox2.SuspendLayout();
             this.hopeGroupBox3.SuspendLayout();
@@ -86,7 +86,7 @@
             this.hopeRadioButton1.ForeColor = System.Drawing.Color.Black;
             this.hopeRadioButton1.Location = new System.Drawing.Point(8, 11);
             this.hopeRadioButton1.Name = "hopeRadioButton1";
-            this.hopeRadioButton1.Size = new System.Drawing.Size(163, 20);
+            this.hopeRadioButton1.Size = new System.Drawing.Size(198, 20);
             this.hopeRadioButton1.TabIndex = 0;
             this.hopeRadioButton1.TabStop = true;
             this.hopeRadioButton1.Text = "Elasticitatea cererii";
@@ -101,7 +101,7 @@
             this.bigLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.bigLabel1.Location = new System.Drawing.Point(4, 9);
             this.bigLabel1.Name = "bigLabel1";
-            this.bigLabel1.Size = new System.Drawing.Size(342, 46);
+            this.bigLabel1.Size = new System.Drawing.Size(424, 57);
             this.bigLabel1.TabIndex = 2;
             this.bigLabel1.Text = "Calcul cerere și ofertă";
             // 
@@ -154,6 +154,90 @@
             this.hopeGroupBox2.Text = "hopeGroupBox2";
             this.hopeGroupBox2.ThemeColor = System.Drawing.SystemColors.Control;
             this.hopeGroupBox2.Enter += new System.EventHandler(this.hopeGroupBox2_Enter);
+            // 
+            // hopeButton15
+            // 
+            this.hopeButton15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
+            this.hopeButton15.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
+            this.hopeButton15.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.hopeButton15.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
+            this.hopeButton15.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.hopeButton15.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.hopeButton15.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.hopeButton15.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            this.hopeButton15.Location = new System.Drawing.Point(590, 18);
+            this.hopeButton15.Name = "hopeButton15";
+            this.hopeButton15.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.hopeButton15.Size = new System.Drawing.Size(120, 40);
+            this.hopeButton15.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
+            this.hopeButton15.TabIndex = 28;
+            this.hopeButton15.Text = "Ofertă unitar elastică";
+            this.hopeButton15.TextColor = System.Drawing.Color.White;
+            this.hopeButton15.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
+            this.hopeButton15.Click += new System.EventHandler(this.hopeButton15_Click);
+            // 
+            // hopeButton14
+            // 
+            this.hopeButton14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
+            this.hopeButton14.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
+            this.hopeButton14.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.hopeButton14.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
+            this.hopeButton14.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.hopeButton14.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.hopeButton14.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.hopeButton14.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            this.hopeButton14.Location = new System.Drawing.Point(422, 18);
+            this.hopeButton14.Name = "hopeButton14";
+            this.hopeButton14.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.hopeButton14.Size = new System.Drawing.Size(120, 40);
+            this.hopeButton14.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
+            this.hopeButton14.TabIndex = 27;
+            this.hopeButton14.Text = "Ofertă perfect inelastică";
+            this.hopeButton14.TextColor = System.Drawing.Color.White;
+            this.hopeButton14.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
+            this.hopeButton14.Click += new System.EventHandler(this.hopeButton14_Click);
+            // 
+            // hopeButton13
+            // 
+            this.hopeButton13.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
+            this.hopeButton13.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
+            this.hopeButton13.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.hopeButton13.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
+            this.hopeButton13.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.hopeButton13.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.hopeButton13.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.hopeButton13.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            this.hopeButton13.Location = new System.Drawing.Point(208, 18);
+            this.hopeButton13.Name = "hopeButton13";
+            this.hopeButton13.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.hopeButton13.Size = new System.Drawing.Size(120, 40);
+            this.hopeButton13.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
+            this.hopeButton13.TabIndex = 26;
+            this.hopeButton13.Text = "Ofertă inelastică";
+            this.hopeButton13.TextColor = System.Drawing.Color.White;
+            this.hopeButton13.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
+            this.hopeButton13.Click += new System.EventHandler(this.hopeButton13_Click);
+            // 
+            // hopeButton9
+            // 
+            this.hopeButton9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
+            this.hopeButton9.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
+            this.hopeButton9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.hopeButton9.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
+            this.hopeButton9.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.hopeButton9.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.hopeButton9.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.hopeButton9.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            this.hopeButton9.Location = new System.Drawing.Point(45, 18);
+            this.hopeButton9.Name = "hopeButton9";
+            this.hopeButton9.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.hopeButton9.Size = new System.Drawing.Size(120, 40);
+            this.hopeButton9.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
+            this.hopeButton9.TabIndex = 25;
+            this.hopeButton9.Text = "Ofertă elastică";
+            this.hopeButton9.TextColor = System.Drawing.Color.White;
+            this.hopeButton9.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
+            this.hopeButton9.Click += new System.EventHandler(this.hopeButton9_Click);
             // 
             // hopeButton4
             // 
@@ -215,7 +299,7 @@
             this.hopeTextBox8.SelectedText = "";
             this.hopeTextBox8.SelectionLength = 0;
             this.hopeTextBox8.SelectionStart = 0;
-            this.hopeTextBox8.Size = new System.Drawing.Size(163, 38);
+            this.hopeTextBox8.Size = new System.Drawing.Size(163, 43);
             this.hopeTextBox8.TabIndex = 20;
             this.hopeTextBox8.TabStop = false;
             this.hopeTextBox8.UseSystemPasswordChar = false;
@@ -226,7 +310,7 @@
             this.crownLabel8.ForeColor = System.Drawing.Color.Black;
             this.crownLabel8.Location = new System.Drawing.Point(586, 33);
             this.crownLabel8.Name = "crownLabel8";
-            this.crownLabel8.Size = new System.Drawing.Size(99, 21);
+            this.crownLabel8.Size = new System.Drawing.Size(122, 28);
             this.crownLabel8.TabIndex = 12;
             this.crownLabel8.Text = "crownLabel8";
             this.crownLabel8.Click += new System.EventHandler(this.crownLabel8_Click);
@@ -249,7 +333,7 @@
             this.hopeTextBox7.SelectedText = "";
             this.hopeTextBox7.SelectionLength = 0;
             this.hopeTextBox7.SelectionStart = 0;
-            this.hopeTextBox7.Size = new System.Drawing.Size(97, 38);
+            this.hopeTextBox7.Size = new System.Drawing.Size(97, 43);
             this.hopeTextBox7.TabIndex = 19;
             this.hopeTextBox7.TabStop = false;
             this.hopeTextBox7.UseSystemPasswordChar = false;
@@ -260,7 +344,7 @@
             this.crownLabel7.ForeColor = System.Drawing.Color.Black;
             this.crownLabel7.Location = new System.Drawing.Point(483, 33);
             this.crownLabel7.Name = "crownLabel7";
-            this.crownLabel7.Size = new System.Drawing.Size(99, 21);
+            this.crownLabel7.Size = new System.Drawing.Size(122, 28);
             this.crownLabel7.TabIndex = 11;
             this.crownLabel7.Text = "crownLabel7";
             // 
@@ -282,7 +366,7 @@
             this.hopeTextBox6.SelectedText = "";
             this.hopeTextBox6.SelectionLength = 0;
             this.hopeTextBox6.SelectionStart = 0;
-            this.hopeTextBox6.Size = new System.Drawing.Size(240, 38);
+            this.hopeTextBox6.Size = new System.Drawing.Size(240, 43);
             this.hopeTextBox6.TabIndex = 18;
             this.hopeTextBox6.TabStop = false;
             this.hopeTextBox6.UseSystemPasswordChar = false;
@@ -294,7 +378,7 @@
             this.crownLabel6.ForeColor = System.Drawing.Color.Black;
             this.crownLabel6.Location = new System.Drawing.Point(237, 33);
             this.crownLabel6.Name = "crownLabel6";
-            this.crownLabel6.Size = new System.Drawing.Size(99, 21);
+            this.crownLabel6.Size = new System.Drawing.Size(122, 28);
             this.crownLabel6.TabIndex = 10;
             this.crownLabel6.Text = "crownLabel6";
             // 
@@ -304,7 +388,7 @@
             this.crownLabel5.ForeColor = System.Drawing.Color.Black;
             this.crownLabel5.Location = new System.Drawing.Point(4, 33);
             this.crownLabel5.Name = "crownLabel5";
-            this.crownLabel5.Size = new System.Drawing.Size(99, 21);
+            this.crownLabel5.Size = new System.Drawing.Size(122, 28);
             this.crownLabel5.TabIndex = 9;
             this.crownLabel5.Text = "crownLabel5";
             this.crownLabel5.Click += new System.EventHandler(this.crownLabel5_Click);
@@ -327,7 +411,7 @@
             this.hopeTextBox5.SelectedText = "";
             this.hopeTextBox5.SelectionLength = 0;
             this.hopeTextBox5.SelectionStart = 0;
-            this.hopeTextBox5.Size = new System.Drawing.Size(227, 38);
+            this.hopeTextBox5.Size = new System.Drawing.Size(227, 43);
             this.hopeTextBox5.TabIndex = 17;
             this.hopeTextBox5.TabStop = false;
             this.hopeTextBox5.UseSystemPasswordChar = false;
@@ -592,7 +676,7 @@
             this.hopeTextBox1.SelectedText = "";
             this.hopeTextBox1.SelectionLength = 0;
             this.hopeTextBox1.SelectionStart = 0;
-            this.hopeTextBox1.Size = new System.Drawing.Size(227, 38);
+            this.hopeTextBox1.Size = new System.Drawing.Size(227, 43);
             this.hopeTextBox1.TabIndex = 13;
             this.hopeTextBox1.TabStop = false;
             this.hopeTextBox1.UseSystemPasswordChar = false;
@@ -615,7 +699,7 @@
             this.hopeTextBox2.SelectedText = "";
             this.hopeTextBox2.SelectionLength = 0;
             this.hopeTextBox2.SelectionStart = 0;
-            this.hopeTextBox2.Size = new System.Drawing.Size(240, 38);
+            this.hopeTextBox2.Size = new System.Drawing.Size(240, 43);
             this.hopeTextBox2.TabIndex = 14;
             this.hopeTextBox2.TabStop = false;
             this.hopeTextBox2.UseSystemPasswordChar = false;
@@ -638,7 +722,7 @@
             this.hopeTextBox3.SelectedText = "";
             this.hopeTextBox3.SelectionLength = 0;
             this.hopeTextBox3.SelectionStart = 0;
-            this.hopeTextBox3.Size = new System.Drawing.Size(97, 38);
+            this.hopeTextBox3.Size = new System.Drawing.Size(97, 43);
             this.hopeTextBox3.TabIndex = 15;
             this.hopeTextBox3.TabStop = false;
             this.hopeTextBox3.UseSystemPasswordChar = false;
@@ -661,7 +745,7 @@
             this.hopeTextBox4.SelectedText = "";
             this.hopeTextBox4.SelectionLength = 0;
             this.hopeTextBox4.SelectionStart = 0;
-            this.hopeTextBox4.Size = new System.Drawing.Size(171, 38);
+            this.hopeTextBox4.Size = new System.Drawing.Size(171, 43);
             this.hopeTextBox4.TabIndex = 16;
             this.hopeTextBox4.TabStop = false;
             this.hopeTextBox4.UseSystemPasswordChar = false;
@@ -672,7 +756,7 @@
             this.crownLabel1.ForeColor = System.Drawing.Color.Black;
             this.crownLabel1.Location = new System.Drawing.Point(2, 57);
             this.crownLabel1.Name = "crownLabel1";
-            this.crownLabel1.Size = new System.Drawing.Size(166, 21);
+            this.crownLabel1.Size = new System.Drawing.Size(210, 28);
             this.crownLabel1.TabIndex = 5;
             this.crownLabel1.Text = "cantitate ceruta initiala";
             // 
@@ -682,7 +766,7 @@
             this.crownLabel2.ForeColor = System.Drawing.Color.Black;
             this.crownLabel2.Location = new System.Drawing.Point(235, 57);
             this.crownLabel2.Name = "crownLabel2";
-            this.crownLabel2.Size = new System.Drawing.Size(233, 21);
+            this.crownLabel2.Size = new System.Drawing.Size(295, 28);
             this.crownLabel2.TabIndex = 6;
             this.crownLabel2.Text = "cantitate ceruta dupa modificare";
             // 
@@ -692,7 +776,7 @@
             this.crownLabel3.ForeColor = System.Drawing.Color.Black;
             this.crownLabel3.Location = new System.Drawing.Point(481, 57);
             this.crownLabel3.Name = "crownLabel3";
-            this.crownLabel3.Size = new System.Drawing.Size(80, 21);
+            this.crownLabel3.Size = new System.Drawing.Size(101, 28);
             this.crownLabel3.TabIndex = 7;
             this.crownLabel3.Text = "pret initial";
             // 
@@ -702,7 +786,7 @@
             this.crownLabel4.ForeColor = System.Drawing.Color.Black;
             this.crownLabel4.Location = new System.Drawing.Point(584, 57);
             this.crownLabel4.Name = "crownLabel4";
-            this.crownLabel4.Size = new System.Drawing.Size(155, 21);
+            this.crownLabel4.Size = new System.Drawing.Size(196, 28);
             this.crownLabel4.TabIndex = 8;
             this.crownLabel4.Text = "pret dupa modificare";
             // 
@@ -721,98 +805,14 @@
             this.hopeRadioButton4.ForeColor = System.Drawing.Color.Black;
             this.hopeRadioButton4.Location = new System.Drawing.Point(6, 280);
             this.hopeRadioButton4.Name = "hopeRadioButton4";
-            this.hopeRadioButton4.Size = new System.Drawing.Size(165, 20);
+            this.hopeRadioButton4.Size = new System.Drawing.Size(202, 20);
             this.hopeRadioButton4.TabIndex = 4;
             this.hopeRadioButton4.TabStop = true;
             this.hopeRadioButton4.Text = "Elasticitatea ofertei";
             this.hopeRadioButton4.UseVisualStyleBackColor = true;
             this.hopeRadioButton4.CheckedChanged += new System.EventHandler(this.hopeRadioButton4_CheckedChanged);
             // 
-            // hopeButton9
-            // 
-            this.hopeButton9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
-            this.hopeButton9.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
-            this.hopeButton9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hopeButton9.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
-            this.hopeButton9.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.hopeButton9.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.hopeButton9.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.hopeButton9.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.hopeButton9.Location = new System.Drawing.Point(45, 18);
-            this.hopeButton9.Name = "hopeButton9";
-            this.hopeButton9.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.hopeButton9.Size = new System.Drawing.Size(120, 40);
-            this.hopeButton9.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
-            this.hopeButton9.TabIndex = 25;
-            this.hopeButton9.Text = "Ofertă elastică";
-            this.hopeButton9.TextColor = System.Drawing.Color.White;
-            this.hopeButton9.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
-            this.hopeButton9.Click += new System.EventHandler(this.hopeButton9_Click);
-            // 
-            // hopeButton13
-            // 
-            this.hopeButton13.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
-            this.hopeButton13.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
-            this.hopeButton13.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hopeButton13.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
-            this.hopeButton13.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.hopeButton13.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.hopeButton13.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.hopeButton13.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.hopeButton13.Location = new System.Drawing.Point(208, 18);
-            this.hopeButton13.Name = "hopeButton13";
-            this.hopeButton13.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.hopeButton13.Size = new System.Drawing.Size(120, 40);
-            this.hopeButton13.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
-            this.hopeButton13.TabIndex = 26;
-            this.hopeButton13.Text = "Ofertă inelastică";
-            this.hopeButton13.TextColor = System.Drawing.Color.White;
-            this.hopeButton13.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
-            this.hopeButton13.Click += new System.EventHandler(this.hopeButton13_Click);
-            // 
-            // hopeButton14
-            // 
-            this.hopeButton14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
-            this.hopeButton14.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
-            this.hopeButton14.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hopeButton14.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
-            this.hopeButton14.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.hopeButton14.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.hopeButton14.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.hopeButton14.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.hopeButton14.Location = new System.Drawing.Point(422, 18);
-            this.hopeButton14.Name = "hopeButton14";
-            this.hopeButton14.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.hopeButton14.Size = new System.Drawing.Size(120, 40);
-            this.hopeButton14.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
-            this.hopeButton14.TabIndex = 27;
-            this.hopeButton14.Text = "Ofertă perfect inelastică";
-            this.hopeButton14.TextColor = System.Drawing.Color.White;
-            this.hopeButton14.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
-            this.hopeButton14.Click += new System.EventHandler(this.hopeButton14_Click);
-            // 
-            // hopeButton15
-            // 
-            this.hopeButton15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
-            this.hopeButton15.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
-            this.hopeButton15.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hopeButton15.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
-            this.hopeButton15.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.hopeButton15.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.hopeButton15.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.hopeButton15.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.hopeButton15.Location = new System.Drawing.Point(590, 18);
-            this.hopeButton15.Name = "hopeButton15";
-            this.hopeButton15.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.hopeButton15.Size = new System.Drawing.Size(120, 40);
-            this.hopeButton15.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
-            this.hopeButton15.TabIndex = 28;
-            this.hopeButton15.Text = "Ofertă unitar elastică";
-            this.hopeButton15.TextColor = System.Drawing.Color.White;
-            this.hopeButton15.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
-            this.hopeButton15.Click += new System.EventHandler(this.hopeButton15_Click);
-            // 
-            // tab3Form
+            // TabCerereOfertaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -821,7 +821,7 @@
             this.Controls.Add(this.bigLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "tab3Form";
+            this.Name = "TabCerereOfertaForm";
             this.Text = "tab3Form";
             this.Load += new System.EventHandler(this.tab3Form_Load_1);
             this.hopeGroupBox1.ResumeLayout(false);

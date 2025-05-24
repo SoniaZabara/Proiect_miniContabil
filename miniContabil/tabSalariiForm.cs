@@ -438,5 +438,10 @@ namespace MiniContaBill
 
             }
         }
+
+        private void textBoxNumeAngajat_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

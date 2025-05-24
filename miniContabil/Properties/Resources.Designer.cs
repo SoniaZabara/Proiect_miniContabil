@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace miniContabil.Properties {
+namespace MiniContaBill.Properties {
     using System;
     
     

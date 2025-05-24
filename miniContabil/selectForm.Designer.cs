@@ -1,6 +1,6 @@
-﻿namespace miniContabil
+﻿namespace MiniContaBill
 {
-    partial class selectForm
+    partial class SelectForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SelectForm));
             this.labelNumeSocietate = new System.Windows.Forms.Label();
             this.buttonNext1 = new System.Windows.Forms.Button();
             this.labelTipSocietate = new System.Windows.Forms.Label();
@@ -80,7 +81,7 @@
             this.poisonComboBox1.Items.AddRange(new object[] {
             "Societate cu Răspundere Limitată",
             "Persoană Fizica Autorizată",
-            "Societate pe acțiuni"});
+            "Societate pe Acțiuni"});
             this.poisonComboBox1.Location = new System.Drawing.Point(63, 333);
             this.poisonComboBox1.Name = "poisonComboBox1";
             this.poisonComboBox1.Size = new System.Drawing.Size(323, 30);
@@ -108,8 +109,10 @@
             // pictureBoxDecor
             // 
             this.pictureBoxDecor.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBoxDecor.BackgroundImage = global::miniContabil.Properties.Resources.bad445eaa91b27cd07d416aa6edf9516_removebg_preview;
             this.pictureBoxDecor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxDecor.ErrorImage = null;
+            this.pictureBoxDecor.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxDecor.Image")));
+            this.pictureBoxDecor.InitialImage = null;
             this.pictureBoxDecor.Location = new System.Drawing.Point(541, 56);
             this.pictureBoxDecor.Name = "pictureBoxDecor";
             this.pictureBoxDecor.Size = new System.Drawing.Size(640, 505);
@@ -117,7 +120,7 @@
             this.pictureBoxDecor.TabIndex = 12;
             this.pictureBoxDecor.TabStop = false;
             // 
-            // selectForm
+            // SelectForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -131,7 +134,7 @@
             this.Controls.Add(this.labelNumeSocietate);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "selectForm";
+            this.Name = "SelectForm";
             this.Text = "selectForm";
             this.Load += new System.EventHandler(this.selectForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDecor)).EndInit();

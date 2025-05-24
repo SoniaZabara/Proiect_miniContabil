@@ -1,6 +1,6 @@
-﻿namespace miniContabil
+﻿namespace MiniContaBill
 {
-    partial class tab1Form
+    partial class TabCapitalForm
     {
         /// <summary>
         /// Required designer variable.
@@ -42,9 +42,22 @@
             this.dataGridViewAmortizari = new System.Windows.Forms.DataGridView();
             this.buttonCalcAmortizare = new System.Windows.Forms.Button();
             this.chartAmortizare = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.groupBoxDividente = new System.Windows.Forms.GroupBox();
+            this.textBoxDivident = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.numericProcent = new System.Windows.Forms.NumericUpDown();
+            this.textBoxProfitTotal = new System.Windows.Forms.TextBox();
+            this.textBoxSalariiTotal = new System.Windows.Forms.TextBox();
+            this.buttonCalc = new System.Windows.Forms.Button();
+            this.textBoxAmortizareTotala = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownLifeTime)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAmortizari)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartAmortizare)).BeginInit();
+            this.groupBoxDividente.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericProcent)).BeginInit();
             this.SuspendLayout();
             // 
             // labelInitialValue
@@ -128,7 +141,7 @@
             this.dataGridViewAmortizari.Name = "dataGridViewAmortizari";
             this.dataGridViewAmortizari.RowHeadersWidth = 51;
             this.dataGridViewAmortizari.RowTemplate.Height = 24;
-            this.dataGridViewAmortizari.Size = new System.Drawing.Size(590, 233);
+            this.dataGridViewAmortizari.Size = new System.Drawing.Size(614, 233);
             this.dataGridViewAmortizari.TabIndex = 8;
             // 
             // buttonCalcAmortizare
@@ -159,11 +172,117 @@
             this.chartAmortizare.TabIndex = 10;
             this.chartAmortizare.Text = "chartAmortizare";
             // 
+            // groupBoxDividente
+            // 
+            this.groupBoxDividente.Controls.Add(this.textBoxDivident);
+            this.groupBoxDividente.Controls.Add(this.label4);
+            this.groupBoxDividente.Controls.Add(this.label3);
+            this.groupBoxDividente.Controls.Add(this.label2);
+            this.groupBoxDividente.Controls.Add(this.label1);
+            this.groupBoxDividente.Controls.Add(this.numericProcent);
+            this.groupBoxDividente.Controls.Add(this.textBoxProfitTotal);
+            this.groupBoxDividente.Controls.Add(this.textBoxSalariiTotal);
+            this.groupBoxDividente.Controls.Add(this.buttonCalc);
+            this.groupBoxDividente.Controls.Add(this.textBoxAmortizareTotala);
+            this.groupBoxDividente.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxDividente.Location = new System.Drawing.Point(562, 322);
+            this.groupBoxDividente.Name = "groupBoxDividente";
+            this.groupBoxDividente.Size = new System.Drawing.Size(445, 288);
+            this.groupBoxDividente.TabIndex = 11;
+            this.groupBoxDividente.TabStop = false;
+            this.groupBoxDividente.Text = "Calcul Dividente";
+            // 
+            // textBoxDivident
+            // 
+            this.textBoxDivident.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBoxDivident.Location = new System.Drawing.Point(251, 166);
+            this.textBoxDivident.Name = "textBoxDivident";
+            this.textBoxDivident.ReadOnly = true;
+            this.textBoxDivident.Size = new System.Drawing.Size(145, 26);
+            this.textBoxDivident.TabIndex = 28;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(42, 216);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(151, 18);
+            this.label4.TabIndex = 27;
+            this.label4.Text = "Profit redistribuit (%)";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(42, 156);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(79, 18);
+            this.label3.TabIndex = 26;
+            this.label3.Text = "Profit total";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(42, 102);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(89, 18);
+            this.label2.TabIndex = 25;
+            this.label2.Text = "Salarii total";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(42, 40);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(134, 18);
+            this.label1.TabIndex = 24;
+            this.label1.Text = "Amortizare totala";
+            // 
+            // numericProcent
+            // 
+            this.numericProcent.Location = new System.Drawing.Point(42, 237);
+            this.numericProcent.Name = "numericProcent";
+            this.numericProcent.Size = new System.Drawing.Size(100, 26);
+            this.numericProcent.TabIndex = 23;
+            // 
+            // textBoxProfitTotal
+            // 
+            this.textBoxProfitTotal.Location = new System.Drawing.Point(42, 177);
+            this.textBoxProfitTotal.Name = "textBoxProfitTotal";
+            this.textBoxProfitTotal.Size = new System.Drawing.Size(100, 26);
+            this.textBoxProfitTotal.TabIndex = 22;
+            // 
+            // textBoxSalariiTotal
+            // 
+            this.textBoxSalariiTotal.Location = new System.Drawing.Point(42, 123);
+            this.textBoxSalariiTotal.Name = "textBoxSalariiTotal";
+            this.textBoxSalariiTotal.Size = new System.Drawing.Size(100, 26);
+            this.textBoxSalariiTotal.TabIndex = 21;
+            // 
+            // buttonCalc
+            // 
+            this.buttonCalc.ForeColor = System.Drawing.Color.Black;
+            this.buttonCalc.Location = new System.Drawing.Point(251, 102);
+            this.buttonCalc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonCalc.Name = "buttonCalc";
+            this.buttonCalc.Size = new System.Drawing.Size(145, 38);
+            this.buttonCalc.TabIndex = 20;
+            this.buttonCalc.Text = "Calculează";
+            this.buttonCalc.UseVisualStyleBackColor = true;
+            this.buttonCalc.Click += new System.EventHandler(this.buttonCalc_Click);
+            // 
+            // textBoxAmortizareTotala
+            // 
+            this.textBoxAmortizareTotala.Location = new System.Drawing.Point(42, 62);
+            this.textBoxAmortizareTotala.Name = "textBoxAmortizareTotala";
+            this.textBoxAmortizareTotala.Size = new System.Drawing.Size(100, 26);
+            this.textBoxAmortizareTotala.TabIndex = 0;
+            // 
             // tab1Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1062, 633);
+            this.Controls.Add(this.groupBoxDividente);
             this.Controls.Add(this.chartAmortizare);
             this.Controls.Add(this.buttonCalcAmortizare);
             this.Controls.Add(this.dataGridViewAmortizari);
@@ -182,6 +301,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownLifeTime)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAmortizari)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartAmortizare)).EndInit();
+            this.groupBoxDividente.ResumeLayout(false);
+            this.groupBoxDividente.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericProcent)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -200,5 +322,16 @@
         private System.Windows.Forms.DataGridView dataGridViewAmortizari;
         private System.Windows.Forms.Button buttonCalcAmortizare;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartAmortizare;
+        private System.Windows.Forms.GroupBox groupBoxDividente;
+        private System.Windows.Forms.TextBox textBoxAmortizareTotala;
+        private System.Windows.Forms.Button buttonCalc;
+        private System.Windows.Forms.TextBox textBoxProfitTotal;
+        private System.Windows.Forms.TextBox textBoxSalariiTotal;
+        private System.Windows.Forms.NumericUpDown numericProcent;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBoxDivident;
     }
 }

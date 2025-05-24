@@ -1,6 +1,6 @@
-﻿namespace miniContabil
+﻿namespace MiniContaBill
 {
-    partial class dataForm
+    partial class DataForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DataForm));
             this.buttonNext2 = new System.Windows.Forms.Button();
             this.buttonPrev2 = new System.Windows.Forms.Button();
             this.labelAtribute = new System.Windows.Forms.Label();
@@ -207,11 +208,11 @@
             this.labelFirma.TabIndex = 14;
             this.labelFirma.Text = "labelTitlu";
             // 
-            // dataForm
+            // DataForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::miniContabil.Properties.Resources.Screenshot_2025_05_11_203409_removebg_preview;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1280, 680);
             this.Controls.Add(this.textBoxDatorii);
@@ -232,7 +233,7 @@
             this.Controls.Add(this.buttonNext2);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "dataForm";
+            this.Name = "DataForm";
             this.Text = "dataForm";
             this.Load += new System.EventHandler(this.dataForm_Load);
             this.ResumeLayout(false);

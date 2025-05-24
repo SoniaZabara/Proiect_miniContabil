@@ -1,4 +1,22 @@
-﻿using System;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        SelectForm.cs                                            *
+ *  Copyright:   (c) 2025, Sonia Zabara                                   *
+ *  E-mail:      sonia.zabara@student.tuiasi.ro                           *
+ *  Description: Windows Forms UI for choosing the name and type of       *
+ *               firm.                                                    *
+ *                                                                        *
+ *  This program is free software; you can redistribute it and/or modify  *
+ *  it under the terms of the GNU General Public License as published by  *
+ *  the Free Software Foundation. This program is distributed in the      *
+ *  hope that it will be useful, but WITHOUT ANY WARRANTY; without even   *
+ *  the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR   *
+ *  PURPOSE. See the GNU General Public License for more details.         *
+ *                                                                        *
+ **************************************************************************/
+
+
+using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.ComponentModel;
@@ -8,16 +26,28 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FirmUtil;
 
-namespace miniContabil
+namespace MiniContaBill
 {
-    public partial class selectForm : Form
+    /// <summary>
+    /// Clasă pentru form-ul ce face selecția numelui și tipului firmei
+    /// </summary>
+    public partial class SelectForm : Form
     {
-        public selectForm()
+        /// <summary>
+        /// Metodă ce inițializează SelectForm
+        /// </summary>
+        public SelectForm()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Buton de next - se merge la următorul form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonNext1_Click(object sender, EventArgs e)
         {
             if (FormManager.builder == null || bigTextBox1.Text == "")
@@ -26,16 +56,26 @@ namespace miniContabil
             }
             else
             {
-                FormManager.mainForm.loadForm(new dataForm());
+                FormManager.mainForm.LoadForm(new DataForm());
             }
         }
 
+        /// <summary>
+        /// Metodă ce setează numele firmei
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void bigTextBox1_TextChanged(object sender, EventArgs e)
         {
             if(FormManager.builder != null)
                 FormManager.builder.SetName(bigTextBox1.Text);
         }
 
+        /// <summary>
+        /// metodă ce setează tipul firmei
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void poisonComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if(poisonComboBox1.SelectedIndex == 0) //"Societate cu Răspundere Limitată"
@@ -55,6 +95,11 @@ namespace miniContabil
                 FormManager.builder.SetName(bigTextBox1.Text);
         }
 
+        /// <summary>
+        /// Metodă ce inițializează form-ul cu câteva valori deja definite
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void selectForm_Load(object sender, EventArgs e)
         {
             if (FormManager.builder == null)

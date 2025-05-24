@@ -28,9 +28,9 @@ using System.Text.Json;
 using System.Windows.Forms;
 using SalariiAngajati;
 
-namespace miniContabil
+namespace MiniContaBill
 {
-    public partial class tabSalariiForm : Form
+    public partial class TabSalariiForm : Form
     {
         private int _index;
         private readonly List<Angajat> _angajati = new List<Angajat>();
@@ -40,7 +40,7 @@ namespace miniContabil
         /// Constructorul primeste firma selectata si incarca angajatii care sunt salvati pentru acea firma
         /// </summary>
         /// <param name="selectedFirm"></param>
-        public tabSalariiForm(string selectedFirm)
+        public TabSalariiForm(string selectedFirm)
         {
             InitializeComponent();
             CustomizeDataGridView();
@@ -437,6 +437,11 @@ namespace miniContabil
                 textBoxCostTotalAngajator.Text = costTotal.ToString("F2");
 
             }
+        }
+
+        private void textBoxNumeAngajat_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

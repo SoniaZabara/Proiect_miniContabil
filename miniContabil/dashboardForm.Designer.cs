@@ -1,6 +1,6 @@
-﻿namespace miniContabil
+﻿namespace MiniContaBill
 {
-    partial class dashboardForm
+    partial class DashboardForm
     {
         /// <summary>
         /// Required designer variable.
@@ -30,20 +30,20 @@
         {
             this.dashboardSidepanel = new System.Windows.Forms.Panel();
             this.labelFirma = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.buttonTab3 = new System.Windows.Forms.Button();
             this.buttonTab2 = new System.Windows.Forms.Button();
             this.buttonTab1 = new System.Windows.Forms.Button();
             this.buttonPrev3 = new System.Windows.Forms.Button();
             this.dashboardMainpanel = new System.Windows.Forms.Panel();
+            this.buttonTab4 = new System.Windows.Forms.Button();
             this.dashboardSidepanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // dashboardSidepanel
             // 
             this.dashboardSidepanel.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.dashboardSidepanel.Controls.Add(this.buttonTab4);
             this.dashboardSidepanel.Controls.Add(this.labelFirma);
-            this.dashboardSidepanel.Controls.Add(this.button1);
             this.dashboardSidepanel.Controls.Add(this.buttonTab3);
             this.dashboardSidepanel.Controls.Add(this.buttonTab2);
             this.dashboardSidepanel.Controls.Add(this.buttonTab1);
@@ -57,7 +57,7 @@
             // labelFirma
             // 
             this.labelFirma.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.labelFirma.Font = new System.Drawing.Font("RomanT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFirma.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelFirma.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.labelFirma.Location = new System.Drawing.Point(3, 46);
             this.labelFirma.Name = "labelFirma";
@@ -65,20 +65,6 @@
             this.labelFirma.TabIndex = 15;
             this.labelFirma.Text = "labelTitlu";
             this.labelFirma.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(3, 383);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 50);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Salarii + Angajati";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // buttonTab3
             // 
@@ -145,7 +131,21 @@
             this.dashboardMainpanel.TabIndex = 1;
             this.dashboardMainpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.dashboardMainpanel_Paint);
             // 
-            // dashboardForm
+            // buttonTab4
+            // 
+            this.buttonTab4.FlatAppearance.BorderSize = 0;
+            this.buttonTab4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonTab4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTab4.ForeColor = System.Drawing.Color.White;
+            this.buttonTab4.Location = new System.Drawing.Point(0, 383);
+            this.buttonTab4.Name = "buttonTab4";
+            this.buttonTab4.Size = new System.Drawing.Size(200, 50);
+            this.buttonTab4.TabIndex = 16;
+            this.buttonTab4.Text = "Salarii + Angajati";
+            this.buttonTab4.UseVisualStyleBackColor = true;
+            this.buttonTab4.Click += new System.EventHandler(this.buttonTab4_Click);
+            // 
+            // DashboardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -153,7 +153,7 @@
             this.Controls.Add(this.dashboardMainpanel);
             this.Controls.Add(this.dashboardSidepanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "dashboardForm";
+            this.Name = "DashboardForm";
             this.Text = "dashboardForm";
             this.Load += new System.EventHandler(this.dashboardForm_Load);
             this.dashboardSidepanel.ResumeLayout(false);
@@ -169,7 +169,7 @@
         private System.Windows.Forms.Button buttonTab3;
         private System.Windows.Forms.Button buttonTab2;
         private System.Windows.Forms.Button buttonTab1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label labelFirma;
+        private System.Windows.Forms.Button buttonTab4;
     }
 }

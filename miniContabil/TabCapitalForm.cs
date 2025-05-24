@@ -33,12 +33,16 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 using Amortizari;
+using Dividente;
+using ConvertText;
+using FirmUtil;
 
-namespace miniContabil
+
+namespace MiniContaBill
 {
-    public partial class tab1Form : Form
+    public partial class TabCapitalForm : Form
     {
-        public tab1Form()
+        public TabCapitalForm()
         {
             InitializeComponent();
         }
@@ -49,7 +53,15 @@ namespace miniContabil
         /// <param name="e"></param>
         private void tab1Form_Load(object sender, EventArgs e)
         {
+            textBoxAmortizareTotala.Text = "" + 0;
+            textBoxProfitTotal.Text = "" + 0;
+            textBoxSalariiTotal.Text = "" + 0;
 
+            if (FormManager.builder.GetResult().GetFirmType() != FirmType.SA)
+            {
+                groupBoxDividente.Enabled = false;
+            }
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -157,5 +169,27 @@ namespace miniContabil
             chartAmortizare.Series.Add(serie);
         }
 
-    }
+        /// <summary>
+        /// Buton de calcul - se calculeaza si afiseaza valoarea dividentului la apasarea butonului
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void buttonCalc_Click(object sender, EventArgs e)
+        {
+            decimal rezultat = 0;
+            decimal profit;
+            decimal ct;
+            
+            ct = Dividente.Dividente.CalculCheltuieliTotale(ConvertText.ConvertText.ConvertToDecimal(textBoxAmortizareTotala.Text), FormManager.builder.GetResult().GetCC(), ConvertText.ConvertText.ConvertToDecimal(textBoxSalariiTotal.Text));
+            profit = Dividente.Dividente.CalculProfit(FormManager.builder.GetResult().GetCA(), ct);
+            rezultat = Dividente.Dividente.CalculDivident(profit, numericProcent.Value, FormManager.builder.GetResult().GetNrAct());
+
+            if(rezultat == 0)
+            {
+                MessageBox.Show("O posibilă eroare cauzată de introducerea necorespunzătoare a unei valori", "Atenție!");
+            }
+
+            textBoxDivident.Text = "" + rezultat;
+        }
+    }   
 }

@@ -88,11 +88,8 @@
     <Compile Include="CostProfitTests.cs" />
     <Compile Include="OfertaUElasticaTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-<<<<<<< HEAD
     <Compile Include="TabSalariiTests.cs" />
-=======
     <Compile Include="FirmTests.cs" />
->>>>>>> a4aa45dd80070cbfc2babb308341d2946bd03dae
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CostulProductieProfitDDL\CostulProductieProfitDDL.csproj">

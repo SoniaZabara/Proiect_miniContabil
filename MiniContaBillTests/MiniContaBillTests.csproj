@@ -54,11 +54,16 @@
     <Compile Include="CostProfitTests.cs" />
     <Compile Include="OfertaUElasticaTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FirmTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CostulProductieProfitDDL\CostulProductieProfitDDL.csproj">
       <Project>{b84506b6-8ec8-4fc5-b78d-cd79a05c0cb5}</Project>
       <Name>CostulProductieProfitDDL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FirmUtil\FirmUtil.csproj">
+      <Project>{e4c301c1-fb1d-4998-942e-adbbd9d1447b}</Project>
+      <Name>FirmUtil</Name>
     </ProjectReference>
     <ProjectReference Include="..\miniContabil\MiniContaBill.csproj">
       <Project>{4020C6E3-8524-44FF-9A11-CCFA77B2A6D4}</Project>

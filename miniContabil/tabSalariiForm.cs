@@ -1,7 +1,7 @@
 ﻿/**************************************************************************
  *                                                                        *
  *  File:        tabSalariiForm.cs                                        *
- *  Copyright:   (c) 2025, Bran Ioana -Andreea                            *
+ *  Copyright:   (c) 2025, Bran Ioana-Andreea                            *
  *  E-mail:      ioana-andreea.bran@student.tuiasi.ro                     *
  *  Description:  Windows Forms UI pentru gestionarea salariilor          *
  *       angajaților unei firme selectate.Permite adăugarea, modificarea, *
@@ -68,16 +68,17 @@ namespace MiniContaBill
         private void buttonAdd_Click(object sender, EventArgs e)
         {
             double salariuBrut;
-            if (!double.TryParse(textBoxSalariuBrut.Text, out salariuBrut))
+
+            if (!double.TryParse(textBoxSalariuBrut.Text, out salariuBrut) || salariuBrut < 0)
             {
-                MessageBox.Show("Va rugam sa introduceti o valoare numerica pentru salariul brut");
+                MessageBox.Show("Vă rugăm să introduceți o valoare numerică validă, pozitivă, pentru salariul brut.");
                 return;
             }
 
             int id;
             string numeAngajat = textBoxNumeAngajat.Text.Trim();
 
-            if (!int.TryParse(textBoxId.Text, out id))
+            if (!int.TryParse(textBoxId.Text, out id) || id<0)
             {
                 MessageBox.Show("Va rugam sa introduceti un Id valid.");
                 return;
@@ -153,19 +154,30 @@ namespace MiniContaBill
                 var angajat = _angajati[_index];
 
                 double salariuBrut;
-
-                if (!double.TryParse(textBoxSalariuBrut.Text, out salariuBrut))
+                if (!double.TryParse(textBoxSalariuBrut.Text, out salariuBrut) || salariuBrut < 0)
                 {
-                    MessageBox.Show("Va rugam sa introduceti o valoare numerica pentru salariul brut");
+                    MessageBox.Show("Vă rugăm să introduceți o valoare numerică validă, pozitivă, pentru salariul brut.");
                     return;
                 }
 
                 int id;
                 string numeAngajat = textBoxNumeAngajat.Text.Trim();
 
-                if (!int.TryParse(textBoxId.Text, out id))
+                if (!int.TryParse(textBoxId.Text, out id) || id<0)
                 {
                     MessageBox.Show("Va rugam sa introduceti un Id valid.");
+                    return;
+                }
+
+                if (_angajati.Any(a => a.Id == id && a != angajat))
+                {
+                    MessageBox.Show("Un alt angajat are deja acest Id. Alegeți un Id unic.");
+                    return;
+                }
+
+                if (_angajati.Any(a => a.NumeAngajat.Equals(numeAngajat, StringComparison.OrdinalIgnoreCase) && a != angajat))
+                {
+                    MessageBox.Show("Un alt angajat are deja acest nume.");
                     return;
                 }
 
@@ -285,15 +297,42 @@ namespace MiniContaBill
             if (matchingFiles.Length > 0)
             {
                 string filePath = matchingFiles[0];
-                string json = File.ReadAllText(filePath);
-                var allEmployees = System.Text.Json.JsonSerializer.Deserialize<List<Angajat>>(json);
-                _angajati.AddRange(allEmployees);
+
+                try
+                {
+                    string json = File.ReadAllText(filePath);
+
+                    var allEmployees = System.Text.Json.JsonSerializer.Deserialize<List<Angajat>>(json);
+
+                    if (allEmployees == null || allEmployees.Count == 0)
+                    {
+                        MessageBox.Show("Fișierul este gol sau conținutul este invalid.");
+                        return;
+                    }
+
+                    _angajati.Clear(); 
+                    _angajati.AddRange(allEmployees);
+                }
+                catch (IOException ioEx)
+                {
+                    MessageBox.Show($"Eroare la citirea fișierului: {ioEx.Message}");
+                }
+                catch (System.Text.Json.JsonException jsonEx)
+                {
+                    MessageBox.Show($"Fișier JSON invalid: {jsonEx.Message}");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"A apărut o eroare necunoscută: {ex.Message}");
+                }
             }
             else
             {
                 MessageBox.Show($"Fișierul pentru firma '{SelectedFirm}' nu a fost găsit.");
+                return;
             }
         }
+
 
         /// <summary>
         /// Functie pentru a incarca in dataGrid lista cu angajatii firmei selectate

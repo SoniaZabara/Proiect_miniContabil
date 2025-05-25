@@ -78,67 +78,67 @@ namespace MiniContaBill
         private void buttonCalcAmortizare_Click(object sender, EventArgs e)
         {
             double valoareInitiala;
-            int durataViata = Convert.ToInt32(Math.Round(numericUpDownLifeTime.Value, 0)); // converteste valoare din selectorul numeric in int
+            int durataViata = Convert.ToInt32(Math.Round(numericUpDownLifeTime.Value, 0));
             double valoareaReziduala;
-            string amortizare = comboBoxAmortizare.Text;
 
-            try
+            // Validare valoare initiala
+            if (!double.TryParse(textBoxInitialValue.Text, out valoareInitiala))
             {
-                valoareInitiala = Convert.ToDouble(textBoxInitialValue.Text);
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Vă rugăm să introduceți o valoare numerică validă pentru Valoarea Inițială!", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Introduceți o valoare numerică validă pentru Valoarea Inițială.", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxInitialValue.Focus();
                 return;
             }
 
-            try
+            // Validare valoare reziduala
+            if (!double.TryParse(textBoxRezidualValue.Text, out valoareaReziduala))
             {
-                valoareaReziduala = Convert.ToDouble(textBoxRezidualValue.Text);
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Vă rugăm să introduceți o valoare numerică validă pentru Valoarea Reziduală!", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Introduceți o valoare numerică validă pentru Valoarea Reziduală.", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxRezidualValue.Focus();
                 return;
             }
 
+            // Validare selectie metoda amortizare
+            if (comboBoxAmortizare.SelectedIndex == -1)
+            {
+                MessageBox.Show("Selectați o metodă de amortizare.", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                comboBoxAmortizare.Focus();
+                return;
+            }
+
+            List<Amortizare> amortizari;
+
             try
             {
-                if (comboBoxAmortizare.SelectedIndex == -1)
+                switch (comboBoxAmortizare.SelectedIndex)
                 {
-                    throw new InvalidOperationException("Nu a fost selectată nicio metodă de amortizare.");
+                    case 0:
+                        amortizari = AmortizareCalculator.Liniara(valoareInitiala, durataViata, valoareaReziduala);
+                        ActualizeazaGrafic(amortizari, "Amortizare anuala", "Amortizare liniara", Color.SteelBlue);
+                        break;
+                    case 1:
+                        amortizari = AmortizareCalculator.Progresiva(valoareInitiala, durataViata, valoareaReziduala);
+                        ActualizeazaGrafic(amortizari, "Amortizare anuala", "Amortizare progresiva", Color.Green);
+                        break;
+                    case 2:
+                        amortizari = AmortizareCalculator.Degresiva(valoareInitiala, durataViata, valoareaReziduala);
+                        ActualizeazaGrafic(amortizari, "Amortizare anuala", "Amortizare degresiva", Color.Yellow);
+                        break;
+                    default:
+                        MessageBox.Show("Metoda de amortizare selectată nu este validă.", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
                 }
+
+                dataGridViewAmortizari.DataSource = amortizari;
+                dataGridViewAmortizari.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                dataGridViewAmortizari.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+                dataGridViewAmortizari.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show("Vă rugăm selectați un tip de amortizare din listă.", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                MessageBox.Show($"A apărut o eroare la calcul: {ex.Message}", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-            switch (comboBoxAmortizare.SelectedIndex)
-            {
-                case 0:
-                    var amortizariLiniare = AmortizareCalculator.Liniara(valoareInitiala, durataViata, valoareaReziduala); // calcul valoare amortizare liniara folosind functia specifica din dll
-                    dataGridViewAmortizari.DataSource = amortizariLiniare;
-                    ActualizeazaGrafic(amortizariLiniare, "Amortizare anuala", "Amortizare liniara",Color.SteelBlue);
-                    break;
-                case 1:
-                    var amortizariProgresive = AmortizareCalculator.Progresiva(valoareInitiala, durataViata, valoareaReziduala); // calcul valoare amortizare progresiva folosind functia specifica din dll
-                    dataGridViewAmortizari .DataSource = amortizariProgresive;
-                    ActualizeazaGrafic(amortizariProgresive, "Amortizare anuala", "Amortizare progresiva",Color.Green);
-                    break;
-                case 2:
-                    var amortizariDegresive = AmortizareCalculator.Degresiva (valoareInitiala, durataViata, valoareaReziduala); // calcul valoare amortizare degresiva folosind functia specifica din dll
-                    dataGridViewAmortizari.DataSource = amortizariDegresive;
-                    ActualizeazaGrafic(amortizariDegresive, "Amortizare anuala", "Amortizare degresiva", Color.Yellow);
-                    break;
-            }
-
-            dataGridViewAmortizari.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewAmortizari.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-            dataGridViewAmortizari.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
-
         }
+
 
         /// <summary>
         /// Functie ce actualizeaza graficul specific fiecarui tip de amortizare
@@ -176,20 +176,31 @@ namespace MiniContaBill
         /// <param name="e"></param>
         private void buttonCalc_Click(object sender, EventArgs e)
         {
-            decimal rezultat = 0;
-            decimal profit;
-            decimal ct;
-            
-            ct = Dividente.Dividente.CalculCheltuieliTotale(ConvertText.ConvertText.ConvertToDecimal(textBoxAmortizareTotala.Text), FormManager.builder.GetResult().GetCC(), ConvertText.ConvertText.ConvertToDecimal(textBoxSalariiTotal.Text));
-            profit = Dividente.Dividente.CalculProfit(FormManager.builder.GetResult().GetCA(), ct);
-            rezultat = Dividente.Dividente.CalculDivident(profit, numericProcent.Value, FormManager.builder.GetResult().GetNrAct());
-
-            if(rezultat == 0)
+            try
             {
-                MessageBox.Show("O posibilă eroare cauzată de introducerea necorespunzătoare a unei valori", "Atenție!");
-            }
+                decimal amortizareTotala = ConvertText.ConvertText.ConvertToDecimal(textBoxAmortizareTotala.Text);
+                decimal salariiTotal = ConvertText.ConvertText.ConvertToDecimal(textBoxSalariiTotal.Text);
+                decimal ct = Dividente.Dividente.CalculCheltuieliTotale(amortizareTotala, FormManager.builder.GetResult().GetCC(), salariiTotal);
+                decimal profit = Dividente.Dividente.CalculProfit(FormManager.builder.GetResult().GetCA(), ct);
+                decimal rezultat = Dividente.Dividente.CalculDivident(profit, numericProcent.Value, FormManager.builder.GetResult().GetNrAct());
 
-            textBoxDivident.Text = "" + rezultat;
+                if (rezultat <= 0)
+                {
+                    MessageBox.Show("Rezultatul calculului este zero sau negativ. Verificați datele introduse.", "Atenție!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                textBoxDivident.Text = rezultat.ToString("F2");
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Introduceți valori numerice valide în toate câmpurile.", "Eroare format", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"A apărut o eroare: {ex.Message}", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
-    }   
+
+    }
 }

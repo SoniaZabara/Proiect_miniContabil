@@ -24,6 +24,9 @@ using System.Threading.Tasks;
 
 namespace CerereStrategy
 {
+    /// <summary>
+    /// Obiectul prelucrat și afișat ce conține informațiile.
+    /// </summary>
     public struct CerereValori
     {
         public string qc0;
@@ -34,6 +37,9 @@ namespace CerereStrategy
         public string explanation;
 
     }
+    /// <summary>
+    /// Interfața prin care se construiesc obiectele
+    /// </summary>
     public interface ICerereStrategy
     {
         CerereValori generateExample();

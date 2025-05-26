@@ -25,7 +25,7 @@ using System.Text;
 using System.Threading.Tasks;
 using CerereStrategy;
 
-namespace MiniContaBill.Tests
+namespace MiniContaBillTests
 {
     [TestClass()]
     public class OfertaUElasticaTests

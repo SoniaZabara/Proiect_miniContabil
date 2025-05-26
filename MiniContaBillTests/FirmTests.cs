@@ -19,7 +19,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using FirmUtil;
 using CerereStrategy;
 
-namespace MiniContaBill.Tests
+namespace MiniContaBillTests
 {
     [TestClass]
     public class FirmTests

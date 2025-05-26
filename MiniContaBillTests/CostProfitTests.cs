@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MiniContaBill.Tests
+namespace MiniContaBillTests
 {
     [TestClass]
     public class CostProfitTests
@@ -17,7 +17,7 @@ namespace MiniContaBill.Tests
         {
             var mp = new MasaProfit();
             string rezultat = mp.CalculeazaMasaProfit("1000", "600");
-            Assert.AreEqual("400.00", rezultat);
+            Assert.AreEqual("400,00", rezultat);
         }
 
         [TestMethod]
@@ -25,7 +25,7 @@ namespace MiniContaBill.Tests
         {
             var rp = new RataProfit();
             string rezultat = rp.CalculeazaRataProfit("200", "800");
-            Assert.AreEqual("25.00", rezultat); 
+            Assert.AreEqual("25,00", rezultat); 
         }
 
         [TestMethod]
@@ -33,7 +33,7 @@ namespace MiniContaBill.Tests
         {
             var pf = new PretFinal();
             string rezultat = pf.CalculeazaPretFinal("80", "20");
-            Assert.AreNotEqual("100.00", rezultat);
+            Assert.AreNotEqual("100,00", rezultat);
         }
 
         [TestMethod]
@@ -50,7 +50,7 @@ namespace MiniContaBill.Tests
         {
             var ip = new ImpozitProfit();
             string rezultat = ip.CalculeazaImpozitProfit("1000", true);
-            Assert.AreEqual("100.00", rezultat); 
+            Assert.AreEqual("100,00", rezultat); 
         }
     }
 }

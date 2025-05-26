@@ -371,8 +371,7 @@
             this.textBoxNumeAngajat.Name = "textBoxNumeAngajat";
             this.textBoxNumeAngajat.Size = new System.Drawing.Size(145, 20);
             this.textBoxNumeAngajat.TabIndex = 3;
-            this.textBoxNumeAngajat.TextChanged += new System.EventHandler(this.textBoxNumeAngajat_TextChanged);
-            // 
+            
             // buttonAdd
             // 
             this.buttonAdd.BackColor = System.Drawing.Color.SteelBlue;

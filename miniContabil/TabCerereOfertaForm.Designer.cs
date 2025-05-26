@@ -313,8 +313,7 @@
             this.crownLabel8.Size = new System.Drawing.Size(122, 28);
             this.crownLabel8.TabIndex = 12;
             this.crownLabel8.Text = "crownLabel8";
-            this.crownLabel8.Click += new System.EventHandler(this.crownLabel8_Click);
-            // 
+            
             // hopeTextBox7
             // 
             this.hopeTextBox7.BackColor = System.Drawing.Color.White;
@@ -370,8 +369,7 @@
             this.hopeTextBox6.TabIndex = 18;
             this.hopeTextBox6.TabStop = false;
             this.hopeTextBox6.UseSystemPasswordChar = false;
-            this.hopeTextBox6.Click += new System.EventHandler(this.hopeTextBox6_Click);
-            // 
+            
             // crownLabel6
             // 
             this.crownLabel6.AutoSize = true;
@@ -391,7 +389,6 @@
             this.crownLabel5.Size = new System.Drawing.Size(122, 28);
             this.crownLabel5.TabIndex = 9;
             this.crownLabel5.Text = "crownLabel5";
-            this.crownLabel5.Click += new System.EventHandler(this.crownLabel5_Click);
             // 
             // hopeTextBox5
             // 
@@ -449,8 +446,7 @@
             this.hopeGroupBox3.TabStop = false;
             this.hopeGroupBox3.Text = "hopeGroupBox3";
             this.hopeGroupBox3.ThemeColor = System.Drawing.SystemColors.Control;
-            this.hopeGroupBox3.Enter += new System.EventHandler(this.hopeGroupBox3_Enter);
-            // 
+            
             // hopeButton10
             // 
             this.hopeButton10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));

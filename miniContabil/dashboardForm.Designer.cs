@@ -129,8 +129,7 @@
             this.dashboardMainpanel.Name = "dashboardMainpanel";
             this.dashboardMainpanel.Size = new System.Drawing.Size(1062, 633);
             this.dashboardMainpanel.TabIndex = 1;
-            this.dashboardMainpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.dashboardMainpanel_Paint);
-            // 
+            
             // buttonTab4
             // 
             this.buttonTab4.FlatAppearance.BorderSize = 0;

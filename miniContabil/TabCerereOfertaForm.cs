@@ -306,20 +306,9 @@ namespace MiniContaBill
 
         }
 
-        private void hopeGroupBox3_Enter(object sender, EventArgs e)
-        {
+    
 
-        }
-
-        private void crownLabel8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void hopeTextBox6_Click(object sender, EventArgs e)
-        {
-
-        }
+     
         /// <summary>
         /// Funcție ce activează doar butoanele cu exemple de cereri elastice
         /// </summary>
@@ -755,9 +744,5 @@ namespace MiniContaBill
             System.Windows.Forms.MessageBox.Show(oferta.explanation, oferta.typeOfElasticity);
         }
 
-        private void crownLabel5_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

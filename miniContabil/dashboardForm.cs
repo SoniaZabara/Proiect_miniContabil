@@ -114,11 +114,7 @@ namespace MiniContaBill
             loadForm(new TabSalariiForm(firmName));
         }
 
-        private void dashboardMainpanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
+       
         /// <summary>
         /// Metodă ce inițializează form-ul cu câteva valori deja definite
         /// </summary>
